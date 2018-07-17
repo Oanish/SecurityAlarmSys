@@ -1,0 +1,18 @@
+module Security_Top (input CLK,						//the board's oscillator clock
+							input Echo_Sig,				//echo signal from HC-SR04
+							output Trigger_Sig,			//trigger signal to HC-SR04
+							output [13:0] Distance);	//distance from object, digits
+							
+wire T_CLK;		//trigger clock, used in all modules
+							
+CLK_Divider DUT1(.CLK(CLK),
+					  .T_CLK(T_CLK));
+					  
+Distance_Calc DUT2(.CLK(CLK),
+						 .Echo(Echo_Sig),
+						 .Distance(Distance_Raw));
+						 
+Digit_Converter DUT3(.Distance_Raw(Distance_Raw),
+							.Distance(Distance));
+							
+endmodule 
