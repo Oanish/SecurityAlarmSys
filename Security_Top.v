@@ -12,6 +12,7 @@ CLK_Divider DUT1(.CLK(CLK),
 					  .T_CLK(T_CLK));
 					  
 Sensor_Controller DUT2(.CLK(T_CLK),
+							  .RST(RST),
 							  .Trigger(Trigger_Sig),
 							  .Echo(Echo_Sig),
 							  .Distance(Distance_Raw));

@@ -3,8 +3,8 @@ module Digit_Converter (input [6:0] Distance_Raw,		//distance from object, bits
 								
 wire [3:0] Distance_Tens, Distance_Units;
 
-assign Distance_Units = Distance_Raw % 10;
-assign Distance_Tens = (Distance_Raw - Distance_Units) / 10;
+assign Distance_Units = (Distance_Raw < 100) ? Distance_Raw % 10 : 4'bz;
+assign Distance_Tens = (Distance_Raw < 100) ? (Distance_Raw - Distance_Units) / 10 : 4'bz;
 
 BCD DUT1(.BINARY(Distance_Tens),
 			.SEGMENTS(Distance[13:7]));
