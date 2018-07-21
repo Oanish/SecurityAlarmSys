@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Security_System
-Tue Jul 17 23:32:59 2018
+Sat Jul 21 17:07:24 2018
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -19,10 +19,9 @@ Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edit
  11. Parameter Settings for Inferred Entity Instance: Digit_Converter:DUT3|lpm_divide:Div0
  12. Parameter Settings for Inferred Entity Instance: Sensor_Controller:DUT2|lpm_divide:Div0
  13. Port Connectivity Checks: "Digit_Converter:DUT3"
- 14. Port Connectivity Checks: "Sensor_Controller:DUT2"
- 15. Elapsed Time Per Partition
- 16. Analysis & Synthesis Messages
- 17. Analysis & Synthesis Suppressed Messages
+ 14. Elapsed Time Per Partition
+ 15. Analysis & Synthesis Messages
+ 16. Analysis & Synthesis Suppressed Messages
 
 
 
@@ -48,16 +47,16 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Tue Jul 17 23:32:59 2018           ;
+; Analysis & Synthesis Status        ; Successful - Sat Jul 21 17:07:24 2018           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; Security_System                                 ;
 ; Top-level Entity Name              ; Security_Top                                    ;
 ; Family                             ; Cyclone II                                      ;
-; Total logic elements               ; 545                                             ;
-;     Total combinational functions  ; 545                                             ;
-;     Dedicated logic registers      ; 41                                              ;
-; Total registers                    ; 41                                              ;
-; Total pins                         ; 18                                              ;
+; Total logic elements               ; 548                                             ;
+;     Total combinational functions  ; 548                                             ;
+;     Dedicated logic registers      ; 42                                              ;
+; Total registers                    ; 42                                              ;
+; Total pins                         ; 26                                              ;
 ; Total virtual pins                 ; 0                                               ;
 ; Total memory bits                  ; 0                                               ;
 ; Embedded Multiplier 9-bit elements ; 0                                               ;
@@ -194,27 +193,27 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +---------------------------------------------+------------------------+
 ; Resource                                    ; Usage                  ;
 +---------------------------------------------+------------------------+
-; Estimated Total logic elements              ; 545                    ;
+; Estimated Total logic elements              ; 548                    ;
 ;                                             ;                        ;
-; Total combinational functions               ; 545                    ;
+; Total combinational functions               ; 548                    ;
 ; Logic element usage by number of LUT inputs ;                        ;
 ;     -- 4 input functions                    ; 105                    ;
 ;     -- 3 input functions                    ; 160                    ;
-;     -- <=2 input functions                  ; 280                    ;
+;     -- <=2 input functions                  ; 283                    ;
 ;                                             ;                        ;
 ; Logic elements by mode                      ;                        ;
-;     -- normal mode                          ; 341                    ;
+;     -- normal mode                          ; 344                    ;
 ;     -- arithmetic mode                      ; 204                    ;
 ;                                             ;                        ;
-; Total registers                             ; 41                     ;
-;     -- Dedicated logic registers            ; 41                     ;
+; Total registers                             ; 42                     ;
+;     -- Dedicated logic registers            ; 42                     ;
 ;     -- I/O registers                        ; 0                      ;
 ;                                             ;                        ;
-; I/O pins                                    ; 18                     ;
+; I/O pins                                    ; 26                     ;
 ; Embedded Multiplier 9-bit elements          ; 0                      ;
 ; Maximum fan-out node                        ; CLK_Divider:DUT1|T_CLK ;
-; Maximum fan-out                             ; 22                     ;
-; Total fan-out                               ; 1520                   ;
+; Maximum fan-out                             ; 30                     ;
+; Total fan-out                               ; 1550                   ;
 ; Average fan-out                             ; 2.52                   ;
 +---------------------------------------------+------------------------+
 
@@ -224,7 +223,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +-------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------------------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node                ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                  ; Library Name ;
 +-------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------------------------------------------------------------------------+--------------+
-; |Security_Top                             ; 545 (0)           ; 41 (0)       ; 0           ; 0            ; 0       ; 0         ; 18   ; 0            ; |Security_Top                                                                                                                        ; work         ;
+; |Security_Top                             ; 548 (0)           ; 42 (0)       ; 0           ; 0            ; 0       ; 0         ; 26   ; 0            ; |Security_Top                                                                                                                        ; work         ;
 ;    |CLK_Divider:DUT1|                     ; 18 (18)           ; 13 (13)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Security_Top|CLK_Divider:DUT1                                                                                                       ; work         ;
 ;    |Digit_Converter:DUT3|                 ; 124 (7)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Security_Top|Digit_Converter:DUT3                                                                                                   ; work         ;
 ;       |BCD:DUT1|                          ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Security_Top|Digit_Converter:DUT3|BCD:DUT1                                                                                          ; work         ;
@@ -237,11 +236,11 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ;          |lpm_divide_35m:auto_generated|  ; 46 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Security_Top|Digit_Converter:DUT3|lpm_divide:Mod0|lpm_divide_35m:auto_generated                                                     ; work         ;
 ;             |sign_div_unsign_akh:divider| ; 46 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Security_Top|Digit_Converter:DUT3|lpm_divide:Mod0|lpm_divide_35m:auto_generated|sign_div_unsign_akh:divider                         ; work         ;
 ;                |alt_u_div_mve:divider|    ; 46 (46)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Security_Top|Digit_Converter:DUT3|lpm_divide:Mod0|lpm_divide_35m:auto_generated|sign_div_unsign_akh:divider|alt_u_div_mve:divider   ; work         ;
-;    |Sensor_Controller:DUT2|               ; 403 (62)          ; 28 (28)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Security_Top|Sensor_Controller:DUT2                                                                                                 ; work         ;
-;       |lpm_divide:Div0|                   ; 341 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Security_Top|Sensor_Controller:DUT2|lpm_divide:Div0                                                                                 ; work         ;
-;          |lpm_divide_hem:auto_generated|  ; 341 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Security_Top|Sensor_Controller:DUT2|lpm_divide:Div0|lpm_divide_hem:auto_generated                                                   ; work         ;
-;             |sign_div_unsign_rlh:divider| ; 341 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Security_Top|Sensor_Controller:DUT2|lpm_divide:Div0|lpm_divide_hem:auto_generated|sign_div_unsign_rlh:divider                       ; work         ;
-;                |alt_u_div_o2f:divider|    ; 341 (341)         ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Security_Top|Sensor_Controller:DUT2|lpm_divide:Div0|lpm_divide_hem:auto_generated|sign_div_unsign_rlh:divider|alt_u_div_o2f:divider ; work         ;
+;    |Sensor_Controller:DUT2|               ; 406 (58)          ; 29 (29)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Security_Top|Sensor_Controller:DUT2                                                                                                 ; work         ;
+;       |lpm_divide:Div0|                   ; 348 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Security_Top|Sensor_Controller:DUT2|lpm_divide:Div0                                                                                 ; work         ;
+;          |lpm_divide_hem:auto_generated|  ; 348 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Security_Top|Sensor_Controller:DUT2|lpm_divide:Div0|lpm_divide_hem:auto_generated                                                   ; work         ;
+;             |sign_div_unsign_rlh:divider| ; 348 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Security_Top|Sensor_Controller:DUT2|lpm_divide:Div0|lpm_divide_hem:auto_generated|sign_div_unsign_rlh:divider                       ; work         ;
+;                |alt_u_div_o2f:divider|    ; 348 (348)         ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Security_Top|Sensor_Controller:DUT2|lpm_divide:Div0|lpm_divide_hem:auto_generated|sign_div_unsign_rlh:divider|alt_u_div_o2f:divider ; work         ;
 +-------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------------------------------------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -251,24 +250,25 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 41    ;
+; Total registers                              ; 42    ;
 ; Number of registers using Synchronous Clear  ; 32    ;
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 0     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Clock Enable       ; 8     ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                      ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------+
-; 3:1                ; 20 bits   ; 40 LEs        ; 20 LEs               ; 20 LEs                 ; Yes        ; |Security_Top|Sensor_Controller:DUT2|Counter[1] ;
-; 3:1                ; 12 bits   ; 24 LEs        ; 12 LEs               ; 12 LEs                 ; Yes        ; |Security_Top|CLK_Divider:DUT1|Counter[6]       ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                 ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                       ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------+
+; 3:1                ; 20 bits   ; 40 LEs        ; 20 LEs               ; 20 LEs                 ; Yes        ; |Security_Top|Sensor_Controller:DUT2|Counter[12] ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |Security_Top|Sensor_Controller:DUT2|Distance[6] ;
+; 3:1                ; 12 bits   ; 24 LEs        ; 12 LEs               ; 12 LEs                 ; Yes        ; |Security_Top|CLK_Divider:DUT1|Counter[6]        ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------+
 
 
 +---------------------------------------------------------------------------------------+
@@ -349,15 +349,6 @@ Note: In order to hide this table in the UI and the text report file, please set
 +--------------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "Sensor_Controller:DUT2"                                                                    ;
-+-------------+--------+----------+-------------------------------------------------------------------------------------+
-; Port        ; Type   ; Severity ; Details                                                                             ;
-+-------------+--------+----------+-------------------------------------------------------------------------------------+
-; Distance[7] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+-------------+--------+----------+-------------------------------------------------------------------------------------+
-
-
 +-------------------------------+
 ; Elapsed Time Per Partition    ;
 +----------------+--------------+
@@ -373,7 +364,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Tue Jul 17 23:32:58 2018
+    Info: Processing started: Sat Jul 21 17:07:22 2018
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Security_System -c Security_System
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 1 design units, including 1 entities, in source file security_top.v
@@ -390,8 +381,8 @@ Info (12127): Elaborating entity "Security_Top" for the top level hierarchy
 Info (12128): Elaborating entity "CLK_Divider" for hierarchy "CLK_Divider:DUT1"
 Warning (10230): Verilog HDL assignment warning at CLK_Divider.v(20): truncated value with size 32 to match size of target (12)
 Info (12128): Elaborating entity "Sensor_Controller" for hierarchy "Sensor_Controller:DUT2"
-Warning (10230): Verilog HDL assignment warning at Sensor_Controller.v(25): truncated value with size 32 to match size of target (20)
-Warning (10230): Verilog HDL assignment warning at Sensor_Controller.v(30): truncated value with size 32 to match size of target (8)
+Warning (10230): Verilog HDL assignment warning at Sensor_Controller.v(27): truncated value with size 32 to match size of target (20)
+Warning (10230): Verilog HDL assignment warning at Sensor_Controller.v(31): truncated value with size 32 to match size of target (8)
 Info (12128): Elaborating entity "Digit_Converter" for hierarchy "Digit_Converter:DUT3"
 Warning (10230): Verilog HDL assignment warning at Digit_Converter.v(6): truncated value with size 32 to match size of target (4)
 Warning (10230): Verilog HDL assignment warning at Digit_Converter.v(7): truncated value with size 32 to match size of target (4)
@@ -453,14 +444,14 @@ Warning (12241): 1 hierarchies have connectivity warnings - see the Connectivity
 Info (144001): Generated suppressed messages file D:/Oana/Documents/Materiale Poli/GitHub/SecurityAlarmSys/output_files/Security_System.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 563 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 574 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 3 input pins
-    Info (21059): Implemented 15 output pins
-    Info (21061): Implemented 545 logic cells
+    Info (21059): Implemented 23 output pins
+    Info (21061): Implemented 548 logic cells
 Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 16 warnings
-    Info: Peak virtual memory: 4655 megabytes
-    Info: Processing ended: Tue Jul 17 23:32:59 2018
-    Info: Elapsed time: 00:00:01
+    Info: Peak virtual memory: 4643 megabytes
+    Info: Processing ended: Sat Jul 21 17:07:24 2018
+    Info: Elapsed time: 00:00:02
     Info: Total CPU time (on all processors): 00:00:01
 
 

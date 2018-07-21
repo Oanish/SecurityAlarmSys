@@ -17,6 +17,14 @@ Distance[10] <= Digit_Converter:DUT3.Distance
 Distance[11] <= Digit_Converter:DUT3.Distance
 Distance[12] <= Digit_Converter:DUT3.Distance
 Distance[13] <= Digit_Converter:DUT3.Distance
+Distance_Raw[0] <= Distance_Raw[0].DB_MAX_OUTPUT_PORT_TYPE
+Distance_Raw[1] <= Distance_Raw[1].DB_MAX_OUTPUT_PORT_TYPE
+Distance_Raw[2] <= Distance_Raw[2].DB_MAX_OUTPUT_PORT_TYPE
+Distance_Raw[3] <= Distance_Raw[3].DB_MAX_OUTPUT_PORT_TYPE
+Distance_Raw[4] <= Distance_Raw[4].DB_MAX_OUTPUT_PORT_TYPE
+Distance_Raw[5] <= Distance_Raw[5].DB_MAX_OUTPUT_PORT_TYPE
+Distance_Raw[6] <= Distance_Raw[6].DB_MAX_OUTPUT_PORT_TYPE
+Distance_Raw[7] <= Distance_Raw[7].DB_MAX_OUTPUT_PORT_TYPE
 
 
 |Security_Top|CLK_Divider:DUT1
@@ -50,6 +58,14 @@ T_CLK <= T_CLK~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |Security_Top|Sensor_Controller:DUT2
+CLK => Distance[0]~reg0.CLK
+CLK => Distance[1]~reg0.CLK
+CLK => Distance[2]~reg0.CLK
+CLK => Distance[3]~reg0.CLK
+CLK => Distance[4]~reg0.CLK
+CLK => Distance[5]~reg0.CLK
+CLK => Distance[6]~reg0.CLK
+CLK => Distance[7]~reg0.CLK
 CLK => Trigger~reg0.CLK
 CLK => Counter[0].CLK
 CLK => Counter[1].CLK
@@ -92,14 +108,22 @@ RST => Counter.OUTPUTSELECT
 RST => Counter.OUTPUTSELECT
 RST => Counter.OUTPUTSELECT
 RST => Trigger.OUTPUTSELECT
-Echo => Distance[0]~reg0.CLK
-Echo => Distance[1]~reg0.CLK
-Echo => Distance[2]~reg0.CLK
-Echo => Distance[3]~reg0.CLK
-Echo => Distance[4]~reg0.CLK
-Echo => Distance[5]~reg0.CLK
-Echo => Distance[6]~reg0.CLK
-Echo => Distance[7]~reg0.CLK
+RST => Distance.OUTPUTSELECT
+RST => Distance.OUTPUTSELECT
+RST => Distance.OUTPUTSELECT
+RST => Distance.OUTPUTSELECT
+RST => Distance.OUTPUTSELECT
+RST => Distance.OUTPUTSELECT
+RST => Distance.OUTPUTSELECT
+RST => Distance.OUTPUTSELECT
+Echo => Distance.OUTPUTSELECT
+Echo => Distance.OUTPUTSELECT
+Echo => Distance.OUTPUTSELECT
+Echo => Distance.OUTPUTSELECT
+Echo => Distance.OUTPUTSELECT
+Echo => Distance.OUTPUTSELECT
+Echo => Distance.OUTPUTSELECT
+Echo => Distance.OUTPUTSELECT
 Trigger <= Trigger~reg0.DB_MAX_OUTPUT_PORT_TYPE
 Distance[0] <= Distance[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 Distance[1] <= Distance[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE

@@ -12,21 +12,23 @@ always@(posedge CLK)
 		begin
 			Counter <= 0;
 			Trigger <= 0;
+			Distance <= 0;
 		end
 	else
-		if(Counter == 99999)		//impulse generated ever second
-			begin
-				Counter <= 0;
-				Trigger <= 1;
-			end
-		else
-			begin
-				Trigger <= 0;
-				Counter <= Counter + 1;
-			end
-
-//distance calculator
-always@(posedge Echo)
-	Distance = Counter * 10 / 58;
+		begin
+			if(Counter == 99999)		//impulse generated ever second
+				begin
+					Counter <= 0;
+					Trigger <= 1;
+				end
+			else
+				begin
+					Trigger <= 0;
+					Counter <= Counter + 1;
+				end
+			
+			if(Echo)						//distance calculator
+				Distance <= Counter * 10 / 58;
+		end
 
 endmodule 
