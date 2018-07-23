@@ -1,5 +1,5 @@
 Fitter report for Security_System
-Mon Jul 23 20:59:18 2018
+Mon Jul 23 22:21:04 2018
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -62,18 +62,18 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Fitter Summary                                                                       ;
 +------------------------------------+-------------------------------------------------+
-; Fitter Status                      ; Successful - Mon Jul 23 20:59:18 2018           ;
+; Fitter Status                      ; Successful - Mon Jul 23 22:21:04 2018           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; Security_System                                 ;
 ; Top-level Entity Name              ; Security_Top                                    ;
 ; Family                             ; Cyclone II                                      ;
 ; Device                             ; EP2C20F484C7                                    ;
 ; Timing Models                      ; Final                                           ;
-; Total logic elements               ; 48 / 18,752 ( < 1 % )                           ;
+; Total logic elements               ; 47 / 18,752 ( < 1 % )                           ;
 ;     Total combinational functions  ; 46 / 18,752 ( < 1 % )                           ;
 ;     Dedicated logic registers      ; 34 / 18,752 ( < 1 % )                           ;
 ; Total registers                    ; 34                                              ;
-; Total pins                         ; 6 / 315 ( 2 % )                                 ;
+; Total pins                         ; 4 / 315 ( 1 % )                                 ;
 ; Total virtual pins                 ; 0                                               ;
 ; Total memory bits                  ; 0 / 239,616 ( 0 % )                             ;
 ; Embedded Multiplier 9-bit elements ; 0 / 52 ( 0 % )                                  ;
@@ -149,8 +149,8 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ; Type                ; Value                  ;
 +---------------------+------------------------+
 ; Placement (by node) ;                        ;
-;     -- Requested    ; 0 / 92 ( 0.00 % )      ;
-;     -- Achieved     ; 0 / 92 ( 0.00 % )      ;
+;     -- Requested    ; 0 / 90 ( 0.00 % )      ;
+;     -- Achieved     ; 0 / 90 ( 0.00 % )      ;
 ;                     ;                        ;
 ; Routing (by net)    ;                        ;
 ;     -- Requested    ; 0 / 0 ( 0.00 % )       ;
@@ -173,7 +173,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +--------------------------------+---------+-------------------+-------------------------+-------------------+
 ; Partition Name                 ; # Nodes ; # Preserved Nodes ; Preservation Level Used ; Netlist Type Used ;
 +--------------------------------+---------+-------------------+-------------------------+-------------------+
-; Top                            ; 89      ; 0                 ; N/A                     ; Source File       ;
+; Top                            ; 87      ; 0                 ; N/A                     ; Source File       ;
 ; hard_block:auto_generated_inst ; 3       ; 0                 ; N/A                     ; Source File       ;
 +--------------------------------+---------+-------------------+-------------------------+-------------------+
 
@@ -189,16 +189,16 @@ The pin-out file can be found in D:/Oana/Documents/Materiale Poli/GitHub/Securit
 +---------------------------------------------+-----------------------+
 ; Resource                                    ; Usage                 ;
 +---------------------------------------------+-----------------------+
-; Total logic elements                        ; 48 / 18,752 ( < 1 % ) ;
-;     -- Combinational with no register       ; 14                    ;
-;     -- Register only                        ; 2                     ;
-;     -- Combinational with a register        ; 32                    ;
+; Total logic elements                        ; 47 / 18,752 ( < 1 % ) ;
+;     -- Combinational with no register       ; 13                    ;
+;     -- Register only                        ; 1                     ;
+;     -- Combinational with a register        ; 33                    ;
 ;                                             ;                       ;
 ; Logic element usage by number of LUT inputs ;                       ;
 ;     -- 4 input functions                    ; 11                    ;
 ;     -- 3 input functions                    ; 2                     ;
 ;     -- <=2 input functions                  ; 33                    ;
-;     -- Register only                        ; 2                     ;
+;     -- Register only                        ; 1                     ;
 ;                                             ;                       ;
 ; Logic elements by mode                      ;                       ;
 ;     -- normal mode                          ; 16                    ;
@@ -210,7 +210,7 @@ The pin-out file can be found in D:/Oana/Documents/Materiale Poli/GitHub/Securit
 ;                                             ;                       ;
 ; Total LABs:  partially or completely used   ; 4 / 1,172 ( < 1 % )   ;
 ; Virtual pins                                ; 0                     ;
-; I/O pins                                    ; 6 / 315 ( 2 % )       ;
+; I/O pins                                    ; 4 / 315 ( 1 % )       ;
 ;     -- Clock pins                           ; 1 / 8 ( 13 % )        ;
 ;                                             ;                       ;
 ; Global signals                              ; 2                     ;
@@ -227,8 +227,8 @@ The pin-out file can be found in D:/Oana/Documents/Materiale Poli/GitHub/Securit
 ; Peak interconnect usage (total/H/V)         ; 0% / 0% / 0%          ;
 ; Maximum fan-out                             ; 21                    ;
 ; Highest non-global fan-out                  ; 20                    ;
-; Total fan-out                               ; 219                   ;
-; Average fan-out                             ; 2.38                  ;
+; Total fan-out                               ; 218                   ;
+; Average fan-out                             ; 2.42                  ;
 +---------------------------------------------+-----------------------+
 *  Register count does not include registers inside RAM blocks or DSP blocks.
 
@@ -241,16 +241,16 @@ The pin-out file can be found in D:/Oana/Documents/Materiale Poli/GitHub/Securit
 +---------------------------------------------+----------------------+--------------------------------+
 ; Difficulty Clustering Region                ; Low                  ; Low                            ;
 ;                                             ;                      ;                                ;
-; Total logic elements                        ; 48 / 18752 ( < 1 % ) ; 0 / 18752 ( 0 % )              ;
-;     -- Combinational with no register       ; 14                   ; 0                              ;
-;     -- Register only                        ; 2                    ; 0                              ;
-;     -- Combinational with a register        ; 32                   ; 0                              ;
+; Total logic elements                        ; 47 / 18752 ( < 1 % ) ; 0 / 18752 ( 0 % )              ;
+;     -- Combinational with no register       ; 13                   ; 0                              ;
+;     -- Register only                        ; 1                    ; 0                              ;
+;     -- Combinational with a register        ; 33                   ; 0                              ;
 ;                                             ;                      ;                                ;
 ; Logic element usage by number of LUT inputs ;                      ;                                ;
 ;     -- 4 input functions                    ; 11                   ; 0                              ;
 ;     -- 3 input functions                    ; 2                    ; 0                              ;
 ;     -- <=2 input functions                  ; 33                   ; 0                              ;
-;     -- Register only                        ; 2                    ; 0                              ;
+;     -- Register only                        ; 1                    ; 0                              ;
 ;                                             ;                      ;                                ;
 ; Logic elements by mode                      ;                      ;                                ;
 ;     -- normal mode                          ; 16                   ; 0                              ;
@@ -262,7 +262,7 @@ The pin-out file can be found in D:/Oana/Documents/Materiale Poli/GitHub/Securit
 ; Total LABs:  partially or completely used   ; 4 / 1172 ( < 1 % )   ; 0 / 1172 ( 0 % )               ;
 ;                                             ;                      ;                                ;
 ; Virtual pins                                ; 0                    ; 0                              ;
-; I/O pins                                    ; 6                    ; 0                              ;
+; I/O pins                                    ; 4                    ; 0                              ;
 ; Embedded Multiplier 9-bit elements          ; 0 / 52 ( 0 % )       ; 0 / 52 ( 0 % )                 ;
 ; Total memory bits                           ; 0                    ; 0                              ;
 ; Total RAM block bits                        ; 0                    ; 0                              ;
@@ -275,8 +275,8 @@ The pin-out file can be found in D:/Oana/Documents/Materiale Poli/GitHub/Securit
 ;     -- Registered Output Connections        ; 0                    ; 0                              ;
 ;                                             ;                      ;                                ;
 ; Internal Connections                        ;                      ;                                ;
-;     -- Total Connections                    ; 219                  ; 0                              ;
-;     -- Registered Connections               ; 68                   ; 0                              ;
+;     -- Total Connections                    ; 218                  ; 0                              ;
+;     -- Registered Connections               ; 67                   ; 0                              ;
 ;                                             ;                      ;                                ;
 ; External Connections                        ;                      ;                                ;
 ;     -- Top                                  ; 0                    ; 0                              ;
@@ -284,7 +284,7 @@ The pin-out file can be found in D:/Oana/Documents/Materiale Poli/GitHub/Securit
 ;                                             ;                      ;                                ;
 ; Partition Interface                         ;                      ;                                ;
 ;     -- Input Ports                          ; 3                    ; 0                              ;
-;     -- Output Ports                         ; 3                    ; 0                              ;
+;     -- Output Ports                         ; 1                    ; 0                              ;
 ;     -- Bidir Ports                          ; 0                    ; 0                              ;
 ;                                             ;                      ;                                ;
 ; Registered Ports                            ;                      ;                                ;
@@ -319,8 +319,6 @@ The pin-out file can be found in D:/Oana/Documents/Materiale Poli/GitHub/Securit
 +-------------+-------+----------+--------------+--------------+-------------+-----------------+------------------------+---------------+-----------------+------------+---------------+----------+--------------+--------------+------------------+-------------+----------------------+------+----------------------+---------------------+
 ; Name        ; Pin # ; I/O Bank ; X coordinate ; Y coordinate ; Cell number ; Output Register ; Output Enable Register ; Power Up High ; PCI I/O Enabled ; Open Drain ; TRI Primitive ; Bus Hold ; Weak Pull Up ; I/O Standard ; Current Strength ; Termination ; Location assigned by ; Load ; Output Enable Source ; Output Enable Group ;
 +-------------+-------+----------+--------------+--------------+-------------+-----------------+------------------------+---------------+-----------------+------------+---------------+----------+--------------+--------------+------------------+-------------+----------------------+------+----------------------+---------------------+
-; Sound_Sig   ; B5    ; 3        ; 3            ; 27           ; 2           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; User                 ; 0 pF ; -                    ; -                   ;
-; T_CLK       ; B4    ; 3        ; 1            ; 27           ; 0           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; User                 ; 0 pF ; -                    ; -                   ;
 ; Trigger_Sig ; B13   ; 4        ; 26           ; 27           ; 0           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; User                 ; 0 pF ; -                    ; -                   ;
 +-------------+-------+----------+--------------+--------------+-------------+-----------------+------------------------+---------------+-----------------+------------+---------------+----------+--------------+--------------+------------------+-------------+----------------------+------+----------------------+---------------------+
 
@@ -332,7 +330,7 @@ The pin-out file can be found in D:/Oana/Documents/Materiale Poli/GitHub/Securit
 +----------+----------------+---------------+--------------+
 ; 1        ; 0 / 41 ( 0 % ) ; 3.3V          ; --           ;
 ; 2        ; 3 / 33 ( 9 % ) ; 3.3V          ; --           ;
-; 3        ; 2 / 43 ( 5 % ) ; 3.3V          ; --           ;
+; 3        ; 0 / 43 ( 0 % ) ; 3.3V          ; --           ;
 ; 4        ; 2 / 40 ( 5 % ) ; 3.3V          ; --           ;
 ; 5        ; 0 / 39 ( 0 % ) ; 3.3V          ; --           ;
 ; 6        ; 2 / 36 ( 6 % ) ; 3.3V          ; --           ;
@@ -415,8 +413,8 @@ The pin-out file can be found in D:/Oana/Documents/Materiale Poli/GitHub/Securit
 ; B1       ;            ; 2        ; VCCIO2                                   ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
 ; B2       ;            ;          ; GND                                      ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; B3       ; 326        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
-; B4       ; 323        ; 3        ; T_CLK                                    ; output ; 3.3-V LVTTL  ;         ; Column I/O ; Y               ; no       ; Off          ;
-; B5       ; 321        ; 3        ; Sound_Sig                                ; output ; 3.3-V LVTTL  ;         ; Column I/O ; Y               ; no       ; Off          ;
+; B4       ; 323        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
+; B5       ; 321        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; B6       ; 319        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; B7       ; 305        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; B8       ; 303        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
@@ -876,9 +874,9 @@ Note: User assignments will override these defaults. The user specified values a
 +-----------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+--------------------------------------+--------------+
 ; Compilation Hierarchy Node  ; Logic Cells ; Dedicated Logic Registers ; I/O Registers ; Memory Bits ; M4Ks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Full Hierarchy Name                  ; Library Name ;
 +-----------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+--------------------------------------+--------------+
-; |Security_Top               ; 48 (0)      ; 34 (0)                    ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 6    ; 0            ; 14 (0)       ; 2 (0)             ; 32 (0)           ; |Security_Top                        ; work         ;
+; |Security_Top               ; 47 (0)      ; 34 (0)                    ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 4    ; 0            ; 13 (0)       ; 1 (0)             ; 33 (0)           ; |Security_Top                        ; work         ;
 ;    |CLK_Divider:DUT1|       ; 18 (18)     ; 13 (13)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 5 (5)        ; 0 (0)             ; 13 (13)          ; |Security_Top|CLK_Divider:DUT1       ; work         ;
-;    |Sensor_Controller:DUT2| ; 30 (30)     ; 21 (21)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 9 (9)        ; 2 (2)             ; 19 (19)          ; |Security_Top|Sensor_Controller:DUT2 ; work         ;
+;    |Sensor_Controller:DUT2| ; 29 (29)     ; 21 (21)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 8 (8)        ; 1 (1)             ; 20 (20)          ; |Security_Top|Sensor_Controller:DUT2 ; work         ;
 +-----------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+--------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -890,38 +888,36 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-------------+----------+---------------+---------------+-----------------------+-----+
 ; Echo_Sig    ; Input    ; (0) 170 ps    ; (0) 170 ps    ; --                    ; --  ;
 ; Trigger_Sig ; Output   ; --            ; --            ; --                    ; --  ;
-; T_CLK       ; Output   ; --            ; --            ; --                    ; --  ;
-; Sound_Sig   ; Output   ; --            ; --            ; --                    ; --  ;
 ; RST         ; Input    ; (6) 2523 ps   ; (6) 2523 ps   ; --                    ; --  ;
 ; CLK         ; Input    ; (0) 171 ps    ; (0) 171 ps    ; --                    ; --  ;
 +-------------+----------+---------------+---------------+-----------------------+-----+
 
 
-+----------------------------------------------------------------------------+
-; Pad To Core Delay Chain Fanout                                             ;
-+----------------------------------------------+-------------------+---------+
-; Source Pin / Fanout                          ; Pad To Core Index ; Setting ;
-+----------------------------------------------+-------------------+---------+
-; Echo_Sig                                     ;                   ;         ;
-; RST                                          ;                   ;         ;
-;      - Sensor_Controller:DUT2|Trigger~0      ; 0                 ; 6       ;
-;      - CLK_Divider:DUT1|T_CLK~1              ; 0                 ; 6       ;
-;      - Sensor_Controller:DUT2|Counter[19]~56 ; 0                 ; 6       ;
-;      - CLK_Divider:DUT1|Counter[6]~18        ; 0                 ; 6       ;
-; CLK                                          ;                   ;         ;
-+----------------------------------------------+-------------------+---------+
++---------------------------------------------------------------------------+
+; Pad To Core Delay Chain Fanout                                            ;
++---------------------------------------------+-------------------+---------+
+; Source Pin / Fanout                         ; Pad To Core Index ; Setting ;
++---------------------------------------------+-------------------+---------+
+; Echo_Sig                                    ;                   ;         ;
+; RST                                         ;                   ;         ;
+;      - Sensor_Controller:DUT2|Trigger~0     ; 1                 ; 6       ;
+;      - Sensor_Controller:DUT2|Counter[0]~56 ; 1                 ; 6       ;
+;      - CLK_Divider:DUT1|T_CLK~1             ; 1                 ; 6       ;
+;      - CLK_Divider:DUT1|Counter[6]~18       ; 1                 ; 6       ;
+; CLK                                         ;                   ;         ;
++---------------------------------------------+-------------------+---------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Control Signals                                                                                                                                                   ;
-+---------------------------------------+--------------------+---------+-------------+--------+----------------------+------------------+---------------------------+
-; Name                                  ; Location           ; Fan-Out ; Usage       ; Global ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
-+---------------------------------------+--------------------+---------+-------------+--------+----------------------+------------------+---------------------------+
-; CLK                                   ; PIN_L1             ; 13      ; Clock       ; yes    ; Global Clock         ; GCLK2            ; --                        ;
-; CLK_Divider:DUT1|Counter[6]~18        ; LCCOMB_X48_Y12_N26 ; 12      ; Sync. clear ; no     ; --                   ; --               ; --                        ;
-; CLK_Divider:DUT1|T_CLK                ; LCFF_X49_Y12_N29   ; 21      ; Clock       ; yes    ; Global Clock         ; GCLK5            ; --                        ;
-; Sensor_Controller:DUT2|Counter[19]~56 ; LCCOMB_X49_Y13_N10 ; 20      ; Sync. clear ; no     ; --                   ; --               ; --                        ;
-+---------------------------------------+--------------------+---------+-------------+--------+----------------------+------------------+---------------------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Control Signals                                                                                                                                                 ;
++--------------------------------------+-------------------+---------+-------------+--------+----------------------+------------------+---------------------------+
+; Name                                 ; Location          ; Fan-Out ; Usage       ; Global ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
++--------------------------------------+-------------------+---------+-------------+--------+----------------------+------------------+---------------------------+
+; CLK                                  ; PIN_L1            ; 13      ; Clock       ; yes    ; Global Clock         ; GCLK2            ; --                        ;
+; CLK_Divider:DUT1|Counter[6]~18       ; LCCOMB_X48_Y14_N2 ; 12      ; Sync. clear ; no     ; --                   ; --               ; --                        ;
+; CLK_Divider:DUT1|T_CLK               ; LCFF_X49_Y14_N31  ; 21      ; Clock       ; yes    ; Global Clock         ; GCLK6            ; --                        ;
+; Sensor_Controller:DUT2|Counter[0]~56 ; LCCOMB_X49_Y15_N6 ; 20      ; Sync. clear ; no     ; --                   ; --               ; --                        ;
++--------------------------------------+-------------------+---------+-------------+--------+----------------------+------------------+---------------------------+
 
 
 +---------------------------------------------------------------------------------------------------------------------------+
@@ -930,7 +926,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Name                   ; Location         ; Fan-Out ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
 +------------------------+------------------+---------+----------------------+------------------+---------------------------+
 ; CLK                    ; PIN_L1           ; 13      ; Global Clock         ; GCLK2            ; --                        ;
-; CLK_Divider:DUT1|T_CLK ; LCFF_X49_Y12_N29 ; 21      ; Global Clock         ; GCLK5            ; --                        ;
+; CLK_Divider:DUT1|T_CLK ; LCFF_X49_Y14_N31 ; 21      ; Global Clock         ; GCLK6            ; --                        ;
 +------------------------+------------------+---------+----------------------+------------------+---------------------------+
 
 
@@ -939,7 +935,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +---------------------------------------+---------+
 ; Name                                  ; Fan-Out ;
 +---------------------------------------+---------+
-; Sensor_Controller:DUT2|Counter[19]~56 ; 20      ;
+; Sensor_Controller:DUT2|Counter[0]~56  ; 20      ;
 ; CLK_Divider:DUT1|Counter[6]~18        ; 12      ;
 ; RST                                   ; 4       ;
 ; CLK_Divider:DUT1|Equal0~2             ; 2       ;
@@ -947,7 +943,6 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; CLK_Divider:DUT1|Equal0~0             ; 2       ;
 ; Sensor_Controller:DUT2|Equal0~5       ; 2       ;
 ; Sensor_Controller:DUT2|Equal0~0       ; 2       ;
-; CLK_Divider:DUT1|T_CLK                ; 2       ;
 ; CLK_Divider:DUT1|Counter[8]           ; 2       ;
 ; CLK_Divider:DUT1|Counter[11]          ; 2       ;
 ; CLK_Divider:DUT1|Counter[10]          ; 2       ;
@@ -982,6 +977,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Sensor_Controller:DUT2|Counter[17]    ; 2       ;
 ; CLK_Divider:DUT1|T_CLK~1              ; 1       ;
 ; CLK_Divider:DUT1|T_CLK~0              ; 1       ;
+; CLK_Divider:DUT1|T_CLK                ; 1       ;
 ; Sensor_Controller:DUT2|Trigger~0      ; 1       ;
 ; Sensor_Controller:DUT2|Equal0~4       ; 1       ;
 ; Sensor_Controller:DUT2|Equal0~3       ; 1       ;
@@ -1058,24 +1054,24 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------------+-----------------------+
 ; Other Routing Resource Type ; Usage                 ;
 +-----------------------------+-----------------------+
-; Block interconnects         ; 30 / 54,004 ( < 1 % ) ;
+; Block interconnects         ; 24 / 54,004 ( < 1 % ) ;
 ; C16 interconnects           ; 0 / 2,100 ( 0 % )     ;
-; C4 interconnects            ; 17 / 36,000 ( < 1 % ) ;
-; Direct links                ; 14 / 54,004 ( < 1 % ) ;
+; C4 interconnects            ; 12 / 36,000 ( < 1 % ) ;
+; Direct links                ; 12 / 54,004 ( < 1 % ) ;
 ; Global clocks               ; 2 / 16 ( 13 % )       ;
-; Local interconnects         ; 40 / 18,752 ( < 1 % ) ;
+; Local interconnects         ; 41 / 18,752 ( < 1 % ) ;
 ; R24 interconnects           ; 0 / 1,900 ( 0 % )     ;
-; R4 interconnects            ; 20 / 46,920 ( < 1 % ) ;
+; R4 interconnects            ; 7 / 46,920 ( < 1 % )  ;
 +-----------------------------+-----------------------+
 
 
 +---------------------------------------------------------------------------+
 ; LAB Logic Elements                                                        ;
 +---------------------------------------------+-----------------------------+
-; Number of Logic Elements  (Average = 12.00) ; Number of LABs  (Total = 4) ;
+; Number of Logic Elements  (Average = 11.75) ; Number of LABs  (Total = 4) ;
 +---------------------------------------------+-----------------------------+
-; 1                                           ; 0                           ;
-; 2                                           ; 1                           ;
+; 1                                           ; 1                           ;
+; 2                                           ; 0                           ;
 ; 3                                           ; 0                           ;
 ; 4                                           ; 0                           ;
 ; 5                                           ; 0                           ;
@@ -1096,10 +1092,10 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +------------------------------------------------------------------+
 ; LAB-wide Signals                                                 ;
 +------------------------------------+-----------------------------+
-; LAB-wide Signals  (Average = 1.50) ; Number of LABs  (Total = 4) ;
+; LAB-wide Signals  (Average = 1.25) ; Number of LABs  (Total = 4) ;
 +------------------------------------+-----------------------------+
 ; 1 Clock                            ; 3                           ;
-; 1 Sync. clear                      ; 2                           ;
+; 1 Sync. clear                      ; 1                           ;
 ; 2 Clocks                           ; 1                           ;
 +------------------------------------+-----------------------------+
 
@@ -1111,8 +1107,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-----------------------------+
 ; 0                                            ; 0                           ;
 ; 1                                            ; 0                           ;
-; 2                                            ; 0                           ;
-; 3                                            ; 1                           ;
+; 2                                            ; 1                           ;
+; 3                                            ; 0                           ;
 ; 4                                            ; 0                           ;
 ; 5                                            ; 0                           ;
 ; 6                                            ; 0                           ;
@@ -1132,8 +1128,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; 20                                           ; 0                           ;
 ; 21                                           ; 0                           ;
 ; 22                                           ; 0                           ;
-; 23                                           ; 1                           ;
-; 24                                           ; 0                           ;
+; 23                                           ; 0                           ;
+; 24                                           ; 1                           ;
 ; 25                                           ; 0                           ;
 ; 26                                           ; 0                           ;
 ; 27                                           ; 1                           ;
@@ -1144,11 +1140,11 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-------------------------------------------------------------------------------+
 ; LAB Signals Sourced Out                                                       ;
 +-------------------------------------------------+-----------------------------+
-; Number of Signals Sourced Out  (Average = 3.25) ; Number of LABs  (Total = 4) ;
+; Number of Signals Sourced Out  (Average = 3.00) ; Number of LABs  (Total = 4) ;
 +-------------------------------------------------+-----------------------------+
 ; 0                                               ; 0                           ;
-; 1                                               ; 0                           ;
-; 2                                               ; 1                           ;
+; 1                                               ; 1                           ;
+; 2                                               ; 0                           ;
 ; 3                                               ; 2                           ;
 ; 4                                               ; 0                           ;
 ; 5                                               ; 1                           ;
@@ -1158,19 +1154,18 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +---------------------------------------------------------------------------+
 ; LAB Distinct Inputs                                                       ;
 +---------------------------------------------+-----------------------------+
-; Number of Distinct Inputs  (Average = 6.00) ; Number of LABs  (Total = 4) ;
+; Number of Distinct Inputs  (Average = 5.25) ; Number of LABs  (Total = 4) ;
 +---------------------------------------------+-----------------------------+
 ; 0                                           ; 0                           ;
 ; 1                                           ; 0                           ;
 ; 2                                           ; 1                           ;
 ; 3                                           ; 0                           ;
-; 4                                           ; 0                           ;
+; 4                                           ; 1                           ;
 ; 5                                           ; 0                           ;
-; 6                                           ; 2                           ;
+; 6                                           ; 1                           ;
 ; 7                                           ; 0                           ;
 ; 8                                           ; 0                           ;
-; 9                                           ; 0                           ;
-; 10                                          ; 1                           ;
+; 9                                           ; 1                           ;
 +---------------------------------------------+-----------------------------+
 
 
@@ -1229,11 +1224,10 @@ Info (176353): Automatically promoted node CLK_Divider:DUT1|T_CLK
     Info (176355): Automatically promoted destinations to use location or clock signal Global Clock
     Info (176356): Following destination nodes may be non-global or may not use global or regional clocks
         Info (176357): Destination node CLK_Divider:DUT1|T_CLK~0
-        Info (176357): Destination node T_CLK
 Info (176233): Starting register packing
 Info (176235): Finished register packing
     Extra Info (176219): No registers were packed into other blocks
-Info (171121): Fitter preparation operations ending: elapsed time is 00:00:02
+Info (171121): Fitter preparation operations ending: elapsed time is 00:00:00
 Info (170189): Fitter placement preparation operations beginning
 Info (170190): Fitter placement preparation operations ending: elapsed time is 00:00:00
 Info (170191): Fitter placement operations beginning
@@ -1245,12 +1239,10 @@ Info (170195): Router estimated average interconnect usage is 0% of the availabl
 Info (170194): Fitter routing operations ending: elapsed time is 00:00:00
 Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info (170201): Optimizations that may affect the design's routability were skipped
-Info (11888): Total time spent on timing analysis during the Fitter is 0.17 seconds.
+Info (11888): Total time spent on timing analysis during the Fitter is 0.14 seconds.
 Info (306004): Started post-fitting delay annotation
-Warning (306006): Found 3 output pins without output pin load capacitance assignment
+Warning (306006): Found 1 output pins without output pin load capacitance assignment
     Info (306007): Pin "Trigger_Sig" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
-    Info (306007): Pin "T_CLK" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
-    Info (306007): Pin "Sound_Sig" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
 Info (306005): Delay annotation completed successfully
 Info (306004): Started post-fitting delay annotation
 Info (306005): Delay annotation completed successfully
@@ -1258,10 +1250,10 @@ Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:00
 Warning (169174): The Reserve All Unused Pins setting has not been specified, and will default to 'As output driving ground'.
 Info (144001): Generated suppressed messages file D:/Oana/Documents/Materiale Poli/GitHub/SecurityAlarmSys/output_files/Security_System.fit.smsg
 Info: Quartus II 64-Bit Fitter was successful. 0 errors, 5 warnings
-    Info: Peak virtual memory: 4887 megabytes
-    Info: Processing ended: Mon Jul 23 20:59:18 2018
-    Info: Elapsed time: 00:00:07
-    Info: Total CPU time (on all processors): 00:00:04
+    Info: Peak virtual memory: 4891 megabytes
+    Info: Processing ended: Mon Jul 23 22:21:04 2018
+    Info: Elapsed time: 00:00:03
+    Info: Total CPU time (on all processors): 00:00:03
 
 
 +----------------------------+

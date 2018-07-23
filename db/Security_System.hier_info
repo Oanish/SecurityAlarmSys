@@ -3,8 +3,6 @@ CLK => CLK.IN1
 RST => RST.IN2
 Echo_Sig => Echo_Sig.IN1
 Trigger_Sig <= Sensor_Controller:DUT2.Trigger
-T_CLK <= T_CLK.DB_MAX_OUTPUT_PORT_TYPE
-Sound_Sig <= Alarm_Controller:DUT4.Sound
 
 
 |Security_Top|CLK_Divider:DUT1
@@ -113,18 +111,5 @@ Distance[4] <= Distance[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 Distance[5] <= Distance[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 Distance[6] <= Distance[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 Distance[7] <= Distance[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|Security_Top|Alarm_Controller:DUT4
-CLK => ~NO_FANOUT~
-Distance[0] => ~NO_FANOUT~
-Distance[1] => ~NO_FANOUT~
-Distance[2] => ~NO_FANOUT~
-Distance[3] => ~NO_FANOUT~
-Distance[4] => ~NO_FANOUT~
-Distance[5] => ~NO_FANOUT~
-Distance[6] => ~NO_FANOUT~
-Distance[7] => ~NO_FANOUT~
-Sound <= <GND>
 
 

@@ -3,19 +3,19 @@ TimeQuest Timing Analyzer Summary
 ------------------------------------------------------------
 
 Type  : Slow Model Setup 'CLK_Divider:DUT1|T_CLK'
-Slack : -3.115
-TNS   : -58.392
+Slack : -3.096
+TNS   : -58.032
 
 Type  : Slow Model Setup 'CLK'
-Slack : -1.851
-TNS   : -23.993
+Slack : -1.862
+TNS   : -24.180
 
 Type  : Slow Model Hold 'CLK'
-Slack : -1.451
-TNS   : -1.451
+Slack : -1.714
+TNS   : -1.714
 
 Type  : Slow Model Hold 'CLK_Divider:DUT1|T_CLK'
-Slack : 0.620
+Slack : 0.624
 TNS   : 0.000
 
 Type  : Slow Model Minimum Pulse Width 'CLK'
@@ -27,19 +27,19 @@ Slack : -0.611
 TNS   : -25.662
 
 Type  : Fast Model Setup 'CLK_Divider:DUT1|T_CLK'
-Slack : -0.598
-TNS   : -9.935
+Slack : -0.587
+TNS   : -9.726
 
 Type  : Fast Model Setup 'CLK'
-Slack : -0.134
-TNS   : -1.632
+Slack : -0.147
+TNS   : -1.805
 
 Type  : Fast Model Hold 'CLK'
-Slack : -1.334
-TNS   : -1.334
+Slack : -1.423
+TNS   : -1.423
 
 Type  : Fast Model Hold 'CLK_Divider:DUT1|T_CLK'
-Slack : 0.240
+Slack : 0.242
 TNS   : 0.000
 
 Type  : Fast Model Minimum Pulse Width 'CLK'

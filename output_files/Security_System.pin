@@ -137,8 +137,8 @@ GND                          : AB22      : gnd    :                   :         
 VCCIO2                       : B1        : power  :                   : 3.3V    : 2         :                
 GND                          : B2        : gnd    :                   :         :           :                
 GND*                         : B3        :        :                   :         : 3         :                
-T_CLK                        : B4        : output : 3.3-V LVTTL       :         : 3         : Y              
-Sound_Sig                    : B5        : output : 3.3-V LVTTL       :         : 3         : Y              
+GND*                         : B4        :        :                   :         : 3         :                
+GND*                         : B5        :        :                   :         : 3         :                
 GND*                         : B6        :        :                   :         : 3         :                
 GND*                         : B7        :        :                   :         : 3         :                
 GND*                         : B8        :        :                   :         : 3         :                
