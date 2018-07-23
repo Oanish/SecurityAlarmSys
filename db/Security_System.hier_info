@@ -3,28 +3,8 @@ CLK => CLK.IN1
 RST => RST.IN2
 Echo_Sig => Echo_Sig.IN1
 Trigger_Sig <= Sensor_Controller:DUT2.Trigger
-Distance[0] <= Digit_Converter:DUT3.Distance
-Distance[1] <= Digit_Converter:DUT3.Distance
-Distance[2] <= Digit_Converter:DUT3.Distance
-Distance[3] <= Digit_Converter:DUT3.Distance
-Distance[4] <= Digit_Converter:DUT3.Distance
-Distance[5] <= Digit_Converter:DUT3.Distance
-Distance[6] <= Digit_Converter:DUT3.Distance
-Distance[7] <= Digit_Converter:DUT3.Distance
-Distance[8] <= Digit_Converter:DUT3.Distance
-Distance[9] <= Digit_Converter:DUT3.Distance
-Distance[10] <= Digit_Converter:DUT3.Distance
-Distance[11] <= Digit_Converter:DUT3.Distance
-Distance[12] <= Digit_Converter:DUT3.Distance
-Distance[13] <= Digit_Converter:DUT3.Distance
-Distance_Raw[0] <= Distance_Raw[0].DB_MAX_OUTPUT_PORT_TYPE
-Distance_Raw[1] <= Distance_Raw[1].DB_MAX_OUTPUT_PORT_TYPE
-Distance_Raw[2] <= Distance_Raw[2].DB_MAX_OUTPUT_PORT_TYPE
-Distance_Raw[3] <= Distance_Raw[3].DB_MAX_OUTPUT_PORT_TYPE
-Distance_Raw[4] <= Distance_Raw[4].DB_MAX_OUTPUT_PORT_TYPE
-Distance_Raw[5] <= Distance_Raw[5].DB_MAX_OUTPUT_PORT_TYPE
-Distance_Raw[6] <= Distance_Raw[6].DB_MAX_OUTPUT_PORT_TYPE
-Distance_Raw[7] <= Distance_Raw[7].DB_MAX_OUTPUT_PORT_TYPE
+T_CLK <= T_CLK.DB_MAX_OUTPUT_PORT_TYPE
+Sound_Sig <= Alarm_Controller:DUT4.Sound
 
 
 |Security_Top|CLK_Divider:DUT1
@@ -135,76 +115,16 @@ Distance[6] <= Distance[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 Distance[7] <= Distance[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Security_Top|Digit_Converter:DUT3
-Distance_Raw[0] => LessThan0.IN14
-Distance_Raw[0] => Mod0.IN10
-Distance_Raw[0] => LessThan1.IN14
-Distance_Raw[0] => Add0.IN14
-Distance_Raw[1] => LessThan0.IN13
-Distance_Raw[1] => Mod0.IN9
-Distance_Raw[1] => LessThan1.IN13
-Distance_Raw[1] => Add0.IN13
-Distance_Raw[2] => LessThan0.IN12
-Distance_Raw[2] => Mod0.IN8
-Distance_Raw[2] => LessThan1.IN12
-Distance_Raw[2] => Add0.IN12
-Distance_Raw[3] => LessThan0.IN11
-Distance_Raw[3] => Mod0.IN7
-Distance_Raw[3] => LessThan1.IN11
-Distance_Raw[3] => Add0.IN11
-Distance_Raw[4] => LessThan0.IN10
-Distance_Raw[4] => Mod0.IN6
-Distance_Raw[4] => LessThan1.IN10
-Distance_Raw[4] => Add0.IN10
-Distance_Raw[5] => LessThan0.IN9
-Distance_Raw[5] => Mod0.IN5
-Distance_Raw[5] => LessThan1.IN9
-Distance_Raw[5] => Add0.IN9
-Distance_Raw[6] => LessThan0.IN8
-Distance_Raw[6] => Mod0.IN4
-Distance_Raw[6] => LessThan1.IN8
-Distance_Raw[6] => Add0.IN8
-Distance[0] <= BCD:DUT2.SEGMENTS
-Distance[1] <= BCD:DUT2.SEGMENTS
-Distance[2] <= BCD:DUT2.SEGMENTS
-Distance[3] <= BCD:DUT2.SEGMENTS
-Distance[4] <= BCD:DUT2.SEGMENTS
-Distance[5] <= BCD:DUT2.SEGMENTS
-Distance[6] <= BCD:DUT2.SEGMENTS
-Distance[7] <= BCD:DUT1.SEGMENTS
-Distance[8] <= BCD:DUT1.SEGMENTS
-Distance[9] <= BCD:DUT1.SEGMENTS
-Distance[10] <= BCD:DUT1.SEGMENTS
-Distance[11] <= BCD:DUT1.SEGMENTS
-Distance[12] <= BCD:DUT1.SEGMENTS
-Distance[13] <= BCD:DUT1.SEGMENTS
-
-
-|Security_Top|Digit_Converter:DUT3|BCD:DUT1
-BINARY[0] => Decoder0.IN3
-BINARY[1] => Decoder0.IN2
-BINARY[2] => Decoder0.IN1
-BINARY[3] => Decoder0.IN0
-SEGMENTS[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
-SEGMENTS[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
-SEGMENTS[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
-SEGMENTS[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
-SEGMENTS[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
-SEGMENTS[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
-SEGMENTS[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|Security_Top|Digit_Converter:DUT3|BCD:DUT2
-BINARY[0] => Decoder0.IN3
-BINARY[1] => Decoder0.IN2
-BINARY[2] => Decoder0.IN1
-BINARY[3] => Decoder0.IN0
-SEGMENTS[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
-SEGMENTS[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
-SEGMENTS[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
-SEGMENTS[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
-SEGMENTS[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
-SEGMENTS[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
-SEGMENTS[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+|Security_Top|Alarm_Controller:DUT4
+CLK => ~NO_FANOUT~
+Distance[0] => ~NO_FANOUT~
+Distance[1] => ~NO_FANOUT~
+Distance[2] => ~NO_FANOUT~
+Distance[3] => ~NO_FANOUT~
+Distance[4] => ~NO_FANOUT~
+Distance[5] => ~NO_FANOUT~
+Distance[6] => ~NO_FANOUT~
+Distance[7] => ~NO_FANOUT~
+Sound <= <GND>
 
 

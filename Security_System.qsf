@@ -61,28 +61,9 @@ set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "3.3-V LVTTL"
 set_location_assignment PIN_R22 -to RST
 set_location_assignment PIN_L1 -to CLK
-set_location_assignment PIN_D1 -to Distance[13]
-set_location_assignment PIN_D2 -to Distance[12]
-set_location_assignment PIN_G3 -to Distance[11]
-set_location_assignment PIN_H4 -to Distance[10]
-set_location_assignment PIN_H5 -to Distance[9]
-set_location_assignment PIN_H6 -to Distance[8]
-set_location_assignment PIN_E1 -to Distance[7]
-set_location_assignment PIN_E2 -to Distance[6]
-set_location_assignment PIN_F1 -to Distance[5]
-set_location_assignment PIN_F2 -to Distance[4]
-set_location_assignment PIN_H1 -to Distance[3]
-set_location_assignment PIN_H2 -to Distance[2]
-set_location_assignment PIN_J1 -to Distance[1]
-set_location_assignment PIN_J2 -to Distance[0]
 set_location_assignment PIN_A13 -to Echo_Sig
 set_location_assignment PIN_B13 -to Trigger_Sig
-set_location_assignment PIN_U18 -to Distance_Raw[7]
-set_location_assignment PIN_Y18 -to Distance_Raw[6]
-set_location_assignment PIN_V19 -to Distance_Raw[5]
-set_location_assignment PIN_T18 -to Distance_Raw[4]
-set_location_assignment PIN_Y19 -to Distance_Raw[3]
-set_location_assignment PIN_U19 -to Distance_Raw[2]
-set_location_assignment PIN_R19 -to Distance_Raw[1]
-set_location_assignment PIN_R20 -to Distance_Raw[0]
+set_global_assignment -name VERILOG_FILE Alarm_Controller.v
+set_location_assignment PIN_B4 -to T_CLK
+set_location_assignment PIN_B5 -to Sound_Sig
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
