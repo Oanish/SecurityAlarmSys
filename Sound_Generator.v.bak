@@ -1,0 +1,5 @@
+module Sound_Generator (input CLK,
+								input RST,
+								output reg Sound_Data,
+								output reg Sound_Trig);
+								

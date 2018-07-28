@@ -3,20 +3,28 @@ TimeQuest Timing Analyzer Summary
 ------------------------------------------------------------
 
 Type  : Slow Model Setup 'CLK_Divider:DUT1|T_CLK'
-Slack : -3.096
-TNS   : -58.032
+Slack : -60.391
+TNS   : -528.327
+
+Type  : Slow Model Setup 'Alarm_Controller:DUT4|I2C_Automata:DUT1|Counter[0]'
+Slack : -3.235
+TNS   : -3.235
 
 Type  : Slow Model Setup 'CLK'
-Slack : -1.862
-TNS   : -24.180
-
-Type  : Slow Model Hold 'CLK'
-Slack : -1.714
-TNS   : -1.714
+Slack : -1.847
+TNS   : -23.483
 
 Type  : Slow Model Hold 'CLK_Divider:DUT1|T_CLK'
-Slack : 0.624
-TNS   : 0.000
+Slack : -2.989
+TNS   : -6.407
+
+Type  : Slow Model Hold 'CLK'
+Slack : -2.676
+TNS   : -2.676
+
+Type  : Slow Model Hold 'Alarm_Controller:DUT4|I2C_Automata:DUT1|Counter[0]'
+Slack : -0.738
+TNS   : -0.738
 
 Type  : Slow Model Minimum Pulse Width 'CLK'
 Slack : -1.631
@@ -24,23 +32,35 @@ TNS   : -17.517
 
 Type  : Slow Model Minimum Pulse Width 'CLK_Divider:DUT1|T_CLK'
 Slack : -0.611
-TNS   : -25.662
+TNS   : -50.102
+
+Type  : Slow Model Minimum Pulse Width 'Alarm_Controller:DUT4|I2C_Automata:DUT1|Counter[0]'
+Slack : 0.500
+TNS   : 0.000
 
 Type  : Fast Model Setup 'CLK_Divider:DUT1|T_CLK'
-Slack : -0.587
-TNS   : -9.726
+Slack : -21.713
+TNS   : -176.114
+
+Type  : Fast Model Setup 'Alarm_Controller:DUT4|I2C_Automata:DUT1|Counter[0]'
+Slack : -1.564
+TNS   : -1.564
 
 Type  : Fast Model Setup 'CLK'
-Slack : -0.147
-TNS   : -1.805
-
-Type  : Fast Model Hold 'CLK'
-Slack : -1.423
-TNS   : -1.423
+Slack : -0.132
+TNS   : -1.584
 
 Type  : Fast Model Hold 'CLK_Divider:DUT1|T_CLK'
-Slack : 0.242
-TNS   : 0.000
+Slack : -1.738
+TNS   : -5.113
+
+Type  : Fast Model Hold 'CLK'
+Slack : -1.708
+TNS   : -1.708
+
+Type  : Fast Model Hold 'Alarm_Controller:DUT4|I2C_Automata:DUT1|Counter[0]'
+Slack : -0.248
+TNS   : -0.248
 
 Type  : Fast Model Minimum Pulse Width 'CLK'
 Slack : -1.380
@@ -48,6 +68,10 @@ TNS   : -14.380
 
 Type  : Fast Model Minimum Pulse Width 'CLK_Divider:DUT1|T_CLK'
 Slack : -0.500
-TNS   : -21.000
+TNS   : -41.000
+
+Type  : Fast Model Minimum Pulse Width 'Alarm_Controller:DUT4|I2C_Automata:DUT1|Counter[0]'
+Slack : 0.500
+TNS   : 0.000
 
 ------------------------------------------------------------

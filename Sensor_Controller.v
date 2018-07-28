@@ -16,7 +16,7 @@ always@(posedge CLK)
 		end
 	else
 		begin
-			if(Counter == 99999)		//impulse generated ever second
+			if(Counter == 99999)		//impulse generated every second
 				begin
 					Counter <= 0;
 					Trigger <= 1;

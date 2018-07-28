@@ -70,9 +70,9 @@ Pin Name/Usage               : Location  : Dir.   : I/O Standard      : Voltage 
 -------------------------------------------------------------------------------------------------------------
 GND                          : A1        : gnd    :                   :         :           :                
 VCCIO3                       : A2        : power  :                   : 3.3V    : 3         :                
-GND*                         : A3        :        :                   :         : 3         :                
+I2C_Clock                    : A3        : output : 3.3-V LVTTL       :         : 3         : Y              
 GND*                         : A4        :        :                   :         : 3         :                
-GND*                         : A5        :        :                   :         : 3         :                
+Sound_Trig                   : A5        : output : 3.3-V LVTTL       :         : 3         : Y              
 GND*                         : A6        :        :                   :         : 3         :                
 GND*                         : A7        :        :                   :         : 3         :                
 GND*                         : A8        :        :                   :         : 3         :                
@@ -136,9 +136,9 @@ VCCIO7                       : AB21      : power  :                   : 3.3V    
 GND                          : AB22      : gnd    :                   :         :           :                
 VCCIO2                       : B1        : power  :                   : 3.3V    : 2         :                
 GND                          : B2        : gnd    :                   :         :           :                
-GND*                         : B3        :        :                   :         : 3         :                
-GND*                         : B4        :        :                   :         : 3         :                
-GND*                         : B5        :        :                   :         : 3         :                
+I2C_Data                     : B3        : output : 3.3-V LVTTL       :         : 3         : Y              
+T_CLK                        : B4        : output : 3.3-V LVTTL       :         : 3         : Y              
+Sound_Data                   : B5        : output : 3.3-V LVTTL       :         : 3         : Y              
 GND*                         : B6        :        :                   :         : 3         :                
 GND*                         : B7        :        :                   :         : 3         :                
 GND*                         : B8        :        :                   :         : 3         :                
@@ -178,8 +178,8 @@ GND*                         : C19       :        :                   :         
 GND*                         : C20       :        :                   :         : 5         :                
 GND*                         : C21       :        :                   :         : 5         :                
 GND*                         : C22       :        :                   :         : 5         :                
-GND*                         : D1        :        :                   :         : 2         :                
-GND*                         : D2        :        :                   :         : 2         :                
+Distance[13]                 : D1        : output : 3.3-V LVTTL       :         : 2         : Y              
+Distance[12]                 : D2        : output : 3.3-V LVTTL       :         : 2         : Y              
 GND*                         : D3        :        :                   :         : 2         :                
 GND*                         : D4        :        :                   :         : 2         :                
 GND*                         : D5        :        :                   :         : 2         :                
@@ -200,8 +200,8 @@ GND*                         : D19       :        :                   :         
 GND*                         : D20       :        :                   :         : 5         :                
 GND*                         : D21       :        :                   :         : 5         :                
 GND*                         : D22       :        :                   :         : 5         :                
-GND*                         : E1        :        :                   :         : 2         :                
-GND*                         : E2        :        :                   :         : 2         :                
+Distance[7]                  : E1        : output : 3.3-V LVTTL       :         : 2         : Y              
+Distance[6]                  : E2        : output : 3.3-V LVTTL       :         : 2         : Y              
 GND*                         : E3        :        :                   :         : 2         :                
 GND*                         : E4        :        :                   :         : 2         :                
 VCCD_PLL3                    : E5        : power  :                   : 1.2V    :           :                
@@ -222,8 +222,8 @@ GND*                         : E19       :        :                   :         
 GND*                         : E20       :        :                   :         : 5         :                
 GND*                         : E21       :        :                   :         : 5         :                
 GND*                         : E22       :        :                   :         : 5         :                
-GND*                         : F1        :        :                   :         : 2         :                
-GND*                         : F2        :        :                   :         : 2         :                
+Distance[5]                  : F1        : output : 3.3-V LVTTL       :         : 2         : Y              
+Distance[4]                  : F2        : output : 3.3-V LVTTL       :         : 2         : Y              
 GND*                         : F3        :        :                   :         : 2         :                
 GND*                         : F4        :        :                   :         : 2         :                
 GND_PLL3                     : F5        : gnd    :                   :         :           :                
@@ -246,7 +246,7 @@ GND*                         : F21       :        :                   :         
 GND*                         : F22       :        :                   :         : 5         :                
 NC                           : G1        :        :                   :         :           :                
 NC                           : G2        :        :                   :         :           :                
-GND*                         : G3        :        :                   :         : 2         :                
+Distance[11]                 : G3        : output : 3.3-V LVTTL       :         : 2         : Y              
 GND                          : G4        : gnd    :                   :         :           :                
 GND*                         : G5        :        :                   :         : 2         :                
 GND*                         : G6        :        :                   :         : 2         :                
@@ -266,12 +266,12 @@ VCCIO5                       : G19       : power  :                   : 3.3V    
 GND*                         : G20       :        :                   :         : 5         :                
 GND*                         : G21       :        :                   :         : 5         :                
 GND*                         : G22       :        :                   :         : 5         :                
-GND*                         : H1        :        :                   :         : 2         :                
-GND*                         : H2        :        :                   :         : 2         :                
+Distance[3]                  : H1        : output : 3.3-V LVTTL       :         : 2         : Y              
+Distance[2]                  : H2        : output : 3.3-V LVTTL       :         : 2         : Y              
 GND*                         : H3        :        :                   :         : 2         :                
-GND*                         : H4        :        :                   :         : 2         :                
-GND*                         : H5        :        :                   :         : 2         :                
-GND*                         : H6        :        :                   :         : 2         :                
+Distance[10]                 : H4        : output : 3.3-V LVTTL       :         : 2         : Y              
+Distance[9]                  : H5        : output : 3.3-V LVTTL       :         : 2         : Y              
+Distance[8]                  : H6        : output : 3.3-V LVTTL       :         : 2         : Y              
 GND*                         : H7        :        :                   :         : 3         :                
 GND*                         : H8        :        :                   :         : 3         :                
 GND*                         : H9        :        :                   :         : 3         :                
@@ -288,8 +288,8 @@ GND*                         : H19       :        :                   :         
 GND                          : H20       : gnd    :                   :         :           :                
 NC                           : H21       :        :                   :         :           :                
 NC                           : H22       :        :                   :         :           :                
-GND*                         : J1        :        :                   :         : 2         :                
-GND*                         : J2        :        :                   :         : 2         :                
+Distance[1]                  : J1        : output : 3.3-V LVTTL       :         : 2         : Y              
+Distance[0]                  : J2        : output : 3.3-V LVTTL       :         : 2         : Y              
 NC                           : J3        :        :                   :         :           :                
 GND*                         : J4        :        :                   :         : 2         :                
 NC                           : J5        :        :                   :         :           :                

@@ -1,0 +1,9 @@
+
+State Machine - |Security_Top|Alarm_Controller:DUT4|I2C_Automata:DUT1|State
+Name State.101 State.100 State.011 State.010 State.001 State.000 
+State.000 0 0 0 0 0 0 
+State.001 0 0 0 0 1 1 
+State.010 0 0 0 1 0 1 
+State.011 0 0 1 0 0 1 
+State.100 0 1 0 0 0 1 
+State.101 1 0 0 0 0 1 
