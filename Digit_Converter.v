@@ -1,4 +1,4 @@
-module Digit_Converter (input [6:0] Distance_Raw,		//distance from object, bits
+module Digit_Converter (input [7:0] Distance_Raw,		//distance from object, bits
 								output [13:0] Distance);		//distance from object, digits
 								
 wire [3:0] Distance_Tens, Distance_Units;

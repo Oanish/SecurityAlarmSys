@@ -2,7 +2,7 @@
 <LOG_ROOT>
 	<PROJECT NAME="Security_System">
 		<CBX_INST_ENTRY INSTANCE_NAME="|Security_Top|Digit_Converter:DUT3|lpm_divide:Div0" CBX_FILE_NAME="lpm_divide_eem.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|Security_Top|Digit_Converter:DUT3|lpm_divide:Mod0" CBX_FILE_NAME="lpm_divide_35m.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Security_Top|Digit_Converter:DUT3|lpm_divide:Mod0" CBX_FILE_NAME="lpm_divide_45m.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|Security_Top|Sensor_Controller:DUT2|lpm_divide:Div0" CBX_FILE_NAME="lpm_divide_hem.tdf"/>
 	</PROJECT>
 </LOG_ROOT>

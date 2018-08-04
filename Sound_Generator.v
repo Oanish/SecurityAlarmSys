@@ -14,7 +14,7 @@ always@(posedge CLK)
 		if(Distance < 100)
 			begin
 				Trig <= 1;
-				Data <= 1;
+				Data <= Data + 1;
 				if(Trig == 1)
 					Trig <= 0;
 			end

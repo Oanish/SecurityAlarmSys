@@ -1,5 +1,5 @@
 Fitter report for Security_System
-Sat Jul 28 19:07:05 2018
+Sat Aug 04 19:43:54 2018
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -62,17 +62,17 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Fitter Summary                                                                       ;
 +------------------------------------+-------------------------------------------------+
-; Fitter Status                      ; Successful - Sat Jul 28 19:07:05 2018           ;
+; Fitter Status                      ; Successful - Sat Aug 04 19:43:54 2018           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; Security_System                                 ;
 ; Top-level Entity Name              ; Security_Top                                    ;
 ; Family                             ; Cyclone II                                      ;
 ; Device                             ; EP2C20F484C7                                    ;
 ; Timing Models                      ; Final                                           ;
-; Total logic elements               ; 584 / 18,752 ( 3 % )                            ;
-;     Total combinational functions  ; 584 / 18,752 ( 3 % )                            ;
-;     Dedicated logic registers      ; 54 / 18,752 ( < 1 % )                           ;
-; Total registers                    ; 54                                              ;
+; Total logic elements               ; 633 / 18,752 ( 3 % )                            ;
+;     Total combinational functions  ; 632 / 18,752 ( 3 % )                            ;
+;     Dedicated logic registers      ; 53 / 18,752 ( < 1 % )                           ;
+; Total registers                    ; 53                                              ;
 ; Total pins                         ; 23 / 315 ( 7 % )                                ;
 ; Total virtual pins                 ; 0                                               ;
 ; Total memory bits                  ; 0 / 239,616 ( 0 % )                             ;
@@ -149,8 +149,8 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ; Type                ; Value                  ;
 +---------------------+------------------------+
 ; Placement (by node) ;                        ;
-;     -- Requested    ; 0 / 667 ( 0.00 % )     ;
-;     -- Achieved     ; 0 / 667 ( 0.00 % )     ;
+;     -- Requested    ; 0 / 714 ( 0.00 % )     ;
+;     -- Achieved     ; 0 / 714 ( 0.00 % )     ;
 ;                     ;                        ;
 ; Routing (by net)    ;                        ;
 ;     -- Requested    ; 0 / 0 ( 0.00 % )       ;
@@ -173,7 +173,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +--------------------------------+---------+-------------------+-------------------------+-------------------+
 ; Partition Name                 ; # Nodes ; # Preserved Nodes ; Preservation Level Used ; Netlist Type Used ;
 +--------------------------------+---------+-------------------+-------------------------+-------------------+
-; Top                            ; 664     ; 0                 ; N/A                     ; Source File       ;
+; Top                            ; 711     ; 0                 ; N/A                     ; Source File       ;
 ; hard_block:auto_generated_inst ; 3       ; 0                 ; N/A                     ; Source File       ;
 +--------------------------------+---------+-------------------+-------------------------+-------------------+
 
@@ -189,26 +189,26 @@ The pin-out file can be found in D:/Oana/Documents/Materiale Poli/GitHub/Securit
 +---------------------------------------------+-----------------------+
 ; Resource                                    ; Usage                 ;
 +---------------------------------------------+-----------------------+
-; Total logic elements                        ; 584 / 18,752 ( 3 % )  ;
-;     -- Combinational with no register       ; 530                   ;
-;     -- Register only                        ; 0                     ;
-;     -- Combinational with a register        ; 54                    ;
+; Total logic elements                        ; 633 / 18,752 ( 3 % )  ;
+;     -- Combinational with no register       ; 580                   ;
+;     -- Register only                        ; 1                     ;
+;     -- Combinational with a register        ; 52                    ;
 ;                                             ;                       ;
 ; Logic element usage by number of LUT inputs ;                       ;
-;     -- 4 input functions                    ; 125                   ;
-;     -- 3 input functions                    ; 173                   ;
-;     -- <=2 input functions                  ; 286                   ;
-;     -- Register only                        ; 0                     ;
+;     -- 4 input functions                    ; 135                   ;
+;     -- 3 input functions                    ; 187                   ;
+;     -- <=2 input functions                  ; 310                   ;
+;     -- Register only                        ; 1                     ;
 ;                                             ;                       ;
 ; Logic elements by mode                      ;                       ;
-;     -- normal mode                          ; 379                   ;
-;     -- arithmetic mode                      ; 205                   ;
+;     -- normal mode                          ; 411                   ;
+;     -- arithmetic mode                      ; 221                   ;
 ;                                             ;                       ;
-; Total registers*                            ; 54 / 19,649 ( < 1 % ) ;
-;     -- Dedicated logic registers            ; 54 / 18,752 ( < 1 % ) ;
+; Total registers*                            ; 53 / 19,649 ( < 1 % ) ;
+;     -- Dedicated logic registers            ; 53 / 18,752 ( < 1 % ) ;
 ;     -- I/O registers                        ; 0 / 897 ( 0 % )       ;
 ;                                             ;                       ;
-; Total LABs:  partially or completely used   ; 46 / 1,172 ( 4 % )    ;
+; Total LABs:  partially or completely used   ; 48 / 1,172 ( 4 % )    ;
 ; Virtual pins                                ; 0                     ;
 ; I/O pins                                    ; 23 / 315 ( 7 % )      ;
 ;     -- Clock pins                           ; 1 / 8 ( 13 % )        ;
@@ -224,10 +224,10 @@ The pin-out file can be found in D:/Oana/Documents/Materiale Poli/GitHub/Securit
 ; ASMI blocks                                 ; 0 / 1 ( 0 % )         ;
 ; CRC blocks                                  ; 0 / 1 ( 0 % )         ;
 ; Average interconnect usage (total/H/V)      ; 0% / 0% / 0%          ;
-; Peak interconnect usage (total/H/V)         ; 2% / 2% / 2%          ;
-; Maximum fan-out                             ; 36                    ;
-; Highest non-global fan-out                  ; 26                    ;
-; Total fan-out                               ; 1703                  ;
+; Peak interconnect usage (total/H/V)         ; 2% / 2% / 1%          ;
+; Maximum fan-out                             ; 35                    ;
+; Highest non-global fan-out                  ; 25                    ;
+; Total fan-out                               ; 1823                  ;
 ; Average fan-out                             ; 2.56                  ;
 +---------------------------------------------+-----------------------+
 *  Register count does not include registers inside RAM blocks or DSP blocks.
@@ -241,25 +241,25 @@ The pin-out file can be found in D:/Oana/Documents/Materiale Poli/GitHub/Securit
 +---------------------------------------------+----------------------+--------------------------------+
 ; Difficulty Clustering Region                ; Low                  ; Low                            ;
 ;                                             ;                      ;                                ;
-; Total logic elements                        ; 584 / 18752 ( 3 % )  ; 0 / 18752 ( 0 % )              ;
-;     -- Combinational with no register       ; 530                  ; 0                              ;
-;     -- Register only                        ; 0                    ; 0                              ;
-;     -- Combinational with a register        ; 54                   ; 0                              ;
+; Total logic elements                        ; 633 / 18752 ( 3 % )  ; 0 / 18752 ( 0 % )              ;
+;     -- Combinational with no register       ; 580                  ; 0                              ;
+;     -- Register only                        ; 1                    ; 0                              ;
+;     -- Combinational with a register        ; 52                   ; 0                              ;
 ;                                             ;                      ;                                ;
 ; Logic element usage by number of LUT inputs ;                      ;                                ;
-;     -- 4 input functions                    ; 125                  ; 0                              ;
-;     -- 3 input functions                    ; 173                  ; 0                              ;
-;     -- <=2 input functions                  ; 286                  ; 0                              ;
-;     -- Register only                        ; 0                    ; 0                              ;
+;     -- 4 input functions                    ; 135                  ; 0                              ;
+;     -- 3 input functions                    ; 187                  ; 0                              ;
+;     -- <=2 input functions                  ; 310                  ; 0                              ;
+;     -- Register only                        ; 1                    ; 0                              ;
 ;                                             ;                      ;                                ;
 ; Logic elements by mode                      ;                      ;                                ;
-;     -- normal mode                          ; 379                  ; 0                              ;
-;     -- arithmetic mode                      ; 205                  ; 0                              ;
+;     -- normal mode                          ; 411                  ; 0                              ;
+;     -- arithmetic mode                      ; 221                  ; 0                              ;
 ;                                             ;                      ;                                ;
-; Total registers                             ; 54                   ; 0                              ;
-;     -- Dedicated logic registers            ; 54 / 18752 ( < 1 % ) ; 0 / 18752 ( 0 % )              ;
+; Total registers                             ; 53                   ; 0                              ;
+;     -- Dedicated logic registers            ; 53 / 18752 ( < 1 % ) ; 0 / 18752 ( 0 % )              ;
 ;                                             ;                      ;                                ;
-; Total LABs:  partially or completely used   ; 46 / 1172 ( 4 % )    ; 0 / 1172 ( 0 % )               ;
+; Total LABs:  partially or completely used   ; 48 / 1172 ( 4 % )    ; 0 / 1172 ( 0 % )               ;
 ;                                             ;                      ;                                ;
 ; Virtual pins                                ; 0                    ; 0                              ;
 ; I/O pins                                    ; 23                   ; 0                              ;
@@ -275,8 +275,8 @@ The pin-out file can be found in D:/Oana/Documents/Materiale Poli/GitHub/Securit
 ;     -- Registered Output Connections        ; 0                    ; 0                              ;
 ;                                             ;                      ;                                ;
 ; Internal Connections                        ;                      ;                                ;
-;     -- Total Connections                    ; 1703                 ; 0                              ;
-;     -- Registered Connections               ; 213                  ; 0                              ;
+;     -- Total Connections                    ; 1823                 ; 0                              ;
+;     -- Registered Connections               ; 222                  ; 0                              ;
 ;                                             ;                      ;                                ;
 ; External Connections                        ;                      ;                                ;
 ;     -- Top                                  ; 0                    ; 0                              ;
@@ -310,7 +310,7 @@ The pin-out file can be found in D:/Oana/Documents/Materiale Poli/GitHub/Securit
 +----------+-------+----------+--------------+--------------+-------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+-------------+----------------------+
 ; CLK      ; L1    ; 2        ; 0            ; 13           ; 0           ; 1                     ; 0                  ; yes    ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
 ; Echo_Sig ; A13   ; 4        ; 26           ; 27           ; 1           ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
-; RST      ; R22   ; 6        ; 50           ; 10           ; 1           ; 26                    ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
+; RST      ; R22   ; 6        ; 50           ; 10           ; 1           ; 25                    ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
 +----------+-------+----------+--------------+--------------+-------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+-------------+----------------------+
 
 
@@ -893,27 +893,27 @@ Note: User assignments will override these defaults. The user specified values a
 +-------------------------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+--------------------------------------------------------------------------------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node                ; Logic Cells ; Dedicated Logic Registers ; I/O Registers ; Memory Bits ; M4Ks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Full Hierarchy Name                                                                                                                  ; Library Name ;
 +-------------------------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+--------------------------------------------------------------------------------------------------------------------------------------+--------------+
-; |Security_Top                             ; 584 (0)     ; 54 (0)                    ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 23   ; 0            ; 530 (0)      ; 0 (0)             ; 54 (0)           ; |Security_Top                                                                                                                        ; work         ;
-;    |Alarm_Controller:DUT4|                ; 27 (0)      ; 12 (0)                    ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 15 (0)       ; 0 (0)             ; 12 (0)           ; |Security_Top|Alarm_Controller:DUT4                                                                                                  ; work         ;
+; |Security_Top                             ; 633 (0)     ; 53 (0)                    ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 23   ; 0            ; 580 (0)      ; 1 (0)             ; 52 (0)           ; |Security_Top                                                                                                                        ; work         ;
+;    |Alarm_Controller:DUT4|                ; 26 (0)      ; 11 (0)                    ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 15 (0)       ; 0 (0)             ; 11 (0)           ; |Security_Top|Alarm_Controller:DUT4                                                                                                  ; work         ;
 ;       |I2C_Automata:DUT1|                 ; 25 (25)     ; 10 (10)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 15 (15)      ; 0 (0)             ; 10 (10)          ; |Security_Top|Alarm_Controller:DUT4|I2C_Automata:DUT1                                                                                ; work         ;
-;       |Sound_Generator:DUT2|              ; 2 (2)       ; 2 (2)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 2 (2)            ; |Security_Top|Alarm_Controller:DUT4|Sound_Generator:DUT2                                                                             ; work         ;
+;       |Sound_Generator:DUT2|              ; 1 (1)       ; 1 (1)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; |Security_Top|Alarm_Controller:DUT4|Sound_Generator:DUT2                                                                             ; work         ;
 ;    |CLK_Divider:DUT1|                     ; 17 (17)     ; 13 (13)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 4 (4)        ; 0 (0)             ; 13 (13)          ; |Security_Top|CLK_Divider:DUT1                                                                                                       ; work         ;
-;    |Digit_Converter:DUT3|                 ; 134 (20)    ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 134 (20)     ; 0 (0)             ; 0 (0)            ; |Security_Top|Digit_Converter:DUT3                                                                                                   ; work         ;
+;    |Digit_Converter:DUT3|                 ; 183 (21)    ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 183 (21)     ; 0 (0)             ; 0 (0)            ; |Security_Top|Digit_Converter:DUT3                                                                                                   ; work         ;
 ;       |BCD:DUT1|                          ; 7 (7)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 7 (7)        ; 0 (0)             ; 0 (0)            ; |Security_Top|Digit_Converter:DUT3|BCD:DUT1                                                                                          ; work         ;
 ;       |BCD:DUT2|                          ; 7 (7)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 7 (7)        ; 0 (0)             ; 0 (0)            ; |Security_Top|Digit_Converter:DUT3|BCD:DUT2                                                                                          ; work         ;
-;       |lpm_divide:Div0|                   ; 57 (0)      ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 57 (0)       ; 0 (0)             ; 0 (0)            ; |Security_Top|Digit_Converter:DUT3|lpm_divide:Div0                                                                                   ; work         ;
-;          |lpm_divide_eem:auto_generated|  ; 57 (0)      ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 57 (0)       ; 0 (0)             ; 0 (0)            ; |Security_Top|Digit_Converter:DUT3|lpm_divide:Div0|lpm_divide_eem:auto_generated                                                     ; work         ;
-;             |sign_div_unsign_olh:divider| ; 57 (0)      ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 57 (0)       ; 0 (0)             ; 0 (0)            ; |Security_Top|Digit_Converter:DUT3|lpm_divide:Div0|lpm_divide_eem:auto_generated|sign_div_unsign_olh:divider                         ; work         ;
-;                |alt_u_div_i2f:divider|    ; 57 (57)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 57 (57)      ; 0 (0)             ; 0 (0)            ; |Security_Top|Digit_Converter:DUT3|lpm_divide:Div0|lpm_divide_eem:auto_generated|sign_div_unsign_olh:divider|alt_u_div_i2f:divider   ; work         ;
-;       |lpm_divide:Mod0|                   ; 43 (0)      ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 43 (0)       ; 0 (0)             ; 0 (0)            ; |Security_Top|Digit_Converter:DUT3|lpm_divide:Mod0                                                                                   ; work         ;
-;          |lpm_divide_35m:auto_generated|  ; 43 (0)      ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 43 (0)       ; 0 (0)             ; 0 (0)            ; |Security_Top|Digit_Converter:DUT3|lpm_divide:Mod0|lpm_divide_35m:auto_generated                                                     ; work         ;
-;             |sign_div_unsign_akh:divider| ; 43 (0)      ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 43 (0)       ; 0 (0)             ; 0 (0)            ; |Security_Top|Digit_Converter:DUT3|lpm_divide:Mod0|lpm_divide_35m:auto_generated|sign_div_unsign_akh:divider                         ; work         ;
-;                |alt_u_div_mve:divider|    ; 43 (43)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 43 (43)      ; 0 (0)             ; 0 (0)            ; |Security_Top|Digit_Converter:DUT3|lpm_divide:Mod0|lpm_divide_35m:auto_generated|sign_div_unsign_akh:divider|alt_u_div_mve:divider   ; work         ;
-;    |Sensor_Controller:DUT2|               ; 406 (61)    ; 29 (29)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 377 (32)     ; 0 (0)             ; 29 (18)          ; |Security_Top|Sensor_Controller:DUT2                                                                                                 ; work         ;
-;       |lpm_divide:Div0|                   ; 356 (0)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 345 (0)      ; 0 (0)             ; 11 (0)           ; |Security_Top|Sensor_Controller:DUT2|lpm_divide:Div0                                                                                 ; work         ;
-;          |lpm_divide_hem:auto_generated|  ; 356 (0)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 345 (0)      ; 0 (0)             ; 11 (0)           ; |Security_Top|Sensor_Controller:DUT2|lpm_divide:Div0|lpm_divide_hem:auto_generated                                                   ; work         ;
-;             |sign_div_unsign_rlh:divider| ; 356 (0)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 345 (0)      ; 0 (0)             ; 11 (0)           ; |Security_Top|Sensor_Controller:DUT2|lpm_divide:Div0|lpm_divide_hem:auto_generated|sign_div_unsign_rlh:divider                       ; work         ;
-;                |alt_u_div_o2f:divider|    ; 356 (356)   ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 345 (345)    ; 0 (0)             ; 11 (11)          ; |Security_Top|Sensor_Controller:DUT2|lpm_divide:Div0|lpm_divide_hem:auto_generated|sign_div_unsign_rlh:divider|alt_u_div_o2f:divider ; work         ;
+;       |lpm_divide:Div0|                   ; 92 (0)      ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 92 (0)       ; 0 (0)             ; 0 (0)            ; |Security_Top|Digit_Converter:DUT3|lpm_divide:Div0                                                                                   ; work         ;
+;          |lpm_divide_eem:auto_generated|  ; 92 (0)      ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 92 (0)       ; 0 (0)             ; 0 (0)            ; |Security_Top|Digit_Converter:DUT3|lpm_divide:Div0|lpm_divide_eem:auto_generated                                                     ; work         ;
+;             |sign_div_unsign_olh:divider| ; 92 (0)      ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 92 (0)       ; 0 (0)             ; 0 (0)            ; |Security_Top|Digit_Converter:DUT3|lpm_divide:Div0|lpm_divide_eem:auto_generated|sign_div_unsign_olh:divider                         ; work         ;
+;                |alt_u_div_i2f:divider|    ; 92 (92)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 92 (92)      ; 0 (0)             ; 0 (0)            ; |Security_Top|Digit_Converter:DUT3|lpm_divide:Div0|lpm_divide_eem:auto_generated|sign_div_unsign_olh:divider|alt_u_div_i2f:divider   ; work         ;
+;       |lpm_divide:Mod0|                   ; 56 (0)      ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 56 (0)       ; 0 (0)             ; 0 (0)            ; |Security_Top|Digit_Converter:DUT3|lpm_divide:Mod0                                                                                   ; work         ;
+;          |lpm_divide_45m:auto_generated|  ; 56 (0)      ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 56 (0)       ; 0 (0)             ; 0 (0)            ; |Security_Top|Digit_Converter:DUT3|lpm_divide:Mod0|lpm_divide_45m:auto_generated                                                     ; work         ;
+;             |sign_div_unsign_bkh:divider| ; 56 (0)      ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 56 (0)       ; 0 (0)             ; 0 (0)            ; |Security_Top|Digit_Converter:DUT3|lpm_divide:Mod0|lpm_divide_45m:auto_generated|sign_div_unsign_bkh:divider                         ; work         ;
+;                |alt_u_div_ove:divider|    ; 56 (56)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 56 (56)      ; 0 (0)             ; 0 (0)            ; |Security_Top|Digit_Converter:DUT3|lpm_divide:Mod0|lpm_divide_45m:auto_generated|sign_div_unsign_bkh:divider|alt_u_div_ove:divider   ; work         ;
+;    |Sensor_Controller:DUT2|               ; 407 (63)    ; 29 (29)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 378 (34)     ; 1 (1)             ; 28 (16)          ; |Security_Top|Sensor_Controller:DUT2                                                                                                 ; work         ;
+;       |lpm_divide:Div0|                   ; 356 (0)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 344 (0)      ; 0 (0)             ; 12 (0)           ; |Security_Top|Sensor_Controller:DUT2|lpm_divide:Div0                                                                                 ; work         ;
+;          |lpm_divide_hem:auto_generated|  ; 356 (0)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 344 (0)      ; 0 (0)             ; 12 (0)           ; |Security_Top|Sensor_Controller:DUT2|lpm_divide:Div0|lpm_divide_hem:auto_generated                                                   ; work         ;
+;             |sign_div_unsign_rlh:divider| ; 356 (0)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 344 (0)      ; 0 (0)             ; 12 (0)           ; |Security_Top|Sensor_Controller:DUT2|lpm_divide:Div0|lpm_divide_hem:auto_generated|sign_div_unsign_rlh:divider                       ; work         ;
+;                |alt_u_div_o2f:divider|    ; 356 (356)   ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 344 (344)    ; 0 (0)             ; 12 (12)          ; |Security_Top|Sensor_Controller:DUT2|lpm_divide:Div0|lpm_divide_hem:auto_generated|sign_div_unsign_rlh:divider|alt_u_div_o2f:divider ; work         ;
 +-------------------------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+--------------------------------------------------------------------------------------------------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -956,6 +956,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-------------------------------------------------------------+-------------------+---------+
 ; RST                                                         ;                   ;         ;
 ;      - CLK_Divider:DUT1|T_CLK                               ; 1                 ; 6       ;
+;      - Sensor_Controller:DUT2|Distance[7]                   ; 1                 ; 6       ;
 ;      - Sensor_Controller:DUT2|Distance[6]                   ; 1                 ; 6       ;
 ;      - Sensor_Controller:DUT2|Distance[5]                   ; 1                 ; 6       ;
 ;      - Sensor_Controller:DUT2|Distance[4]                   ; 1                 ; 6       ;
@@ -965,25 +966,23 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ;      - Sensor_Controller:DUT2|Distance[0]                   ; 1                 ; 6       ;
 ;      - Alarm_Controller:DUT4|Sound_Generator:DUT2|Trig      ; 1                 ; 6       ;
 ;      - Alarm_Controller:DUT4|I2C_Automata:DUT1|Counter[3]   ; 1                 ; 6       ;
-;      - Sensor_Controller:DUT2|Distance[7]                   ; 1                 ; 6       ;
 ;      - Alarm_Controller:DUT4|I2C_Automata:DUT1|State.010    ; 1                 ; 6       ;
 ;      - Alarm_Controller:DUT4|I2C_Automata:DUT1|State.100    ; 1                 ; 6       ;
 ;      - Alarm_Controller:DUT4|I2C_Automata:DUT1|Clock~0      ; 1                 ; 6       ;
 ;      - Sensor_Controller:DUT2|Trigger~0                     ; 1                 ; 6       ;
-;      - Sensor_Controller:DUT2|Distance[0]~0                 ; 1                 ; 6       ;
-;      - Alarm_Controller:DUT4|Sound_Generator:DUT2|Data~0    ; 1                 ; 6       ;
+;      - Sensor_Controller:DUT2|Distance[1]~0                 ; 1                 ; 6       ;
 ;      - Alarm_Controller:DUT4|I2C_Automata:DUT1|State~19     ; 1                 ; 6       ;
 ;      - Alarm_Controller:DUT4|I2C_Automata:DUT1|State~20     ; 1                 ; 6       ;
 ;      - Alarm_Controller:DUT4|I2C_Automata:DUT1|State~21     ; 1                 ; 6       ;
 ;      - CLK_Divider:DUT1|Counter[9]~18                       ; 1                 ; 6       ;
-;      - Sensor_Controller:DUT2|Counter[1]~56                 ; 1                 ; 6       ;
+;      - Sensor_Controller:DUT2|Counter[2]~56                 ; 1                 ; 6       ;
 ;      - Alarm_Controller:DUT4|I2C_Automata:DUT1|Counter[1]~0 ; 1                 ; 6       ;
 ;      - Alarm_Controller:DUT4|I2C_Automata:DUT1|Counter[0]~1 ; 1                 ; 6       ;
 ;      - Alarm_Controller:DUT4|I2C_Automata:DUT1|State~22     ; 1                 ; 6       ;
 ;      - Alarm_Controller:DUT4|I2C_Automata:DUT1|Data$latch   ; 1                 ; 6       ;
 ; CLK                                                         ;                   ;         ;
 ; Echo_Sig                                                    ;                   ;         ;
-;      - Sensor_Controller:DUT2|Distance[0]~0                 ; 1                 ; 6       ;
+;      - Sensor_Controller:DUT2|Distance[1]~0                 ; 1                 ; 6       ;
 +-------------------------------------------------------------+-------------------+---------+
 
 
@@ -992,14 +991,14 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------------------------------------+--------------------+---------+-------------------------+--------+----------------------+------------------+---------------------------+
 ; Name                                                ; Location           ; Fan-Out ; Usage                   ; Global ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
 +-----------------------------------------------------+--------------------+---------+-------------------------+--------+----------------------+------------------+---------------------------+
-; Alarm_Controller:DUT4|I2C_Automata:DUT1|Selector0~1 ; LCCOMB_X21_Y13_N8  ; 1       ; Latch enable            ; no     ; --                   ; --               ; --                        ;
+; Alarm_Controller:DUT4|I2C_Automata:DUT1|Selector0~1 ; LCCOMB_X11_Y18_N20 ; 1       ; Latch enable            ; no     ; --                   ; --               ; --                        ;
 ; CLK                                                 ; PIN_L1             ; 13      ; Clock                   ; yes    ; Global Clock         ; GCLK2            ; --                        ;
-; CLK_Divider:DUT1|Counter[9]~18                      ; LCCOMB_X20_Y19_N26 ; 12      ; Sync. clear             ; no     ; --                   ; --               ; --                        ;
-; CLK_Divider:DUT1|T_CLK                              ; LCFF_X21_Y19_N29   ; 9       ; Clock                   ; no     ; --                   ; --               ; --                        ;
-; CLK_Divider:DUT1|T_CLK                              ; LCFF_X21_Y19_N29   ; 36      ; Clock                   ; yes    ; Global Clock         ; GCLK10           ; --                        ;
-; RST                                                 ; PIN_R22            ; 26      ; Sync. clear, Sync. load ; no     ; --                   ; --               ; --                        ;
-; Sensor_Controller:DUT2|Counter[1]~56                ; LCCOMB_X19_Y16_N4  ; 20      ; Sync. clear             ; no     ; --                   ; --               ; --                        ;
-; Sensor_Controller:DUT2|Distance[0]~0                ; LCCOMB_X26_Y18_N28 ; 8       ; Clock enable            ; no     ; --                   ; --               ; --                        ;
+; CLK_Divider:DUT1|Counter[9]~18                      ; LCCOMB_X9_Y18_N30  ; 12      ; Sync. clear             ; no     ; --                   ; --               ; --                        ;
+; CLK_Divider:DUT1|T_CLK                              ; LCFF_X10_Y18_N17   ; 9       ; Clock                   ; no     ; --                   ; --               ; --                        ;
+; CLK_Divider:DUT1|T_CLK                              ; LCFF_X10_Y18_N17   ; 35      ; Clock                   ; yes    ; Global Clock         ; GCLK3            ; --                        ;
+; RST                                                 ; PIN_R22            ; 25      ; Sync. clear, Sync. load ; no     ; --                   ; --               ; --                        ;
+; Sensor_Controller:DUT2|Counter[2]~56                ; LCCOMB_X22_Y15_N6  ; 20      ; Sync. clear             ; no     ; --                   ; --               ; --                        ;
+; Sensor_Controller:DUT2|Distance[1]~0                ; LCCOMB_X18_Y17_N12 ; 8       ; Clock enable            ; no     ; --                   ; --               ; --                        ;
 +-----------------------------------------------------+--------------------+---------+-------------------------+--------+----------------------+------------------+---------------------------+
 
 
@@ -1009,7 +1008,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Name                   ; Location         ; Fan-Out ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
 +------------------------+------------------+---------+----------------------+------------------+---------------------------+
 ; CLK                    ; PIN_L1           ; 13      ; Global Clock         ; GCLK2            ; --                        ;
-; CLK_Divider:DUT1|T_CLK ; LCFF_X21_Y19_N29 ; 36      ; Global Clock         ; GCLK10           ; --                        ;
+; CLK_Divider:DUT1|T_CLK ; LCFF_X10_Y18_N17 ; 35      ; Global Clock         ; GCLK3            ; --                        ;
 +------------------------+------------------+---------+----------------------+------------------+---------------------------+
 
 
@@ -1018,8 +1017,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-------------------------------------------------------------------------------------------------------------------------------------------------------------+---------+
 ; Name                                                                                                                                                        ; Fan-Out ;
 +-------------------------------------------------------------------------------------------------------------------------------------------------------------+---------+
-; RST                                                                                                                                                         ; 26      ;
-; Sensor_Controller:DUT2|Counter[1]~56                                                                                                                        ; 20      ;
+; RST                                                                                                                                                         ; 25      ;
+; Sensor_Controller:DUT2|Counter[2]~56                                                                                                                        ; 20      ;
 ; Sensor_Controller:DUT2|lpm_divide:Div0|lpm_divide_hem:auto_generated|sign_div_unsign_rlh:divider|alt_u_div_o2f:divider|add_sub_21_result_int[7]~12          ; 17      ;
 ; Sensor_Controller:DUT2|lpm_divide:Div0|lpm_divide_hem:auto_generated|sign_div_unsign_rlh:divider|alt_u_div_o2f:divider|add_sub_20_result_int[7]~12          ; 17      ;
 ; Sensor_Controller:DUT2|lpm_divide:Div0|lpm_divide_hem:auto_generated|sign_div_unsign_rlh:divider|alt_u_div_o2f:divider|add_sub_19_result_int[7]~12          ; 17      ;
@@ -1039,22 +1038,26 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Sensor_Controller:DUT2|lpm_divide:Div0|lpm_divide_hem:auto_generated|sign_div_unsign_rlh:divider|alt_u_div_o2f:divider|add_sub_5_result_int[6]~10           ; 16      ;
 ; Sensor_Controller:DUT2|lpm_divide:Div0|lpm_divide_hem:auto_generated|sign_div_unsign_rlh:divider|alt_u_div_o2f:divider|add_sub_22_result_int[7]~12          ; 13      ;
 ; CLK_Divider:DUT1|Counter[9]~18                                                                                                                              ; 12      ;
-; Sensor_Controller:DUT2|Distance[5]                                                                                                                          ; 12      ;
 ; Digit_Converter:DUT3|lpm_divide:Div0|lpm_divide_eem:auto_generated|sign_div_unsign_olh:divider|alt_u_div_i2f:divider|add_sub_29_result_int[5]~8             ; 11      ;
 ; Digit_Converter:DUT3|lpm_divide:Div0|lpm_divide_eem:auto_generated|sign_div_unsign_olh:divider|alt_u_div_i2f:divider|add_sub_28_result_int[5]~8             ; 11      ;
+; Sensor_Controller:DUT2|Distance[5]                                                                                                                          ; 11      ;
 ; Digit_Converter:DUT3|lpm_divide:Div0|lpm_divide_eem:auto_generated|sign_div_unsign_olh:divider|alt_u_div_i2f:divider|add_sub_27_result_int[5]~8             ; 10      ;
-; Digit_Converter:DUT3|lpm_divide:Mod0|lpm_divide_35m:auto_generated|sign_div_unsign_akh:divider|alt_u_div_mve:divider|add_sub_5_result_int[5]~8              ; 10      ;
-; Digit_Converter:DUT3|lpm_divide:Mod0|lpm_divide_35m:auto_generated|sign_div_unsign_akh:divider|alt_u_div_mve:divider|add_sub_4_result_int[5]~8              ; 10      ;
-; Digit_Converter:DUT3|lpm_divide:Mod0|lpm_divide_35m:auto_generated|sign_div_unsign_akh:divider|alt_u_div_mve:divider|add_sub_3_result_int[4]~6              ; 10      ;
+; Digit_Converter:DUT3|lpm_divide:Div0|lpm_divide_eem:auto_generated|sign_div_unsign_olh:divider|alt_u_div_i2f:divider|add_sub_26_result_int[5]~8             ; 10      ;
+; Digit_Converter:DUT3|lpm_divide:Div0|lpm_divide_eem:auto_generated|sign_div_unsign_olh:divider|alt_u_div_i2f:divider|add_sub_25_result_int[5]~8             ; 10      ;
+; Digit_Converter:DUT3|lpm_divide:Mod0|lpm_divide_45m:auto_generated|sign_div_unsign_bkh:divider|alt_u_div_ove:divider|add_sub_6_result_int[5]~8              ; 10      ;
+; Digit_Converter:DUT3|lpm_divide:Mod0|lpm_divide_45m:auto_generated|sign_div_unsign_bkh:divider|alt_u_div_ove:divider|add_sub_5_result_int[5]~8              ; 10      ;
+; Digit_Converter:DUT3|lpm_divide:Mod0|lpm_divide_45m:auto_generated|sign_div_unsign_bkh:divider|alt_u_div_ove:divider|add_sub_4_result_int[5]~8              ; 10      ;
+; Digit_Converter:DUT3|lpm_divide:Mod0|lpm_divide_45m:auto_generated|sign_div_unsign_bkh:divider|alt_u_div_ove:divider|add_sub_3_result_int[4]~6              ; 10      ;
+; Sensor_Controller:DUT2|Distance[7]                                                                                                                          ; 10      ;
 ; Alarm_Controller:DUT4|I2C_Automata:DUT1|State.100                                                                                                           ; 9       ;
 ; Alarm_Controller:DUT4|I2C_Automata:DUT1|State.010                                                                                                           ; 9       ;
 ; Digit_Converter:DUT3|lpm_divide:Div0|lpm_divide_eem:auto_generated|sign_div_unsign_olh:divider|alt_u_div_i2f:divider|add_sub_30_result_int[5]~8             ; 9       ;
-; Sensor_Controller:DUT2|Distance[0]~0                                                                                                                        ; 8       ;
+; Sensor_Controller:DUT2|Distance[1]~0                                                                                                                        ; 8       ;
 ; Digit_Converter:DUT3|Distance_Units[3]~5                                                                                                                    ; 8       ;
 ; Digit_Converter:DUT3|Distance_Units[2]~3                                                                                                                    ; 8       ;
 ; Digit_Converter:DUT3|Distance_Units[1]~1                                                                                                                    ; 8       ;
 ; Digit_Converter:DUT3|Distance_Units[0]~0                                                                                                                    ; 8       ;
-; Digit_Converter:DUT3|LessThan0~0                                                                                                                            ; 8       ;
+; Digit_Converter:DUT3|lpm_divide:Div0|lpm_divide_eem:auto_generated|sign_div_unsign_olh:divider|alt_u_div_i2f:divider|op_16~6                                ; 8       ;
 ; CLK_Divider:DUT1|T_CLK                                                                                                                                      ; 8       ;
 ; Digit_Converter:DUT3|Distance_Tens[3]~11                                                                                                                    ; 7       ;
 ; Digit_Converter:DUT3|Distance_Tens[2]~10                                                                                                                    ; 7       ;
@@ -1062,14 +1065,17 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Digit_Converter:DUT3|Distance_Tens[0]~8                                                                                                                     ; 7       ;
 ; Alarm_Controller:DUT4|I2C_Automata:DUT1|always0~1                                                                                                           ; 7       ;
 ; Alarm_Controller:DUT4|I2C_Automata:DUT1|Counter[0]                                                                                                          ; 7       ;
+; Digit_Converter:DUT3|LessThan0~0                                                                                                                            ; 7       ;
 ; Alarm_Controller:DUT4|I2C_Automata:DUT1|Counter[2]                                                                                                          ; 6       ;
 ; Alarm_Controller:DUT4|I2C_Automata:DUT1|Counter[1]                                                                                                          ; 6       ;
 ; Alarm_Controller:DUT4|I2C_Automata:DUT1|Counter[3]                                                                                                          ; 6       ;
 ; Sensor_Controller:DUT2|Counter[1]                                                                                                                           ; 6       ;
 ; Sensor_Controller:DUT2|Distance[2]                                                                                                                          ; 6       ;
 ; Sensor_Controller:DUT2|Distance[3]                                                                                                                          ; 6       ;
+; Sensor_Controller:DUT2|Distance[4]                                                                                                                          ; 6       ;
 ; Sensor_Controller:DUT2|Counter[0]                                                                                                                           ; 5       ;
-; Sensor_Controller:DUT2|Distance[4]                                                                                                                          ; 5       ;
+; Digit_Converter:DUT3|Add0~16                                                                                                                                ; 5       ;
+; Sensor_Controller:DUT2|Distance[6]                                                                                                                          ; 5       ;
 ; Sensor_Controller:DUT2|Add1~30                                                                                                                              ; 4       ;
 ; Sensor_Controller:DUT2|Add1~28                                                                                                                              ; 4       ;
 ; Sensor_Controller:DUT2|Add1~26                                                                                                                              ; 4       ;
@@ -1104,10 +1110,12 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Sensor_Controller:DUT2|Counter[19]                                                                                                                          ; 4       ;
 ; Sensor_Controller:DUT2|Counter[18]                                                                                                                          ; 4       ;
 ; Sensor_Controller:DUT2|Counter[17]                                                                                                                          ; 4       ;
+; Digit_Converter:DUT3|Add0~14                                                                                                                                ; 4       ;
+; Digit_Converter:DUT3|Add0~12                                                                                                                                ; 4       ;
+; Digit_Converter:DUT3|Add0~10                                                                                                                                ; 4       ;
 ; Digit_Converter:DUT3|Add0~8                                                                                                                                 ; 4       ;
 ; Digit_Converter:DUT3|Add0~6                                                                                                                                 ; 4       ;
 ; Sensor_Controller:DUT2|Distance[1]                                                                                                                          ; 4       ;
-; Sensor_Controller:DUT2|Distance[6]                                                                                                                          ; 4       ;
 ; Alarm_Controller:DUT4|I2C_Automata:DUT1|Data$latch                                                                                                          ; 3       ;
 ; Alarm_Controller:DUT4|I2C_Automata:DUT1|Counter[0]~1                                                                                                        ; 3       ;
 ; Alarm_Controller:DUT4|I2C_Automata:DUT1|Counter[1]~0                                                                                                        ; 3       ;
@@ -1118,10 +1126,9 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Sensor_Controller:DUT2|Add1~36                                                                                                                              ; 3       ;
 ; Sensor_Controller:DUT2|Add1~34                                                                                                                              ; 3       ;
 ; Sensor_Controller:DUT2|Add1~32                                                                                                                              ; 3       ;
-; Digit_Converter:DUT3|Add0~12                                                                                                                                ; 3       ;
-; Digit_Converter:DUT3|Add0~10                                                                                                                                ; 3       ;
+; Alarm_Controller:DUT4|Sound_Generator:DUT2|Trig                                                                                                             ; 3       ;
 ; Digit_Converter:DUT3|Add0~4                                                                                                                                 ; 3       ;
-; Digit_Converter:DUT3|lpm_divide:Mod0|lpm_divide_35m:auto_generated|sign_div_unsign_akh:divider|alt_u_div_mve:divider|add_sub_6_result_int[5]~8              ; 3       ;
+; Digit_Converter:DUT3|lpm_divide:Mod0|lpm_divide_45m:auto_generated|sign_div_unsign_bkh:divider|alt_u_div_ove:divider|add_sub_7_result_int[5]~8              ; 3       ;
 ; Sensor_Controller:DUT2|lpm_divide:Div0|lpm_divide_hem:auto_generated|sign_div_unsign_rlh:divider|alt_u_div_o2f:divider|StageOut[149]~470                    ; 2       ;
 ; Sensor_Controller:DUT2|lpm_divide:Div0|lpm_divide_hem:auto_generated|sign_div_unsign_rlh:divider|alt_u_div_o2f:divider|StageOut[142]~469                    ; 2       ;
 ; Sensor_Controller:DUT2|lpm_divide:Div0|lpm_divide_hem:auto_generated|sign_div_unsign_rlh:divider|alt_u_div_o2f:divider|StageOut[135]~468                    ; 2       ;
@@ -1140,9 +1147,12 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Sensor_Controller:DUT2|lpm_divide:Div0|lpm_divide_hem:auto_generated|sign_div_unsign_rlh:divider|alt_u_div_o2f:divider|StageOut[44]~455                     ; 2       ;
 ; Sensor_Controller:DUT2|lpm_divide:Div0|lpm_divide_hem:auto_generated|sign_div_unsign_rlh:divider|alt_u_div_o2f:divider|StageOut[45]~454                     ; 2       ;
 ; Sensor_Controller:DUT2|lpm_divide:Div0|lpm_divide_hem:auto_generated|sign_div_unsign_rlh:divider|alt_u_div_o2f:divider|StageOut[46]~453                     ; 2       ;
-; Digit_Converter:DUT3|lpm_divide:Div0|lpm_divide_eem:auto_generated|sign_div_unsign_olh:divider|alt_u_div_i2f:divider|StageOut[147]~66                       ; 2       ;
-; Digit_Converter:DUT3|lpm_divide:Div0|lpm_divide_eem:auto_generated|sign_div_unsign_olh:divider|alt_u_div_i2f:divider|StageOut[142]~65                       ; 2       ;
-; Digit_Converter:DUT3|lpm_divide:Mod0|lpm_divide_35m:auto_generated|sign_div_unsign_akh:divider|alt_u_div_mve:divider|StageOut[22]~48                        ; 2       ;
+; Digit_Converter:DUT3|lpm_divide:Div0|lpm_divide_eem:auto_generated|sign_div_unsign_olh:divider|alt_u_div_i2f:divider|StageOut[147]~101                      ; 2       ;
+; Digit_Converter:DUT3|lpm_divide:Div0|lpm_divide_eem:auto_generated|sign_div_unsign_olh:divider|alt_u_div_i2f:divider|StageOut[142]~100                      ; 2       ;
+; Digit_Converter:DUT3|lpm_divide:Div0|lpm_divide_eem:auto_generated|sign_div_unsign_olh:divider|alt_u_div_i2f:divider|StageOut[137]~99                       ; 2       ;
+; Digit_Converter:DUT3|lpm_divide:Div0|lpm_divide_eem:auto_generated|sign_div_unsign_olh:divider|alt_u_div_i2f:divider|StageOut[132]~98                       ; 2       ;
+; Digit_Converter:DUT3|lpm_divide:Mod0|lpm_divide_45m:auto_generated|sign_div_unsign_bkh:divider|alt_u_div_ove:divider|StageOut[27]~66                        ; 2       ;
+; Digit_Converter:DUT3|lpm_divide:Mod0|lpm_divide_45m:auto_generated|sign_div_unsign_bkh:divider|alt_u_div_ove:divider|StageOut[22]~65                        ; 2       ;
 ; Sensor_Controller:DUT2|lpm_divide:Div0|lpm_divide_hem:auto_generated|sign_div_unsign_rlh:divider|alt_u_div_o2f:divider|StageOut[150]~448                    ; 2       ;
 ; Sensor_Controller:DUT2|lpm_divide:Div0|lpm_divide_hem:auto_generated|sign_div_unsign_rlh:divider|alt_u_div_o2f:divider|StageOut[151]~447                    ; 2       ;
 ; Sensor_Controller:DUT2|lpm_divide:Div0|lpm_divide_hem:auto_generated|sign_div_unsign_rlh:divider|alt_u_div_o2f:divider|StageOut[143]~445                    ; 2       ;
@@ -1180,9 +1190,10 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; CLK_Divider:DUT1|Equal0~1                                                                                                                                   ; 2       ;
 ; CLK_Divider:DUT1|Equal0~0                                                                                                                                   ; 2       ;
 ; Alarm_Controller:DUT4|I2C_Automata:DUT1|State.000                                                                                                           ; 2       ;
-; Digit_Converter:DUT3|lpm_divide:Mod0|lpm_divide_35m:auto_generated|sign_div_unsign_akh:divider|alt_u_div_mve:divider|StageOut[21]~37                        ; 2       ;
-; Digit_Converter:DUT3|lpm_divide:Mod0|lpm_divide_35m:auto_generated|sign_div_unsign_akh:divider|alt_u_div_mve:divider|StageOut[21]~36                        ; 2       ;
-; Sensor_Controller:DUT2|Distance[7]                                                                                                                          ; 2       ;
+; Digit_Converter:DUT3|lpm_divide:Div0|lpm_divide_eem:auto_generated|sign_div_unsign_olh:divider|alt_u_div_i2f:divider|StageOut[127]~57                       ; 2       ;
+; Digit_Converter:DUT3|lpm_divide:Div0|lpm_divide_eem:auto_generated|sign_div_unsign_olh:divider|alt_u_div_i2f:divider|StageOut[121]~50                       ; 2       ;
+; Digit_Converter:DUT3|lpm_divide:Mod0|lpm_divide_45m:auto_generated|sign_div_unsign_bkh:divider|alt_u_div_ove:divider|StageOut[26]~53                        ; 2       ;
+; Digit_Converter:DUT3|lpm_divide:Mod0|lpm_divide_45m:auto_generated|sign_div_unsign_bkh:divider|alt_u_div_ove:divider|StageOut[26]~52                        ; 2       ;
 ; Sensor_Controller:DUT2|lpm_divide:Div0|lpm_divide_hem:auto_generated|sign_div_unsign_rlh:divider|alt_u_div_o2f:divider|add_sub_21_result_int[4]~6           ; 2       ;
 ; Sensor_Controller:DUT2|lpm_divide:Div0|lpm_divide_hem:auto_generated|sign_div_unsign_rlh:divider|alt_u_div_o2f:divider|add_sub_21_result_int[3]~4           ; 2       ;
 ; Sensor_Controller:DUT2|lpm_divide:Div0|lpm_divide_hem:auto_generated|sign_div_unsign_rlh:divider|alt_u_div_o2f:divider|add_sub_21_result_int[2]~2           ; 2       ;
@@ -1264,21 +1275,26 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; CLK_Divider:DUT1|Counter[0]                                                                                                                                 ; 2       ;
 ; CLK_Divider:DUT1|Counter[3]                                                                                                                                 ; 2       ;
 ; CLK_Divider:DUT1|Counter[2]                                                                                                                                 ; 2       ;
-; Alarm_Controller:DUT4|Sound_Generator:DUT2|Trig                                                                                                             ; 2       ;
 ; Digit_Converter:DUT3|lpm_divide:Div0|lpm_divide_eem:auto_generated|sign_div_unsign_olh:divider|alt_u_div_i2f:divider|add_sub_29_result_int[2]~2             ; 2       ;
 ; Digit_Converter:DUT3|lpm_divide:Div0|lpm_divide_eem:auto_generated|sign_div_unsign_olh:divider|alt_u_div_i2f:divider|add_sub_29_result_int[1]~0             ; 2       ;
 ; Digit_Converter:DUT3|lpm_divide:Div0|lpm_divide_eem:auto_generated|sign_div_unsign_olh:divider|alt_u_div_i2f:divider|add_sub_28_result_int[2]~2             ; 2       ;
 ; Digit_Converter:DUT3|lpm_divide:Div0|lpm_divide_eem:auto_generated|sign_div_unsign_olh:divider|alt_u_div_i2f:divider|add_sub_28_result_int[1]~0             ; 2       ;
 ; Digit_Converter:DUT3|lpm_divide:Div0|lpm_divide_eem:auto_generated|sign_div_unsign_olh:divider|alt_u_div_i2f:divider|add_sub_27_result_int[2]~2             ; 2       ;
 ; Digit_Converter:DUT3|lpm_divide:Div0|lpm_divide_eem:auto_generated|sign_div_unsign_olh:divider|alt_u_div_i2f:divider|add_sub_27_result_int[1]~0             ; 2       ;
-; Digit_Converter:DUT3|Add0~14                                                                                                                                ; 2       ;
+; Digit_Converter:DUT3|lpm_divide:Div0|lpm_divide_eem:auto_generated|sign_div_unsign_olh:divider|alt_u_div_i2f:divider|add_sub_26_result_int[2]~2             ; 2       ;
+; Digit_Converter:DUT3|lpm_divide:Div0|lpm_divide_eem:auto_generated|sign_div_unsign_olh:divider|alt_u_div_i2f:divider|add_sub_26_result_int[1]~0             ; 2       ;
+; Digit_Converter:DUT3|lpm_divide:Div0|lpm_divide_eem:auto_generated|sign_div_unsign_olh:divider|alt_u_div_i2f:divider|add_sub_25_result_int[2]~2             ; 2       ;
+; Digit_Converter:DUT3|lpm_divide:Div0|lpm_divide_eem:auto_generated|sign_div_unsign_olh:divider|alt_u_div_i2f:divider|add_sub_25_result_int[1]~0             ; 2       ;
+; Digit_Converter:DUT3|lpm_divide:Div0|lpm_divide_eem:auto_generated|sign_div_unsign_olh:divider|alt_u_div_i2f:divider|op_16~2                                ; 2       ;
 ; Digit_Converter:DUT3|Add0~2                                                                                                                                 ; 2       ;
-; Digit_Converter:DUT3|lpm_divide:Mod0|lpm_divide_35m:auto_generated|sign_div_unsign_akh:divider|alt_u_div_mve:divider|add_sub_5_result_int[2]~2              ; 2       ;
-; Digit_Converter:DUT3|lpm_divide:Mod0|lpm_divide_35m:auto_generated|sign_div_unsign_akh:divider|alt_u_div_mve:divider|add_sub_5_result_int[1]~0              ; 2       ;
-; Digit_Converter:DUT3|lpm_divide:Mod0|lpm_divide_35m:auto_generated|sign_div_unsign_akh:divider|alt_u_div_mve:divider|add_sub_4_result_int[2]~2              ; 2       ;
-; Digit_Converter:DUT3|lpm_divide:Mod0|lpm_divide_35m:auto_generated|sign_div_unsign_akh:divider|alt_u_div_mve:divider|add_sub_4_result_int[1]~0              ; 2       ;
-; Digit_Converter:DUT3|lpm_divide:Mod0|lpm_divide_35m:auto_generated|sign_div_unsign_akh:divider|alt_u_div_mve:divider|add_sub_3_result_int[2]~2              ; 2       ;
-; Digit_Converter:DUT3|lpm_divide:Mod0|lpm_divide_35m:auto_generated|sign_div_unsign_akh:divider|alt_u_div_mve:divider|add_sub_3_result_int[1]~0              ; 2       ;
+; Digit_Converter:DUT3|lpm_divide:Mod0|lpm_divide_45m:auto_generated|sign_div_unsign_bkh:divider|alt_u_div_ove:divider|add_sub_6_result_int[2]~2              ; 2       ;
+; Digit_Converter:DUT3|lpm_divide:Mod0|lpm_divide_45m:auto_generated|sign_div_unsign_bkh:divider|alt_u_div_ove:divider|add_sub_6_result_int[1]~0              ; 2       ;
+; Digit_Converter:DUT3|lpm_divide:Mod0|lpm_divide_45m:auto_generated|sign_div_unsign_bkh:divider|alt_u_div_ove:divider|add_sub_5_result_int[2]~2              ; 2       ;
+; Digit_Converter:DUT3|lpm_divide:Mod0|lpm_divide_45m:auto_generated|sign_div_unsign_bkh:divider|alt_u_div_ove:divider|add_sub_5_result_int[1]~0              ; 2       ;
+; Digit_Converter:DUT3|lpm_divide:Mod0|lpm_divide_45m:auto_generated|sign_div_unsign_bkh:divider|alt_u_div_ove:divider|add_sub_4_result_int[2]~2              ; 2       ;
+; Digit_Converter:DUT3|lpm_divide:Mod0|lpm_divide_45m:auto_generated|sign_div_unsign_bkh:divider|alt_u_div_ove:divider|add_sub_4_result_int[1]~0              ; 2       ;
+; Digit_Converter:DUT3|lpm_divide:Mod0|lpm_divide_45m:auto_generated|sign_div_unsign_bkh:divider|alt_u_div_ove:divider|add_sub_3_result_int[2]~2              ; 2       ;
+; Digit_Converter:DUT3|lpm_divide:Mod0|lpm_divide_45m:auto_generated|sign_div_unsign_bkh:divider|alt_u_div_ove:divider|add_sub_3_result_int[1]~0              ; 2       ;
 ; Sensor_Controller:DUT2|Distance[0]                                                                                                                          ; 2       ;
 ; Echo_Sig                                                                                                                                                    ; 1       ;
 ; Sensor_Controller:DUT2|lpm_divide:Div0|lpm_divide_hem:auto_generated|sign_div_unsign_rlh:divider|alt_u_div_o2f:divider|op_15~12_wirecell                    ; 1       ;
@@ -1291,10 +1307,9 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Sensor_Controller:DUT2|lpm_divide:Div0|lpm_divide_hem:auto_generated|sign_div_unsign_rlh:divider|alt_u_div_o2f:divider|add_sub_16_result_int[7]~12_wirecell ; 1       ;
 ; Sensor_Controller:DUT2|lpm_divide:Div0|lpm_divide_hem:auto_generated|sign_div_unsign_rlh:divider|alt_u_div_o2f:divider|StageOut[156]~471                    ; 1       ;
 ; Sensor_Controller:DUT2|lpm_divide:Div0|lpm_divide_hem:auto_generated|sign_div_unsign_rlh:divider|alt_u_div_o2f:divider|StageOut[47]~452                     ; 1       ;
-; Digit_Converter:DUT3|lpm_divide:Div0|lpm_divide_eem:auto_generated|sign_div_unsign_olh:divider|alt_u_div_i2f:divider|StageOut[152]~67                       ; 1       ;
-; Digit_Converter:DUT3|lpm_divide:Div0|lpm_divide_eem:auto_generated|sign_div_unsign_olh:divider|alt_u_div_i2f:divider|StageOut[143]~64                       ; 1       ;
-; Digit_Converter:DUT3|lpm_divide:Mod0|lpm_divide_35m:auto_generated|sign_div_unsign_akh:divider|alt_u_div_mve:divider|StageOut[27]~49                        ; 1       ;
-; Digit_Converter:DUT3|lpm_divide:Mod0|lpm_divide_35m:auto_generated|sign_div_unsign_akh:divider|alt_u_div_mve:divider|StageOut[23]~47                        ; 1       ;
+; Digit_Converter:DUT3|lpm_divide:Div0|lpm_divide_eem:auto_generated|sign_div_unsign_olh:divider|alt_u_div_i2f:divider|StageOut[152]~102                      ; 1       ;
+; Digit_Converter:DUT3|lpm_divide:Mod0|lpm_divide_45m:auto_generated|sign_div_unsign_bkh:divider|alt_u_div_ove:divider|StageOut[32]~67                        ; 1       ;
+; Digit_Converter:DUT3|lpm_divide:Mod0|lpm_divide_45m:auto_generated|sign_div_unsign_bkh:divider|alt_u_div_ove:divider|StageOut[23]~64                        ; 1       ;
 ; Sensor_Controller:DUT2|lpm_divide:Div0|lpm_divide_hem:auto_generated|sign_div_unsign_rlh:divider|alt_u_div_o2f:divider|StageOut[157]~451                    ; 1       ;
 ; Sensor_Controller:DUT2|lpm_divide:Div0|lpm_divide_hem:auto_generated|sign_div_unsign_rlh:divider|alt_u_div_o2f:divider|StageOut[158]~450                    ; 1       ;
 ; Sensor_Controller:DUT2|lpm_divide:Div0|lpm_divide_hem:auto_generated|sign_div_unsign_rlh:divider|alt_u_div_o2f:divider|StageOut[159]~449                    ; 1       ;
@@ -1313,9 +1328,13 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Sensor_Controller:DUT2|lpm_divide:Div0|lpm_divide_hem:auto_generated|sign_div_unsign_rlh:divider|alt_u_div_o2f:divider|StageOut[68]~410                     ; 1       ;
 ; Sensor_Controller:DUT2|lpm_divide:Div0|lpm_divide_hem:auto_generated|sign_div_unsign_rlh:divider|alt_u_div_o2f:divider|StageOut[61]~407                     ; 1       ;
 ; Sensor_Controller:DUT2|lpm_divide:Div0|lpm_divide_hem:auto_generated|sign_div_unsign_rlh:divider|alt_u_div_o2f:divider|StageOut[54]~404                     ; 1       ;
-; Digit_Converter:DUT3|lpm_divide:Div0|lpm_divide_eem:auto_generated|sign_div_unsign_olh:divider|alt_u_div_i2f:divider|StageOut[153]~63                       ; 1       ;
-; Digit_Converter:DUT3|lpm_divide:Div0|lpm_divide_eem:auto_generated|sign_div_unsign_olh:divider|alt_u_div_i2f:divider|StageOut[148]~62                       ; 1       ;
-; Digit_Converter:DUT3|lpm_divide:Mod0|lpm_divide_35m:auto_generated|sign_div_unsign_akh:divider|alt_u_div_mve:divider|StageOut[28]~46                        ; 1       ;
+; Digit_Converter:DUT3|lpm_divide:Div0|lpm_divide_eem:auto_generated|sign_div_unsign_olh:divider|alt_u_div_i2f:divider|StageOut[153]~97                       ; 1       ;
+; Digit_Converter:DUT3|lpm_divide:Div0|lpm_divide_eem:auto_generated|sign_div_unsign_olh:divider|alt_u_div_i2f:divider|StageOut[148]~96                       ; 1       ;
+; Digit_Converter:DUT3|lpm_divide:Div0|lpm_divide_eem:auto_generated|sign_div_unsign_olh:divider|alt_u_div_i2f:divider|StageOut[143]~95                       ; 1       ;
+; Digit_Converter:DUT3|lpm_divide:Div0|lpm_divide_eem:auto_generated|sign_div_unsign_olh:divider|alt_u_div_i2f:divider|StageOut[138]~94                       ; 1       ;
+; Digit_Converter:DUT3|lpm_divide:Div0|lpm_divide_eem:auto_generated|sign_div_unsign_olh:divider|alt_u_div_i2f:divider|StageOut[133]~93                       ; 1       ;
+; Digit_Converter:DUT3|lpm_divide:Mod0|lpm_divide_45m:auto_generated|sign_div_unsign_bkh:divider|alt_u_div_ove:divider|StageOut[33]~63                        ; 1       ;
+; Digit_Converter:DUT3|lpm_divide:Mod0|lpm_divide_45m:auto_generated|sign_div_unsign_bkh:divider|alt_u_div_ove:divider|StageOut[28]~62                        ; 1       ;
 ; Alarm_Controller:DUT4|I2C_Automata:DUT1|State~22                                                                                                            ; 1       ;
 ; Alarm_Controller:DUT4|I2C_Automata:DUT1|Selector12~1                                                                                                        ; 1       ;
 ; Alarm_Controller:DUT4|I2C_Automata:DUT1|Selector12~0                                                                                                        ; 1       ;
@@ -1336,7 +1355,6 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Alarm_Controller:DUT4|I2C_Automata:DUT1|Selector3~1                                                                                                         ; 1       ;
 ; Alarm_Controller:DUT4|I2C_Automata:DUT1|Selector3~0                                                                                                         ; 1       ;
 ; Alarm_Controller:DUT4|Sound_Generator:DUT2|Trig~0                                                                                                           ; 1       ;
-; Alarm_Controller:DUT4|Sound_Generator:DUT2|Data~0                                                                                                           ; 1       ;
 ; Sensor_Controller:DUT2|lpm_divide:Div0|lpm_divide_hem:auto_generated|sign_div_unsign_rlh:divider|alt_u_div_o2f:divider|StageOut[154]~403                    ; 1       ;
 ; Sensor_Controller:DUT2|lpm_divide:Div0|lpm_divide_hem:auto_generated|sign_div_unsign_rlh:divider|alt_u_div_o2f:divider|StageOut[154]~402                    ; 1       ;
 ; Sensor_Controller:DUT2|lpm_divide:Div0|lpm_divide_hem:auto_generated|sign_div_unsign_rlh:divider|alt_u_div_o2f:divider|StageOut[155]~401                    ; 1       ;
@@ -1493,7 +1511,6 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; CLK_Divider:DUT1|T_CLK~0                                                                                                                                    ; 1       ;
 ; Alarm_Controller:DUT4|I2C_Automata:DUT1|Clock~1                                                                                                             ; 1       ;
 ; Alarm_Controller:DUT4|I2C_Automata:DUT1|Clock~0                                                                                                             ; 1       ;
-; Alarm_Controller:DUT4|Sound_Generator:DUT2|Data                                                                                                             ; 1       ;
 ; Digit_Converter:DUT3|BCD:DUT1|WideOr0~0                                                                                                                     ; 1       ;
 ; Digit_Converter:DUT3|BCD:DUT1|WideOr1~0                                                                                                                     ; 1       ;
 ; Digit_Converter:DUT3|BCD:DUT1|WideOr2~0                                                                                                                     ; 1       ;
@@ -1501,32 +1518,47 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Digit_Converter:DUT3|BCD:DUT1|WideOr4~0                                                                                                                     ; 1       ;
 ; Digit_Converter:DUT3|BCD:DUT1|WideOr5~0                                                                                                                     ; 1       ;
 ; Digit_Converter:DUT3|BCD:DUT1|WideOr6~0                                                                                                                     ; 1       ;
-; Digit_Converter:DUT3|lpm_divide:Div0|lpm_divide_eem:auto_generated|sign_div_unsign_olh:divider|alt_u_div_i2f:divider|StageOut[150]~61                       ; 1       ;
-; Digit_Converter:DUT3|lpm_divide:Div0|lpm_divide_eem:auto_generated|sign_div_unsign_olh:divider|alt_u_div_i2f:divider|StageOut[150]~60                       ; 1       ;
-; Digit_Converter:DUT3|lpm_divide:Div0|lpm_divide_eem:auto_generated|sign_div_unsign_olh:divider|alt_u_div_i2f:divider|StageOut[151]~59                       ; 1       ;
-; Digit_Converter:DUT3|lpm_divide:Div0|lpm_divide_eem:auto_generated|sign_div_unsign_olh:divider|alt_u_div_i2f:divider|StageOut[151]~58                       ; 1       ;
-; Digit_Converter:DUT3|lpm_divide:Div0|lpm_divide_eem:auto_generated|sign_div_unsign_olh:divider|alt_u_div_i2f:divider|StageOut[152]~57                       ; 1       ;
-; Digit_Converter:DUT3|lpm_divide:Div0|lpm_divide_eem:auto_generated|sign_div_unsign_olh:divider|alt_u_div_i2f:divider|StageOut[153]~56                       ; 1       ;
-; Digit_Converter:DUT3|lpm_divide:Div0|lpm_divide_eem:auto_generated|sign_div_unsign_olh:divider|alt_u_div_i2f:divider|StageOut[145]~55                       ; 1       ;
-; Digit_Converter:DUT3|lpm_divide:Div0|lpm_divide_eem:auto_generated|sign_div_unsign_olh:divider|alt_u_div_i2f:divider|StageOut[145]~54                       ; 1       ;
-; Digit_Converter:DUT3|lpm_divide:Div0|lpm_divide_eem:auto_generated|sign_div_unsign_olh:divider|alt_u_div_i2f:divider|StageOut[146]~53                       ; 1       ;
-; Digit_Converter:DUT3|lpm_divide:Div0|lpm_divide_eem:auto_generated|sign_div_unsign_olh:divider|alt_u_div_i2f:divider|StageOut[146]~52                       ; 1       ;
-; Digit_Converter:DUT3|lpm_divide:Div0|lpm_divide_eem:auto_generated|sign_div_unsign_olh:divider|alt_u_div_i2f:divider|StageOut[147]~51                       ; 1       ;
-; Digit_Converter:DUT3|lpm_divide:Div0|lpm_divide_eem:auto_generated|sign_div_unsign_olh:divider|alt_u_div_i2f:divider|StageOut[148]~50                       ; 1       ;
-; Digit_Converter:DUT3|lpm_divide:Div0|lpm_divide_eem:auto_generated|sign_div_unsign_olh:divider|alt_u_div_i2f:divider|StageOut[140]~49                       ; 1       ;
-; Digit_Converter:DUT3|lpm_divide:Div0|lpm_divide_eem:auto_generated|sign_div_unsign_olh:divider|alt_u_div_i2f:divider|StageOut[140]~48                       ; 1       ;
-; Digit_Converter:DUT3|lpm_divide:Div0|lpm_divide_eem:auto_generated|sign_div_unsign_olh:divider|alt_u_div_i2f:divider|StageOut[141]~47                       ; 1       ;
-; Digit_Converter:DUT3|lpm_divide:Div0|lpm_divide_eem:auto_generated|sign_div_unsign_olh:divider|alt_u_div_i2f:divider|StageOut[141]~46                       ; 1       ;
-; Digit_Converter:DUT3|lpm_divide:Div0|lpm_divide_eem:auto_generated|sign_div_unsign_olh:divider|alt_u_div_i2f:divider|StageOut[142]~45                       ; 1       ;
-; Digit_Converter:DUT3|lpm_divide:Div0|lpm_divide_eem:auto_generated|sign_div_unsign_olh:divider|alt_u_div_i2f:divider|StageOut[143]~44                       ; 1       ;
-; Digit_Converter:DUT3|lpm_divide:Div0|lpm_divide_eem:auto_generated|sign_div_unsign_olh:divider|alt_u_div_i2f:divider|StageOut[135]~43                       ; 1       ;
-; Digit_Converter:DUT3|lpm_divide:Div0|lpm_divide_eem:auto_generated|sign_div_unsign_olh:divider|alt_u_div_i2f:divider|StageOut[135]~42                       ; 1       ;
-; Digit_Converter:DUT3|lpm_divide:Div0|lpm_divide_eem:auto_generated|sign_div_unsign_olh:divider|alt_u_div_i2f:divider|StageOut[136]~41                       ; 1       ;
-; Digit_Converter:DUT3|lpm_divide:Div0|lpm_divide_eem:auto_generated|sign_div_unsign_olh:divider|alt_u_div_i2f:divider|StageOut[136]~40                       ; 1       ;
-; Digit_Converter:DUT3|lpm_divide:Div0|lpm_divide_eem:auto_generated|sign_div_unsign_olh:divider|alt_u_div_i2f:divider|StageOut[137]~39                       ; 1       ;
-; Digit_Converter:DUT3|lpm_divide:Div0|lpm_divide_eem:auto_generated|sign_div_unsign_olh:divider|alt_u_div_i2f:divider|StageOut[137]~38                       ; 1       ;
-; Digit_Converter:DUT3|lpm_divide:Div0|lpm_divide_eem:auto_generated|sign_div_unsign_olh:divider|alt_u_div_i2f:divider|StageOut[138]~37                       ; 1       ;
-; Digit_Converter:DUT3|lpm_divide:Div0|lpm_divide_eem:auto_generated|sign_div_unsign_olh:divider|alt_u_div_i2f:divider|StageOut[138]~36                       ; 1       ;
+; Digit_Converter:DUT3|lpm_divide:Div0|lpm_divide_eem:auto_generated|sign_div_unsign_olh:divider|alt_u_div_i2f:divider|StageOut[150]~92                       ; 1       ;
+; Digit_Converter:DUT3|lpm_divide:Div0|lpm_divide_eem:auto_generated|sign_div_unsign_olh:divider|alt_u_div_i2f:divider|StageOut[150]~91                       ; 1       ;
+; Digit_Converter:DUT3|lpm_divide:Div0|lpm_divide_eem:auto_generated|sign_div_unsign_olh:divider|alt_u_div_i2f:divider|StageOut[151]~90                       ; 1       ;
+; Digit_Converter:DUT3|lpm_divide:Div0|lpm_divide_eem:auto_generated|sign_div_unsign_olh:divider|alt_u_div_i2f:divider|StageOut[151]~89                       ; 1       ;
+; Digit_Converter:DUT3|lpm_divide:Div0|lpm_divide_eem:auto_generated|sign_div_unsign_olh:divider|alt_u_div_i2f:divider|StageOut[152]~88                       ; 1       ;
+; Digit_Converter:DUT3|lpm_divide:Div0|lpm_divide_eem:auto_generated|sign_div_unsign_olh:divider|alt_u_div_i2f:divider|StageOut[153]~87                       ; 1       ;
+; Digit_Converter:DUT3|lpm_divide:Div0|lpm_divide_eem:auto_generated|sign_div_unsign_olh:divider|alt_u_div_i2f:divider|StageOut[145]~86                       ; 1       ;
+; Digit_Converter:DUT3|lpm_divide:Div0|lpm_divide_eem:auto_generated|sign_div_unsign_olh:divider|alt_u_div_i2f:divider|StageOut[145]~85                       ; 1       ;
+; Digit_Converter:DUT3|lpm_divide:Div0|lpm_divide_eem:auto_generated|sign_div_unsign_olh:divider|alt_u_div_i2f:divider|StageOut[146]~84                       ; 1       ;
+; Digit_Converter:DUT3|lpm_divide:Div0|lpm_divide_eem:auto_generated|sign_div_unsign_olh:divider|alt_u_div_i2f:divider|StageOut[146]~83                       ; 1       ;
+; Digit_Converter:DUT3|lpm_divide:Div0|lpm_divide_eem:auto_generated|sign_div_unsign_olh:divider|alt_u_div_i2f:divider|StageOut[147]~82                       ; 1       ;
+; Digit_Converter:DUT3|lpm_divide:Div0|lpm_divide_eem:auto_generated|sign_div_unsign_olh:divider|alt_u_div_i2f:divider|StageOut[148]~81                       ; 1       ;
+; Digit_Converter:DUT3|lpm_divide:Div0|lpm_divide_eem:auto_generated|sign_div_unsign_olh:divider|alt_u_div_i2f:divider|StageOut[140]~80                       ; 1       ;
+; Digit_Converter:DUT3|lpm_divide:Div0|lpm_divide_eem:auto_generated|sign_div_unsign_olh:divider|alt_u_div_i2f:divider|StageOut[140]~79                       ; 1       ;
+; Digit_Converter:DUT3|lpm_divide:Div0|lpm_divide_eem:auto_generated|sign_div_unsign_olh:divider|alt_u_div_i2f:divider|StageOut[141]~78                       ; 1       ;
+; Digit_Converter:DUT3|lpm_divide:Div0|lpm_divide_eem:auto_generated|sign_div_unsign_olh:divider|alt_u_div_i2f:divider|StageOut[141]~77                       ; 1       ;
+; Digit_Converter:DUT3|lpm_divide:Div0|lpm_divide_eem:auto_generated|sign_div_unsign_olh:divider|alt_u_div_i2f:divider|StageOut[142]~76                       ; 1       ;
+; Digit_Converter:DUT3|lpm_divide:Div0|lpm_divide_eem:auto_generated|sign_div_unsign_olh:divider|alt_u_div_i2f:divider|StageOut[143]~75                       ; 1       ;
+; Digit_Converter:DUT3|lpm_divide:Div0|lpm_divide_eem:auto_generated|sign_div_unsign_olh:divider|alt_u_div_i2f:divider|StageOut[135]~74                       ; 1       ;
+; Digit_Converter:DUT3|lpm_divide:Div0|lpm_divide_eem:auto_generated|sign_div_unsign_olh:divider|alt_u_div_i2f:divider|StageOut[135]~73                       ; 1       ;
+; Digit_Converter:DUT3|lpm_divide:Div0|lpm_divide_eem:auto_generated|sign_div_unsign_olh:divider|alt_u_div_i2f:divider|StageOut[136]~72                       ; 1       ;
+; Digit_Converter:DUT3|lpm_divide:Div0|lpm_divide_eem:auto_generated|sign_div_unsign_olh:divider|alt_u_div_i2f:divider|StageOut[136]~71                       ; 1       ;
+; Digit_Converter:DUT3|lpm_divide:Div0|lpm_divide_eem:auto_generated|sign_div_unsign_olh:divider|alt_u_div_i2f:divider|StageOut[137]~70                       ; 1       ;
+; Digit_Converter:DUT3|lpm_divide:Div0|lpm_divide_eem:auto_generated|sign_div_unsign_olh:divider|alt_u_div_i2f:divider|StageOut[138]~69                       ; 1       ;
+; Digit_Converter:DUT3|lpm_divide:Div0|lpm_divide_eem:auto_generated|sign_div_unsign_olh:divider|alt_u_div_i2f:divider|StageOut[130]~68                       ; 1       ;
+; Digit_Converter:DUT3|lpm_divide:Div0|lpm_divide_eem:auto_generated|sign_div_unsign_olh:divider|alt_u_div_i2f:divider|StageOut[130]~67                       ; 1       ;
+; Digit_Converter:DUT3|lpm_divide:Div0|lpm_divide_eem:auto_generated|sign_div_unsign_olh:divider|alt_u_div_i2f:divider|StageOut[131]~66                       ; 1       ;
+; Digit_Converter:DUT3|lpm_divide:Div0|lpm_divide_eem:auto_generated|sign_div_unsign_olh:divider|alt_u_div_i2f:divider|StageOut[131]~65                       ; 1       ;
+; Digit_Converter:DUT3|lpm_divide:Div0|lpm_divide_eem:auto_generated|sign_div_unsign_olh:divider|alt_u_div_i2f:divider|StageOut[132]~64                       ; 1       ;
+; Digit_Converter:DUT3|lpm_divide:Div0|lpm_divide_eem:auto_generated|sign_div_unsign_olh:divider|alt_u_div_i2f:divider|StageOut[133]~63                       ; 1       ;
+; Digit_Converter:DUT3|lpm_divide:Div0|lpm_divide_eem:auto_generated|sign_div_unsign_olh:divider|alt_u_div_i2f:divider|StageOut[125]~62                       ; 1       ;
+; Digit_Converter:DUT3|lpm_divide:Div0|lpm_divide_eem:auto_generated|sign_div_unsign_olh:divider|alt_u_div_i2f:divider|StageOut[125]~61                       ; 1       ;
+; Digit_Converter:DUT3|lpm_divide:Div0|lpm_divide_eem:auto_generated|sign_div_unsign_olh:divider|alt_u_div_i2f:divider|StageOut[126]~60                       ; 1       ;
+; Digit_Converter:DUT3|lpm_divide:Div0|lpm_divide_eem:auto_generated|sign_div_unsign_olh:divider|alt_u_div_i2f:divider|StageOut[126]~59                       ; 1       ;
+; Digit_Converter:DUT3|lpm_divide:Div0|lpm_divide_eem:auto_generated|sign_div_unsign_olh:divider|alt_u_div_i2f:divider|StageOut[127]~58                       ; 1       ;
+; Digit_Converter:DUT3|lpm_divide:Div0|lpm_divide_eem:auto_generated|sign_div_unsign_olh:divider|alt_u_div_i2f:divider|StageOut[128]~56                       ; 1       ;
+; Digit_Converter:DUT3|lpm_divide:Div0|lpm_divide_eem:auto_generated|sign_div_unsign_olh:divider|alt_u_div_i2f:divider|StageOut[128]~55                       ; 1       ;
+; Digit_Converter:DUT3|lpm_divide:Div0|lpm_divide_eem:auto_generated|sign_div_unsign_olh:divider|alt_u_div_i2f:divider|StageOut[120]~54                       ; 1       ;
+; Digit_Converter:DUT3|lpm_divide:Div0|lpm_divide_eem:auto_generated|sign_div_unsign_olh:divider|alt_u_div_i2f:divider|StageOut[120]~53                       ; 1       ;
+; Digit_Converter:DUT3|lpm_divide:Div0|lpm_divide_eem:auto_generated|sign_div_unsign_olh:divider|alt_u_div_i2f:divider|StageOut[121]~52                       ; 1       ;
+; Digit_Converter:DUT3|lpm_divide:Div0|lpm_divide_eem:auto_generated|sign_div_unsign_olh:divider|alt_u_div_i2f:divider|StageOut[123]~51                       ; 1       ;
 ; Digit_Converter:DUT3|BCD:DUT2|WideOr0~0                                                                                                                     ; 1       ;
 ; Digit_Converter:DUT3|BCD:DUT2|WideOr1~0                                                                                                                     ; 1       ;
 ; Digit_Converter:DUT3|BCD:DUT2|WideOr2~0                                                                                                                     ; 1       ;
@@ -1536,24 +1568,30 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Digit_Converter:DUT3|BCD:DUT2|WideOr6~0                                                                                                                     ; 1       ;
 ; Digit_Converter:DUT3|Distance_Units[3]~4                                                                                                                    ; 1       ;
 ; Digit_Converter:DUT3|Distance_Units[2]~2                                                                                                                    ; 1       ;
-; Digit_Converter:DUT3|lpm_divide:Mod0|lpm_divide_35m:auto_generated|sign_div_unsign_akh:divider|alt_u_div_mve:divider|StageOut[26]~45                        ; 1       ;
-; Digit_Converter:DUT3|lpm_divide:Mod0|lpm_divide_35m:auto_generated|sign_div_unsign_akh:divider|alt_u_div_mve:divider|StageOut[26]~44                        ; 1       ;
-; Digit_Converter:DUT3|lpm_divide:Mod0|lpm_divide_35m:auto_generated|sign_div_unsign_akh:divider|alt_u_div_mve:divider|StageOut[27]~43                        ; 1       ;
-; Digit_Converter:DUT3|lpm_divide:Mod0|lpm_divide_35m:auto_generated|sign_div_unsign_akh:divider|alt_u_div_mve:divider|StageOut[28]~42                        ; 1       ;
-; Digit_Converter:DUT3|lpm_divide:Mod0|lpm_divide_35m:auto_generated|sign_div_unsign_akh:divider|alt_u_div_mve:divider|StageOut[25]~41                        ; 1       ;
-; Digit_Converter:DUT3|lpm_divide:Mod0|lpm_divide_35m:auto_generated|sign_div_unsign_akh:divider|alt_u_div_mve:divider|StageOut[25]~40                        ; 1       ;
-; Digit_Converter:DUT3|lpm_divide:Mod0|lpm_divide_35m:auto_generated|sign_div_unsign_akh:divider|alt_u_div_mve:divider|StageOut[20]~39                        ; 1       ;
-; Digit_Converter:DUT3|lpm_divide:Mod0|lpm_divide_35m:auto_generated|sign_div_unsign_akh:divider|alt_u_div_mve:divider|StageOut[20]~38                        ; 1       ;
-; Digit_Converter:DUT3|lpm_divide:Mod0|lpm_divide_35m:auto_generated|sign_div_unsign_akh:divider|alt_u_div_mve:divider|StageOut[22]~35                        ; 1       ;
-; Digit_Converter:DUT3|lpm_divide:Mod0|lpm_divide_35m:auto_generated|sign_div_unsign_akh:divider|alt_u_div_mve:divider|StageOut[23]~34                        ; 1       ;
-; Digit_Converter:DUT3|lpm_divide:Mod0|lpm_divide_35m:auto_generated|sign_div_unsign_akh:divider|alt_u_div_mve:divider|StageOut[15]~33                        ; 1       ;
-; Digit_Converter:DUT3|lpm_divide:Mod0|lpm_divide_35m:auto_generated|sign_div_unsign_akh:divider|alt_u_div_mve:divider|StageOut[15]~32                        ; 1       ;
-; Digit_Converter:DUT3|lpm_divide:Mod0|lpm_divide_35m:auto_generated|sign_div_unsign_akh:divider|alt_u_div_mve:divider|StageOut[16]~31                        ; 1       ;
-; Digit_Converter:DUT3|lpm_divide:Mod0|lpm_divide_35m:auto_generated|sign_div_unsign_akh:divider|alt_u_div_mve:divider|StageOut[16]~30                        ; 1       ;
-; Digit_Converter:DUT3|lpm_divide:Mod0|lpm_divide_35m:auto_generated|sign_div_unsign_akh:divider|alt_u_div_mve:divider|StageOut[17]~29                        ; 1       ;
-; Digit_Converter:DUT3|lpm_divide:Mod0|lpm_divide_35m:auto_generated|sign_div_unsign_akh:divider|alt_u_div_mve:divider|StageOut[17]~28                        ; 1       ;
-; Digit_Converter:DUT3|lpm_divide:Mod0|lpm_divide_35m:auto_generated|sign_div_unsign_akh:divider|alt_u_div_mve:divider|StageOut[18]~27                        ; 1       ;
-; Digit_Converter:DUT3|lpm_divide:Mod0|lpm_divide_35m:auto_generated|sign_div_unsign_akh:divider|alt_u_div_mve:divider|StageOut[18]~26                        ; 1       ;
+; Digit_Converter:DUT3|lpm_divide:Mod0|lpm_divide_45m:auto_generated|sign_div_unsign_bkh:divider|alt_u_div_ove:divider|StageOut[31]~61                        ; 1       ;
+; Digit_Converter:DUT3|lpm_divide:Mod0|lpm_divide_45m:auto_generated|sign_div_unsign_bkh:divider|alt_u_div_ove:divider|StageOut[31]~60                        ; 1       ;
+; Digit_Converter:DUT3|lpm_divide:Mod0|lpm_divide_45m:auto_generated|sign_div_unsign_bkh:divider|alt_u_div_ove:divider|StageOut[32]~59                        ; 1       ;
+; Digit_Converter:DUT3|lpm_divide:Mod0|lpm_divide_45m:auto_generated|sign_div_unsign_bkh:divider|alt_u_div_ove:divider|StageOut[33]~58                        ; 1       ;
+; Digit_Converter:DUT3|lpm_divide:Mod0|lpm_divide_45m:auto_generated|sign_div_unsign_bkh:divider|alt_u_div_ove:divider|StageOut[30]~57                        ; 1       ;
+; Digit_Converter:DUT3|lpm_divide:Mod0|lpm_divide_45m:auto_generated|sign_div_unsign_bkh:divider|alt_u_div_ove:divider|StageOut[30]~56                        ; 1       ;
+; Digit_Converter:DUT3|lpm_divide:Mod0|lpm_divide_45m:auto_generated|sign_div_unsign_bkh:divider|alt_u_div_ove:divider|StageOut[25]~55                        ; 1       ;
+; Digit_Converter:DUT3|lpm_divide:Mod0|lpm_divide_45m:auto_generated|sign_div_unsign_bkh:divider|alt_u_div_ove:divider|StageOut[25]~54                        ; 1       ;
+; Digit_Converter:DUT3|lpm_divide:Mod0|lpm_divide_45m:auto_generated|sign_div_unsign_bkh:divider|alt_u_div_ove:divider|StageOut[27]~51                        ; 1       ;
+; Digit_Converter:DUT3|lpm_divide:Mod0|lpm_divide_45m:auto_generated|sign_div_unsign_bkh:divider|alt_u_div_ove:divider|StageOut[28]~50                        ; 1       ;
+; Digit_Converter:DUT3|lpm_divide:Mod0|lpm_divide_45m:auto_generated|sign_div_unsign_bkh:divider|alt_u_div_ove:divider|StageOut[20]~49                        ; 1       ;
+; Digit_Converter:DUT3|lpm_divide:Mod0|lpm_divide_45m:auto_generated|sign_div_unsign_bkh:divider|alt_u_div_ove:divider|StageOut[20]~48                        ; 1       ;
+; Digit_Converter:DUT3|lpm_divide:Mod0|lpm_divide_45m:auto_generated|sign_div_unsign_bkh:divider|alt_u_div_ove:divider|StageOut[21]~47                        ; 1       ;
+; Digit_Converter:DUT3|lpm_divide:Mod0|lpm_divide_45m:auto_generated|sign_div_unsign_bkh:divider|alt_u_div_ove:divider|StageOut[21]~46                        ; 1       ;
+; Digit_Converter:DUT3|lpm_divide:Mod0|lpm_divide_45m:auto_generated|sign_div_unsign_bkh:divider|alt_u_div_ove:divider|StageOut[22]~45                        ; 1       ;
+; Digit_Converter:DUT3|lpm_divide:Mod0|lpm_divide_45m:auto_generated|sign_div_unsign_bkh:divider|alt_u_div_ove:divider|StageOut[23]~44                        ; 1       ;
+; Digit_Converter:DUT3|lpm_divide:Mod0|lpm_divide_45m:auto_generated|sign_div_unsign_bkh:divider|alt_u_div_ove:divider|StageOut[15]~43                        ; 1       ;
+; Digit_Converter:DUT3|lpm_divide:Mod0|lpm_divide_45m:auto_generated|sign_div_unsign_bkh:divider|alt_u_div_ove:divider|StageOut[15]~42                        ; 1       ;
+; Digit_Converter:DUT3|lpm_divide:Mod0|lpm_divide_45m:auto_generated|sign_div_unsign_bkh:divider|alt_u_div_ove:divider|StageOut[16]~41                        ; 1       ;
+; Digit_Converter:DUT3|lpm_divide:Mod0|lpm_divide_45m:auto_generated|sign_div_unsign_bkh:divider|alt_u_div_ove:divider|StageOut[16]~40                        ; 1       ;
+; Digit_Converter:DUT3|lpm_divide:Mod0|lpm_divide_45m:auto_generated|sign_div_unsign_bkh:divider|alt_u_div_ove:divider|StageOut[17]~39                        ; 1       ;
+; Digit_Converter:DUT3|lpm_divide:Mod0|lpm_divide_45m:auto_generated|sign_div_unsign_bkh:divider|alt_u_div_ove:divider|StageOut[17]~38                        ; 1       ;
+; Digit_Converter:DUT3|lpm_divide:Mod0|lpm_divide_45m:auto_generated|sign_div_unsign_bkh:divider|alt_u_div_ove:divider|StageOut[18]~37                        ; 1       ;
+; Digit_Converter:DUT3|lpm_divide:Mod0|lpm_divide_45m:auto_generated|sign_div_unsign_bkh:divider|alt_u_div_ove:divider|StageOut[18]~36                        ; 1       ;
 ; Sensor_Controller:DUT2|Trigger                                                                                                                              ; 1       ;
 ; Sensor_Controller:DUT2|Counter[19]~59                                                                                                                       ; 1       ;
 ; Sensor_Controller:DUT2|Counter[18]~58                                                                                                                       ; 1       ;
@@ -1800,6 +1838,21 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Digit_Converter:DUT3|lpm_divide:Div0|lpm_divide_eem:auto_generated|sign_div_unsign_olh:divider|alt_u_div_i2f:divider|add_sub_27_result_int[3]~4             ; 1       ;
 ; Digit_Converter:DUT3|lpm_divide:Div0|lpm_divide_eem:auto_generated|sign_div_unsign_olh:divider|alt_u_div_i2f:divider|add_sub_27_result_int[2]~3             ; 1       ;
 ; Digit_Converter:DUT3|lpm_divide:Div0|lpm_divide_eem:auto_generated|sign_div_unsign_olh:divider|alt_u_div_i2f:divider|add_sub_27_result_int[1]~1             ; 1       ;
+; Digit_Converter:DUT3|lpm_divide:Div0|lpm_divide_eem:auto_generated|sign_div_unsign_olh:divider|alt_u_div_i2f:divider|add_sub_26_result_int[4]~7             ; 1       ;
+; Digit_Converter:DUT3|lpm_divide:Div0|lpm_divide_eem:auto_generated|sign_div_unsign_olh:divider|alt_u_div_i2f:divider|add_sub_26_result_int[3]~5             ; 1       ;
+; Digit_Converter:DUT3|lpm_divide:Div0|lpm_divide_eem:auto_generated|sign_div_unsign_olh:divider|alt_u_div_i2f:divider|add_sub_26_result_int[3]~4             ; 1       ;
+; Digit_Converter:DUT3|lpm_divide:Div0|lpm_divide_eem:auto_generated|sign_div_unsign_olh:divider|alt_u_div_i2f:divider|add_sub_26_result_int[2]~3             ; 1       ;
+; Digit_Converter:DUT3|lpm_divide:Div0|lpm_divide_eem:auto_generated|sign_div_unsign_olh:divider|alt_u_div_i2f:divider|add_sub_26_result_int[1]~1             ; 1       ;
+; Digit_Converter:DUT3|lpm_divide:Div0|lpm_divide_eem:auto_generated|sign_div_unsign_olh:divider|alt_u_div_i2f:divider|add_sub_25_result_int[4]~7             ; 1       ;
+; Digit_Converter:DUT3|lpm_divide:Div0|lpm_divide_eem:auto_generated|sign_div_unsign_olh:divider|alt_u_div_i2f:divider|add_sub_25_result_int[3]~5             ; 1       ;
+; Digit_Converter:DUT3|lpm_divide:Div0|lpm_divide_eem:auto_generated|sign_div_unsign_olh:divider|alt_u_div_i2f:divider|add_sub_25_result_int[3]~4             ; 1       ;
+; Digit_Converter:DUT3|lpm_divide:Div0|lpm_divide_eem:auto_generated|sign_div_unsign_olh:divider|alt_u_div_i2f:divider|add_sub_25_result_int[2]~3             ; 1       ;
+; Digit_Converter:DUT3|lpm_divide:Div0|lpm_divide_eem:auto_generated|sign_div_unsign_olh:divider|alt_u_div_i2f:divider|add_sub_25_result_int[1]~1             ; 1       ;
+; Digit_Converter:DUT3|lpm_divide:Div0|lpm_divide_eem:auto_generated|sign_div_unsign_olh:divider|alt_u_div_i2f:divider|op_16~5                                ; 1       ;
+; Digit_Converter:DUT3|lpm_divide:Div0|lpm_divide_eem:auto_generated|sign_div_unsign_olh:divider|alt_u_div_i2f:divider|op_16~4                                ; 1       ;
+; Digit_Converter:DUT3|lpm_divide:Div0|lpm_divide_eem:auto_generated|sign_div_unsign_olh:divider|alt_u_div_i2f:divider|op_16~3                                ; 1       ;
+; Digit_Converter:DUT3|lpm_divide:Div0|lpm_divide_eem:auto_generated|sign_div_unsign_olh:divider|alt_u_div_i2f:divider|op_16~1                                ; 1       ;
+; Digit_Converter:DUT3|Add0~15                                                                                                                                ; 1       ;
 ; Digit_Converter:DUT3|Add0~13                                                                                                                                ; 1       ;
 ; Digit_Converter:DUT3|Add0~11                                                                                                                                ; 1       ;
 ; Digit_Converter:DUT3|Add0~9                                                                                                                                 ; 1       ;
@@ -1807,27 +1860,32 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Digit_Converter:DUT3|Add0~5                                                                                                                                 ; 1       ;
 ; Digit_Converter:DUT3|Add0~3                                                                                                                                 ; 1       ;
 ; Digit_Converter:DUT3|Add0~1                                                                                                                                 ; 1       ;
-; Digit_Converter:DUT3|lpm_divide:Mod0|lpm_divide_35m:auto_generated|sign_div_unsign_akh:divider|alt_u_div_mve:divider|add_sub_6_result_int[4]~7              ; 1       ;
-; Digit_Converter:DUT3|lpm_divide:Mod0|lpm_divide_35m:auto_generated|sign_div_unsign_akh:divider|alt_u_div_mve:divider|add_sub_6_result_int[3]~5              ; 1       ;
-; Digit_Converter:DUT3|lpm_divide:Mod0|lpm_divide_35m:auto_generated|sign_div_unsign_akh:divider|alt_u_div_mve:divider|add_sub_6_result_int[3]~4              ; 1       ;
-; Digit_Converter:DUT3|lpm_divide:Mod0|lpm_divide_35m:auto_generated|sign_div_unsign_akh:divider|alt_u_div_mve:divider|add_sub_6_result_int[2]~3              ; 1       ;
-; Digit_Converter:DUT3|lpm_divide:Mod0|lpm_divide_35m:auto_generated|sign_div_unsign_akh:divider|alt_u_div_mve:divider|add_sub_6_result_int[2]~2              ; 1       ;
-; Digit_Converter:DUT3|lpm_divide:Mod0|lpm_divide_35m:auto_generated|sign_div_unsign_akh:divider|alt_u_div_mve:divider|add_sub_6_result_int[1]~1              ; 1       ;
-; Digit_Converter:DUT3|lpm_divide:Mod0|lpm_divide_35m:auto_generated|sign_div_unsign_akh:divider|alt_u_div_mve:divider|add_sub_6_result_int[1]~0              ; 1       ;
-; Digit_Converter:DUT3|lpm_divide:Mod0|lpm_divide_35m:auto_generated|sign_div_unsign_akh:divider|alt_u_div_mve:divider|add_sub_5_result_int[4]~7              ; 1       ;
-; Digit_Converter:DUT3|lpm_divide:Mod0|lpm_divide_35m:auto_generated|sign_div_unsign_akh:divider|alt_u_div_mve:divider|add_sub_5_result_int[3]~5              ; 1       ;
-; Digit_Converter:DUT3|lpm_divide:Mod0|lpm_divide_35m:auto_generated|sign_div_unsign_akh:divider|alt_u_div_mve:divider|add_sub_5_result_int[3]~4              ; 1       ;
-; Digit_Converter:DUT3|lpm_divide:Mod0|lpm_divide_35m:auto_generated|sign_div_unsign_akh:divider|alt_u_div_mve:divider|add_sub_5_result_int[2]~3              ; 1       ;
-; Digit_Converter:DUT3|lpm_divide:Mod0|lpm_divide_35m:auto_generated|sign_div_unsign_akh:divider|alt_u_div_mve:divider|add_sub_5_result_int[1]~1              ; 1       ;
-; Digit_Converter:DUT3|lpm_divide:Mod0|lpm_divide_35m:auto_generated|sign_div_unsign_akh:divider|alt_u_div_mve:divider|add_sub_4_result_int[4]~7              ; 1       ;
-; Digit_Converter:DUT3|lpm_divide:Mod0|lpm_divide_35m:auto_generated|sign_div_unsign_akh:divider|alt_u_div_mve:divider|add_sub_4_result_int[3]~5              ; 1       ;
-; Digit_Converter:DUT3|lpm_divide:Mod0|lpm_divide_35m:auto_generated|sign_div_unsign_akh:divider|alt_u_div_mve:divider|add_sub_4_result_int[3]~4              ; 1       ;
-; Digit_Converter:DUT3|lpm_divide:Mod0|lpm_divide_35m:auto_generated|sign_div_unsign_akh:divider|alt_u_div_mve:divider|add_sub_4_result_int[2]~3              ; 1       ;
-; Digit_Converter:DUT3|lpm_divide:Mod0|lpm_divide_35m:auto_generated|sign_div_unsign_akh:divider|alt_u_div_mve:divider|add_sub_4_result_int[1]~1              ; 1       ;
-; Digit_Converter:DUT3|lpm_divide:Mod0|lpm_divide_35m:auto_generated|sign_div_unsign_akh:divider|alt_u_div_mve:divider|add_sub_3_result_int[3]~5              ; 1       ;
-; Digit_Converter:DUT3|lpm_divide:Mod0|lpm_divide_35m:auto_generated|sign_div_unsign_akh:divider|alt_u_div_mve:divider|add_sub_3_result_int[3]~4              ; 1       ;
-; Digit_Converter:DUT3|lpm_divide:Mod0|lpm_divide_35m:auto_generated|sign_div_unsign_akh:divider|alt_u_div_mve:divider|add_sub_3_result_int[2]~3              ; 1       ;
-; Digit_Converter:DUT3|lpm_divide:Mod0|lpm_divide_35m:auto_generated|sign_div_unsign_akh:divider|alt_u_div_mve:divider|add_sub_3_result_int[1]~1              ; 1       ;
+; Digit_Converter:DUT3|lpm_divide:Mod0|lpm_divide_45m:auto_generated|sign_div_unsign_bkh:divider|alt_u_div_ove:divider|add_sub_7_result_int[4]~7              ; 1       ;
+; Digit_Converter:DUT3|lpm_divide:Mod0|lpm_divide_45m:auto_generated|sign_div_unsign_bkh:divider|alt_u_div_ove:divider|add_sub_7_result_int[3]~5              ; 1       ;
+; Digit_Converter:DUT3|lpm_divide:Mod0|lpm_divide_45m:auto_generated|sign_div_unsign_bkh:divider|alt_u_div_ove:divider|add_sub_7_result_int[3]~4              ; 1       ;
+; Digit_Converter:DUT3|lpm_divide:Mod0|lpm_divide_45m:auto_generated|sign_div_unsign_bkh:divider|alt_u_div_ove:divider|add_sub_7_result_int[2]~3              ; 1       ;
+; Digit_Converter:DUT3|lpm_divide:Mod0|lpm_divide_45m:auto_generated|sign_div_unsign_bkh:divider|alt_u_div_ove:divider|add_sub_7_result_int[2]~2              ; 1       ;
+; Digit_Converter:DUT3|lpm_divide:Mod0|lpm_divide_45m:auto_generated|sign_div_unsign_bkh:divider|alt_u_div_ove:divider|add_sub_7_result_int[1]~1              ; 1       ;
+; Digit_Converter:DUT3|lpm_divide:Mod0|lpm_divide_45m:auto_generated|sign_div_unsign_bkh:divider|alt_u_div_ove:divider|add_sub_7_result_int[1]~0              ; 1       ;
+; Digit_Converter:DUT3|lpm_divide:Mod0|lpm_divide_45m:auto_generated|sign_div_unsign_bkh:divider|alt_u_div_ove:divider|add_sub_6_result_int[4]~7              ; 1       ;
+; Digit_Converter:DUT3|lpm_divide:Mod0|lpm_divide_45m:auto_generated|sign_div_unsign_bkh:divider|alt_u_div_ove:divider|add_sub_6_result_int[3]~5              ; 1       ;
+; Digit_Converter:DUT3|lpm_divide:Mod0|lpm_divide_45m:auto_generated|sign_div_unsign_bkh:divider|alt_u_div_ove:divider|add_sub_6_result_int[3]~4              ; 1       ;
+; Digit_Converter:DUT3|lpm_divide:Mod0|lpm_divide_45m:auto_generated|sign_div_unsign_bkh:divider|alt_u_div_ove:divider|add_sub_6_result_int[2]~3              ; 1       ;
+; Digit_Converter:DUT3|lpm_divide:Mod0|lpm_divide_45m:auto_generated|sign_div_unsign_bkh:divider|alt_u_div_ove:divider|add_sub_6_result_int[1]~1              ; 1       ;
+; Digit_Converter:DUT3|lpm_divide:Mod0|lpm_divide_45m:auto_generated|sign_div_unsign_bkh:divider|alt_u_div_ove:divider|add_sub_5_result_int[4]~7              ; 1       ;
+; Digit_Converter:DUT3|lpm_divide:Mod0|lpm_divide_45m:auto_generated|sign_div_unsign_bkh:divider|alt_u_div_ove:divider|add_sub_5_result_int[3]~5              ; 1       ;
+; Digit_Converter:DUT3|lpm_divide:Mod0|lpm_divide_45m:auto_generated|sign_div_unsign_bkh:divider|alt_u_div_ove:divider|add_sub_5_result_int[3]~4              ; 1       ;
+; Digit_Converter:DUT3|lpm_divide:Mod0|lpm_divide_45m:auto_generated|sign_div_unsign_bkh:divider|alt_u_div_ove:divider|add_sub_5_result_int[2]~3              ; 1       ;
+; Digit_Converter:DUT3|lpm_divide:Mod0|lpm_divide_45m:auto_generated|sign_div_unsign_bkh:divider|alt_u_div_ove:divider|add_sub_5_result_int[1]~1              ; 1       ;
+; Digit_Converter:DUT3|lpm_divide:Mod0|lpm_divide_45m:auto_generated|sign_div_unsign_bkh:divider|alt_u_div_ove:divider|add_sub_4_result_int[4]~7              ; 1       ;
+; Digit_Converter:DUT3|lpm_divide:Mod0|lpm_divide_45m:auto_generated|sign_div_unsign_bkh:divider|alt_u_div_ove:divider|add_sub_4_result_int[3]~5              ; 1       ;
+; Digit_Converter:DUT3|lpm_divide:Mod0|lpm_divide_45m:auto_generated|sign_div_unsign_bkh:divider|alt_u_div_ove:divider|add_sub_4_result_int[3]~4              ; 1       ;
+; Digit_Converter:DUT3|lpm_divide:Mod0|lpm_divide_45m:auto_generated|sign_div_unsign_bkh:divider|alt_u_div_ove:divider|add_sub_4_result_int[2]~3              ; 1       ;
+; Digit_Converter:DUT3|lpm_divide:Mod0|lpm_divide_45m:auto_generated|sign_div_unsign_bkh:divider|alt_u_div_ove:divider|add_sub_4_result_int[1]~1              ; 1       ;
+; Digit_Converter:DUT3|lpm_divide:Mod0|lpm_divide_45m:auto_generated|sign_div_unsign_bkh:divider|alt_u_div_ove:divider|add_sub_3_result_int[3]~5              ; 1       ;
+; Digit_Converter:DUT3|lpm_divide:Mod0|lpm_divide_45m:auto_generated|sign_div_unsign_bkh:divider|alt_u_div_ove:divider|add_sub_3_result_int[3]~4              ; 1       ;
+; Digit_Converter:DUT3|lpm_divide:Mod0|lpm_divide_45m:auto_generated|sign_div_unsign_bkh:divider|alt_u_div_ove:divider|add_sub_3_result_int[2]~3              ; 1       ;
+; Digit_Converter:DUT3|lpm_divide:Mod0|lpm_divide_45m:auto_generated|sign_div_unsign_bkh:divider|alt_u_div_ove:divider|add_sub_3_result_int[1]~1              ; 1       ;
 +-------------------------------------------------------------------------------------------------------------------------------------------------------------+---------+
 
 
@@ -1836,48 +1894,48 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------------+------------------------+
 ; Other Routing Resource Type ; Usage                  ;
 +-----------------------------+------------------------+
-; Block interconnects         ; 634 / 54,004 ( 1 % )   ;
-; C16 interconnects           ; 2 / 2,100 ( < 1 % )    ;
-; C4 interconnects            ; 185 / 36,000 ( < 1 % ) ;
-; Direct links                ; 276 / 54,004 ( < 1 % ) ;
+; Block interconnects         ; 665 / 54,004 ( 1 % )   ;
+; C16 interconnects           ; 1 / 2,100 ( < 1 % )    ;
+; C4 interconnects            ; 184 / 36,000 ( < 1 % ) ;
+; Direct links                ; 298 / 54,004 ( < 1 % ) ;
 ; Global clocks               ; 2 / 16 ( 13 % )        ;
-; Local interconnects         ; 258 / 18,752 ( 1 % )   ;
-; R24 interconnects           ; 3 / 1,900 ( < 1 % )    ;
-; R4 interconnects            ; 289 / 46,920 ( < 1 % ) ;
+; Local interconnects         ; 283 / 18,752 ( 2 % )   ;
+; R24 interconnects           ; 2 / 1,900 ( < 1 % )    ;
+; R4 interconnects            ; 287 / 46,920 ( < 1 % ) ;
 +-----------------------------+------------------------+
 
 
 +----------------------------------------------------------------------------+
 ; LAB Logic Elements                                                         ;
 +---------------------------------------------+------------------------------+
-; Number of Logic Elements  (Average = 12.70) ; Number of LABs  (Total = 46) ;
+; Number of Logic Elements  (Average = 13.19) ; Number of LABs  (Total = 48) ;
 +---------------------------------------------+------------------------------+
-; 1                                           ; 2                            ;
+; 1                                           ; 1                            ;
 ; 2                                           ; 2                            ;
-; 3                                           ; 1                            ;
-; 4                                           ; 0                            ;
-; 5                                           ; 0                            ;
-; 6                                           ; 2                            ;
-; 7                                           ; 2                            ;
-; 8                                           ; 1                            ;
-; 9                                           ; 1                            ;
-; 10                                          ; 1                            ;
-; 11                                          ; 3                            ;
+; 3                                           ; 0                            ;
+; 4                                           ; 1                            ;
+; 5                                           ; 1                            ;
+; 6                                           ; 1                            ;
+; 7                                           ; 1                            ;
+; 8                                           ; 0                            ;
+; 9                                           ; 0                            ;
+; 10                                          ; 3                            ;
+; 11                                          ; 5                            ;
 ; 12                                          ; 0                            ;
-; 13                                          ; 0                            ;
-; 14                                          ; 2                            ;
-; 15                                          ; 3                            ;
-; 16                                          ; 26                           ;
+; 13                                          ; 1                            ;
+; 14                                          ; 1                            ;
+; 15                                          ; 2                            ;
+; 16                                          ; 29                           ;
 +---------------------------------------------+------------------------------+
 
 
 +-------------------------------------------------------------------+
 ; LAB-wide Signals                                                  ;
 +------------------------------------+------------------------------+
-; LAB-wide Signals  (Average = 0.33) ; Number of LABs  (Total = 46) ;
+; LAB-wide Signals  (Average = 0.31) ; Number of LABs  (Total = 48) ;
 +------------------------------------+------------------------------+
-; 1 Clock                            ; 6                            ;
-; 1 Clock enable                     ; 2                            ;
+; 1 Clock                            ; 7                            ;
+; 1 Clock enable                     ; 1                            ;
 ; 1 Sync. clear                      ; 5                            ;
 ; 2 Clocks                           ; 2                            ;
 +------------------------------------+------------------------------+
@@ -1886,36 +1944,36 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------------------------------------------------------------+
 ; LAB Signals Sourced                                                         ;
 +----------------------------------------------+------------------------------+
-; Number of Signals Sourced  (Average = 13.11) ; Number of LABs  (Total = 46) ;
+; Number of Signals Sourced  (Average = 13.46) ; Number of LABs  (Total = 48) ;
 +----------------------------------------------+------------------------------+
 ; 0                                            ; 0                            ;
 ; 1                                            ; 1                            ;
 ; 2                                            ; 3                            ;
-; 3                                            ; 1                            ;
-; 4                                            ; 1                            ;
-; 5                                            ; 0                            ;
-; 6                                            ; 2                            ;
-; 7                                            ; 2                            ;
+; 3                                            ; 0                            ;
+; 4                                            ; 0                            ;
+; 5                                            ; 1                            ;
+; 6                                            ; 1                            ;
+; 7                                            ; 1                            ;
 ; 8                                            ; 0                            ;
-; 9                                            ; 0                            ;
-; 10                                           ; 1                            ;
-; 11                                           ; 4                            ;
-; 12                                           ; 0                            ;
-; 13                                           ; 4                            ;
+; 9                                            ; 1                            ;
+; 10                                           ; 3                            ;
+; 11                                           ; 3                            ;
+; 12                                           ; 1                            ;
+; 13                                           ; 1                            ;
 ; 14                                           ; 2                            ;
-; 15                                           ; 19                           ;
+; 15                                           ; 23                           ;
 ; 16                                           ; 1                            ;
-; 17                                           ; 0                            ;
-; 18                                           ; 0                            ;
+; 17                                           ; 1                            ;
+; 18                                           ; 1                            ;
 ; 19                                           ; 0                            ;
 ; 20                                           ; 0                            ;
-; 21                                           ; 0                            ;
-; 22                                           ; 1                            ;
+; 21                                           ; 1                            ;
+; 22                                           ; 0                            ;
 ; 23                                           ; 0                            ;
 ; 24                                           ; 0                            ;
 ; 25                                           ; 1                            ;
 ; 26                                           ; 1                            ;
-; 27                                           ; 1                            ;
+; 27                                           ; 0                            ;
 ; 28                                           ; 1                            ;
 +----------------------------------------------+------------------------------+
 
@@ -1923,64 +1981,63 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------------------------------------------------------------------+
 ; LAB Signals Sourced Out                                                        ;
 +-------------------------------------------------+------------------------------+
-; Number of Signals Sourced Out  (Average = 8.50) ; Number of LABs  (Total = 46) ;
+; Number of Signals Sourced Out  (Average = 8.88) ; Number of LABs  (Total = 48) ;
 +-------------------------------------------------+------------------------------+
 ; 0                                               ; 0                            ;
-; 1                                               ; 4                            ;
+; 1                                               ; 3                            ;
 ; 2                                               ; 2                            ;
-; 3                                               ; 3                            ;
-; 4                                               ; 0                            ;
-; 5                                               ; 0                            ;
-; 6                                               ; 5                            ;
-; 7                                               ; 5                            ;
-; 8                                               ; 4                            ;
-; 9                                               ; 6                            ;
-; 10                                              ; 7                            ;
-; 11                                              ; 2                            ;
-; 12                                              ; 0                            ;
-; 13                                              ; 4                            ;
+; 3                                               ; 2                            ;
+; 4                                               ; 2                            ;
+; 5                                               ; 1                            ;
+; 6                                               ; 3                            ;
+; 7                                               ; 3                            ;
+; 8                                               ; 5                            ;
+; 9                                               ; 5                            ;
+; 10                                              ; 8                            ;
+; 11                                              ; 6                            ;
+; 12                                              ; 2                            ;
+; 13                                              ; 1                            ;
 ; 14                                              ; 0                            ;
-; 15                                              ; 1                            ;
-; 16                                              ; 1                            ;
+; 15                                              ; 3                            ;
+; 16                                              ; 0                            ;
 ; 17                                              ; 0                            ;
 ; 18                                              ; 0                            ;
 ; 19                                              ; 0                            ;
 ; 20                                              ; 0                            ;
 ; 21                                              ; 0                            ;
-; 22                                              ; 1                            ;
-; 23                                              ; 0                            ;
+; 22                                              ; 0                            ;
+; 23                                              ; 1                            ;
 ; 24                                              ; 0                            ;
-; 25                                              ; 0                            ;
-; 26                                              ; 1                            ;
+; 25                                              ; 1                            ;
 +-------------------------------------------------+------------------------------+
 
 
 +-----------------------------------------------------------------------------+
 ; LAB Distinct Inputs                                                         ;
 +----------------------------------------------+------------------------------+
-; Number of Distinct Inputs  (Average = 11.61) ; Number of LABs  (Total = 46) ;
+; Number of Distinct Inputs  (Average = 11.88) ; Number of LABs  (Total = 48) ;
 +----------------------------------------------+------------------------------+
 ; 0                                            ; 0                            ;
 ; 1                                            ; 0                            ;
-; 2                                            ; 2                            ;
-; 3                                            ; 3                            ;
-; 4                                            ; 1                            ;
+; 2                                            ; 3                            ;
+; 3                                            ; 0                            ;
+; 4                                            ; 2                            ;
 ; 5                                            ; 1                            ;
-; 6                                            ; 4                            ;
-; 7                                            ; 0                            ;
-; 8                                            ; 6                            ;
-; 9                                            ; 1                            ;
-; 10                                           ; 4                            ;
+; 6                                            ; 1                            ;
+; 7                                            ; 1                            ;
+; 8                                            ; 8                            ;
+; 9                                            ; 2                            ;
+; 10                                           ; 2                            ;
 ; 11                                           ; 2                            ;
-; 12                                           ; 0                            ;
-; 13                                           ; 2                            ;
+; 12                                           ; 4                            ;
+; 13                                           ; 3                            ;
 ; 14                                           ; 2                            ;
-; 15                                           ; 0                            ;
-; 16                                           ; 6                            ;
-; 17                                           ; 5                            ;
-; 18                                           ; 2                            ;
-; 19                                           ; 2                            ;
-; 20                                           ; 3                            ;
+; 15                                           ; 3                            ;
+; 16                                           ; 1                            ;
+; 17                                           ; 4                            ;
+; 18                                           ; 3                            ;
+; 19                                           ; 4                            ;
+; 20                                           ; 2                            ;
 +----------------------------------------------+------------------------------+
 
 
@@ -2052,7 +2109,7 @@ Info (176353): Automatically promoted node CLK_Divider:DUT1|T_CLK
 Info (176233): Starting register packing
 Info (176235): Finished register packing
     Extra Info (176219): No registers were packed into other blocks
-Info (171121): Fitter preparation operations ending: elapsed time is 00:00:02
+Info (171121): Fitter preparation operations ending: elapsed time is 00:00:01
 Info (170189): Fitter placement preparation operations beginning
 Info (170190): Fitter placement preparation operations ending: elapsed time is 00:00:00
 Info (170191): Fitter placement operations beginning
@@ -2060,11 +2117,11 @@ Info (170137): Fitter placement was successful
 Info (170192): Fitter placement operations ending: elapsed time is 00:00:01
 Info (170193): Fitter routing operations beginning
 Info (170195): Router estimated average interconnect usage is 0% of the available device resources
-    Info (170196): Router estimated peak interconnect usage is 2% of the available device resources in the region that extends from location X12_Y14 to location X24_Y27
+    Info (170196): Router estimated peak interconnect usage is 1% of the available device resources in the region that extends from location X12_Y14 to location X24_Y27
 Info (170194): Fitter routing operations ending: elapsed time is 00:00:01
 Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info (170201): Optimizations that may affect the design's routability were skipped
-Info (11888): Total time spent on timing analysis during the Fitter is 0.36 seconds.
+Info (11888): Total time spent on timing analysis during the Fitter is 0.39 seconds.
 Info (306004): Started post-fitting delay annotation
 Warning (306006): Found 20 output pins without output pin load capacitance assignment
     Info (306007): Pin "T_CLK" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
@@ -2090,13 +2147,13 @@ Warning (306006): Found 20 output pins without output pin load capacitance assig
 Info (306005): Delay annotation completed successfully
 Info (306004): Started post-fitting delay annotation
 Info (306005): Delay annotation completed successfully
-Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:00
+Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:01
 Warning (169174): The Reserve All Unused Pins setting has not been specified, and will default to 'As output driving ground'.
 Info (144001): Generated suppressed messages file D:/Oana/Documents/Materiale Poli/GitHub/SecurityAlarmSys/output_files/Security_System.fit.smsg
 Info: Quartus II 64-Bit Fitter was successful. 0 errors, 6 warnings
-    Info: Peak virtual memory: 4888 megabytes
-    Info: Processing ended: Sat Jul 28 19:07:06 2018
-    Info: Elapsed time: 00:00:09
+    Info: Peak virtual memory: 4896 megabytes
+    Info: Processing ended: Sat Aug 04 19:43:54 2018
+    Info: Elapsed time: 00:00:05
     Info: Total CPU time (on all processors): 00:00:05
 
 
