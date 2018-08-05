@@ -70,9 +70,9 @@ Pin Name/Usage               : Location  : Dir.   : I/O Standard      : Voltage 
 -------------------------------------------------------------------------------------------------------------
 GND                          : A1        : gnd    :                   :         :           :                
 VCCIO3                       : A2        : power  :                   : 3.3V    : 3         :                
-I2C_Clock                    : A3        : output : 3.3-V LVTTL       :         : 3         : Y              
+I2C_Clock                    : A3        : bidir  : 3.3-V LVTTL       :         : 3         : Y              
 GND*                         : A4        :        :                   :         : 3         :                
-GND*                         : A5        :        :                   :         : 3         :                
+Sound_Trig                   : A5        : bidir  : 3.3-V LVTTL       :         : 3         : Y              
 GND*                         : A6        :        :                   :         : 3         :                
 GND*                         : A7        :        :                   :         : 3         :                
 GND*                         : A8        :        :                   :         : 3         :                
@@ -136,9 +136,9 @@ VCCIO7                       : AB21      : power  :                   : 3.3V    
 GND                          : AB22      : gnd    :                   :         :           :                
 VCCIO2                       : B1        : power  :                   : 3.3V    : 2         :                
 GND                          : B2        : gnd    :                   :         :           :                
-I2C_Data                     : B3        : output : 3.3-V LVTTL       :         : 3         : Y              
+I2C_Data                     : B3        : bidir  : 3.3-V LVTTL       :         : 3         : Y              
 T_CLK                        : B4        : output : 3.3-V LVTTL       :         : 3         : Y              
-GND*                         : B5        :        :                   :         : 3         :                
+Sound_Data                   : B5        : output : 3.3-V LVTTL       :         : 3         : Y              
 GND*                         : B6        :        :                   :         : 3         :                
 GND*                         : B7        :        :                   :         : 3         :                
 GND*                         : B8        :        :                   :         : 3         :                
@@ -193,7 +193,7 @@ GND+                         : D12       :        :                   :         
 GND                          : D13       : gnd    :                   :         :           :                
 GND*                         : D14       :        :                   :         : 4         :                
 GND*                         : D15       :        :                   :         : 4         :                
-Sound_Trig                   : D16       : output : 3.3-V LVTTL       :         : 4         : N              
+GND*                         : D16       :        :                   :         : 4         :                
 VCCIO4                       : D17       : power  :                   : 3.3V    : 4         :                
 GND                          : D18       : gnd    :                   :         :           :                
 GND*                         : D19       :        :                   :         : 5         :                
@@ -472,7 +472,7 @@ GND_PLL1                     : U5        : gnd    :                   :         
 VCCD_PLL1                    : U6        : power  :                   : 1.2V    :           :                
 VCCA_PLL1                    : U7        : power  :                   : 1.2V    :           :                
 GND*                         : U8        :        :                   :         : 8         :                
-Sound_Data                   : U9        : output : 3.3-V LVTTL       :         : 8         : N              
+GND*                         : U9        :        :                   :         : 8         :                
 GND*                         : U10       :        :                   :         : 8         :                
 GND+                         : U11       :        :                   :         : 8         :                
 GND+                         : U12       :        :                   :         : 8         :                

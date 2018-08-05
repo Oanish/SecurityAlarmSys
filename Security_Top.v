@@ -5,9 +5,9 @@ module Security_Top (input CLK,						//the board's oscillator clock
 							output Trigger_Sig,			//trigger signal to HC-SR04
 							output [13:0] Distance,		//distance from object, digits
 							output Sound_Data,			//alarm data stream to be converted to analog audio
-							output Sound_Trig,			//alarm trigger impulse
-							output I2C_Data,				//i2c data for address, r/w operation
-							output I2C_Clock);			//i2c clock
+							inout Sound_Trig,				//alarm trigger impulse
+							inout I2C_Data,				//i2c data for address, r/w operation
+							inout I2C_Clock);				//i2c clock
 							
 wire [7:0] Distance_Raw;	//distance from object, bits
 							
@@ -38,5 +38,11 @@ CodecConfigurator DUT5(.reset(RST),
 							  .scl(I2C_Clock),
 							  .ready(),
 							  .ackNum());
+							
+Sound_Generator DUT6(.CLK(T_CLK),
+							.RST(RST),
+							.Distance(Distance_Raw),
+							.Data(Sound_Data),
+							.Trig(Sound_Trig));
 							
 endmodule 

@@ -29,7 +29,7 @@ module CodecConfigurator
 	output reg [3:0] ackNum
 );
 
-	localparam DEVICE_ADDR = 8'h34;
+	localparam DEVICE_ADDR = 8'h35;
 
 	reg i2cClockDisable;
 	reg [23:0] data;

@@ -1,27 +1,26 @@
 module Sound_Generator (input CLK,					//trigger clock, used in all modules and by the DAC decoder
 								input RST,					//system reset
 								input [7:0] Distance,	//distance from object, bits
-								output reg Data,			//alarm data stream to be converted to analog audio
-								output reg Trig);			//alarm trigger impulse
+								output Data,				//alarm data stream to be converted to analog audio
+								inout reg Trig);			//alarm trigger impulse
+								
+reg [7:0] Counter;
 
 always@(posedge CLK)
 	if(!RST)
 		begin
-			Data <= 0;
 			Trig <= 0;
+			Counter <= 0;
 		end
 	else
-		if(Distance < 100)
-			begin
-				Trig <= 1;
-				Data <= Data + 1;
-				if(Trig == 1)
-					Trig <= 0;
-			end
-		else
-			begin
+		begin
+			Counter <= Counter + 1;
+			if(Distance < 100)
 				Trig <= 0;
-				Data <= 0;
-			end
+			else
+				Trig <= 1;
+		end
+			
+assign Data = Counter[7];		
 
 endmodule 

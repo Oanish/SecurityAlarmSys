@@ -3,32 +3,32 @@ TimeQuest Timing Analyzer Summary
 ------------------------------------------------------------
 
 Type  : Slow Model Setup 'CLK_Divider:DUT1|T_CLK'
-Slack : -60.242
-TNS   : -572.601
+Slack : -59.683
+TNS   : -568.396
 
 Type  : Slow Model Setup 'CodecConfigurator:DUT5|I2CMaster:i2cm1|ready'
-Slack : -2.255
-TNS   : -22.155
+Slack : -2.804
+TNS   : -19.726
 
 Type  : Slow Model Setup 'CLK'
-Slack : -1.865
-TNS   : -23.958
+Slack : -1.843
+TNS   : -23.770
 
 Type  : Slow Model Setup 'CodecConfigurator:DUT5|I2CMaster:i2cm1|I2CTxLogic:txLogic|ready'
-Slack : -1.033
-TNS   : -3.770
+Slack : -0.960
+TNS   : -3.400
 
 Type  : Slow Model Hold 'CLK_Divider:DUT1|T_CLK'
-Slack : -5.246
-TNS   : -6.026
+Slack : -5.339
+TNS   : -9.240
 
 Type  : Slow Model Hold 'CodecConfigurator:DUT5|I2CMaster:i2cm1|I2CTxLogic:txLogic|ready'
-Slack : -3.510
-TNS   : -3.510
+Slack : -3.086
+TNS   : -3.086
 
 Type  : Slow Model Hold 'CLK'
-Slack : -2.692
-TNS   : -2.692
+Slack : -2.686
+TNS   : -2.686
 
 Type  : Slow Model Hold 'CodecConfigurator:DUT5|I2CMaster:i2cm1|ready'
 Slack : 0.445
@@ -40,7 +40,7 @@ TNS   : -17.517
 
 Type  : Slow Model Minimum Pulse Width 'CLK_Divider:DUT1|T_CLK'
 Slack : -0.611
-TNS   : -46.436
+TNS   : -57.434
 
 Type  : Slow Model Minimum Pulse Width 'CodecConfigurator:DUT5|I2CMaster:i2cm1|ready'
 Slack : -0.611
@@ -51,32 +51,32 @@ Slack : -0.611
 TNS   : -6.110
 
 Type  : Fast Model Setup 'CLK_Divider:DUT1|T_CLK'
-Slack : -21.601
-TNS   : -194.985
+Slack : -21.383
+TNS   : -189.933
 
 Type  : Fast Model Setup 'CodecConfigurator:DUT5|I2CMaster:i2cm1|ready'
-Slack : -0.746
-TNS   : -2.246
+Slack : -0.984
+TNS   : -1.844
 
 Type  : Fast Model Setup 'CLK'
-Slack : -0.144
-TNS   : -1.728
+Slack : -0.130
+TNS   : -1.560
 
 Type  : Fast Model Setup 'CodecConfigurator:DUT5|I2CMaster:i2cm1|I2CTxLogic:txLogic|ready'
-Slack : 0.148
+Slack : 0.128
 TNS   : 0.000
 
 Type  : Fast Model Hold 'CLK_Divider:DUT1|T_CLK'
-Slack : -2.656
-TNS   : -2.878
+Slack : -2.636
+TNS   : -4.522
 
 Type  : Fast Model Hold 'CodecConfigurator:DUT5|I2CMaster:i2cm1|I2CTxLogic:txLogic|ready'
-Slack : -2.018
-TNS   : -2.018
+Slack : -1.792
+TNS   : -1.792
 
 Type  : Fast Model Hold 'CLK'
-Slack : -1.722
-TNS   : -1.722
+Slack : -1.717
+TNS   : -1.717
 
 Type  : Fast Model Hold 'CodecConfigurator:DUT5|I2CMaster:i2cm1|ready'
 Slack : 0.215
@@ -88,7 +88,7 @@ TNS   : -14.380
 
 Type  : Fast Model Minimum Pulse Width 'CLK_Divider:DUT1|T_CLK'
 Slack : -0.500
-TNS   : -38.000
+TNS   : -47.000
 
 Type  : Fast Model Minimum Pulse Width 'CodecConfigurator:DUT5|I2CMaster:i2cm1|ready'
 Slack : -0.500
