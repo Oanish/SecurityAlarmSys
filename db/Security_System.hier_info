@@ -18,10 +18,10 @@ Distance[10] <= Digit_Converter:DUT3.Distance
 Distance[11] <= Digit_Converter:DUT3.Distance
 Distance[12] <= Digit_Converter:DUT3.Distance
 Distance[13] <= Digit_Converter:DUT3.Distance
-Sound_Data <= Alarm_Controller:DUT4.Sound_Data
-Sound_Trig <= Alarm_Controller:DUT4.Sound_Trig
-I2C_Data <= Alarm_Controller:DUT4.I2C_Data
-I2C_Clock <= Alarm_Controller:DUT4.I2C_Clock
+Sound_Data <= <GND>
+Sound_Trig <= <GND>
+I2C_Data <= CodecConfigurator:DUT5.sda
+I2C_Clock <= CodecConfigurator:DUT5.scl
 
 
 |Security_Top|CLK_Divider:DUT1
@@ -209,60 +209,100 @@ SEGMENTS[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
 SEGMENTS[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Security_Top|Alarm_Controller:DUT4
-CLK => CLK.IN2
-RST => RST.IN2
-Distance[0] => Distance[0].IN1
-Distance[1] => Distance[1].IN1
-Distance[2] => Distance[2].IN1
-Distance[3] => Distance[3].IN1
-Distance[4] => Distance[4].IN1
-Distance[5] => Distance[5].IN1
-Distance[6] => Distance[6].IN1
-Distance[7] => Distance[7].IN1
-Sound_Data <= Sound_Generator:DUT2.Data
-Sound_Trig <= Sound_Generator:DUT2.Trig
-I2C_Data <> I2C_Automata:DUT1.Data
-I2C_Clock <= I2C_Automata:DUT1.Clock
+|Security_Top|CodecConfigurator:DUT5
+reset => reset.IN1
+inClock => comb.DATAA
+sda <> I2CMaster:i2cm1.sda
+scl <> I2CMaster:i2cm1.scl
+ready <= ready~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ackNum[0] <= ackNum[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ackNum[1] <= ackNum[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ackNum[2] <= ackNum[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ackNum[3] <= ackNum[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Security_Top|Alarm_Controller:DUT4|I2C_Automata:DUT1
-CLK => Selector16.IN4
-CLK => Counter[0].CLK
-CLK => Counter[1].CLK
-CLK => Counter[2].CLK
-CLK => Counter[3].CLK
-CLK => State~7.DATAIN
-RST => State.OUTPUTSELECT
-RST => State.OUTPUTSELECT
-RST => State.OUTPUTSELECT
-RST => State.OUTPUTSELECT
-RST => State.OUTPUTSELECT
-RST => State.OUTPUTSELECT
-RST => Counter.OUTPUTSELECT
-RST => Counter.OUTPUTSELECT
-RST => Counter.OUTPUTSELECT
-RST => Counter.OUTPUTSELECT
-RST => Clock.OUTPUTSELECT
-RST => Data$latch.PRESET
-Data <> Data
-Clock <= Clock.DB_MAX_OUTPUT_PORT_TYPE
+|Security_Top|CodecConfigurator:DUT5|I2CMaster:i2cm1
+reset => reset.IN1
+inClock => inClock.IN1
+inData[0] => Mux7.IN3
+inData[1] => Mux6.IN3
+inData[2] => Mux5.IN3
+inData[3] => Mux4.IN3
+inData[4] => Mux3.IN3
+inData[5] => Mux2.IN3
+inData[6] => Mux1.IN3
+inData[7] => Mux0.IN3
+inData[8] => Mux7.IN2
+inData[9] => Mux6.IN2
+inData[10] => Mux5.IN2
+inData[11] => Mux4.IN2
+inData[12] => Mux3.IN2
+inData[13] => Mux2.IN2
+inData[14] => Mux1.IN2
+inData[15] => Mux0.IN2
+inData[16] => Mux7.IN1
+inData[17] => Mux6.IN1
+inData[18] => Mux5.IN1
+inData[19] => Mux4.IN1
+inData[20] => Mux3.IN1
+inData[21] => Mux2.IN1
+inData[22] => Mux1.IN1
+inData[23] => Mux0.IN1
+sda <> I2CTxLogic:txLogic.sda
+scl <> I2CTxLogic:txLogic.scl
+ack <= ack~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ready <= ready~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Security_Top|Alarm_Controller:DUT4|Sound_Generator:DUT2
-CLK => Trig~reg0.CLK
-CLK => Data~reg0.CLK
-RST => Data.OUTPUTSELECT
-RST => Trig.OUTPUTSELECT
-Distance[0] => LessThan0.IN16
-Distance[1] => LessThan0.IN15
-Distance[2] => LessThan0.IN14
-Distance[3] => LessThan0.IN13
-Distance[4] => LessThan0.IN12
-Distance[5] => LessThan0.IN11
-Distance[6] => LessThan0.IN10
-Distance[7] => LessThan0.IN9
-Data <= Data~reg0.DB_MAX_OUTPUT_PORT_TYPE
-Trig <= Trig~reg0.DB_MAX_OUTPUT_PORT_TYPE
+|Security_Top|CodecConfigurator:DUT5|I2CMaster:i2cm1|I2CTxLogic:txLogic
+reset => sdaPullDown.ACLR
+reset => sclPullDown.ACLR
+reset => bitState[0].ACLR
+reset => bitState[1].ACLR
+reset => ready~reg0.ACLR
+reset => state[0].ACLR
+reset => state[1].ACLR
+reset => state[2].ACLR
+reset => state[3].ACLR
+reset => ack~reg0.ACLR
+enable => ~NO_FANOUT~
+inClock => sdaPullDown.CLK
+inClock => sclPullDown.CLK
+inClock => bitState[0].CLK
+inClock => bitState[1].CLK
+inClock => ready~reg0.CLK
+inClock => state[0].CLK
+inClock => state[1].CLK
+inClock => state[2].CLK
+inClock => state[3].CLK
+inClock => ack~reg0.CLK
+inData[0] => ShiftRight0.IN12
+inData[1] => ShiftRight0.IN11
+inData[2] => ShiftRight0.IN10
+inData[3] => ShiftRight0.IN9
+inData[4] => ShiftRight0.IN8
+inData[5] => ShiftRight0.IN7
+inData[6] => ShiftRight0.IN6
+inData[7] => ShiftRight0.IN5
+mode[0] => Mux1.IN4
+mode[0] => Mux2.IN4
+mode[0] => Mux3.IN4
+mode[0] => Mux4.IN4
+mode[0] => Mux5.IN4
+mode[0] => Mux6.IN4
+mode[0] => Mux7.IN4
+mode[0] => Decoder2.IN1
+mode[1] => Mux1.IN3
+mode[1] => Mux2.IN3
+mode[1] => Mux3.IN3
+mode[1] => Mux4.IN3
+mode[1] => Mux5.IN3
+mode[1] => Mux6.IN3
+mode[1] => Mux7.IN3
+mode[1] => Decoder2.IN0
+sda <> sda
+scl <> scl
+ack <= ack~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ready <= ready~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
