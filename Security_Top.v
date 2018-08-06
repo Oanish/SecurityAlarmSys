@@ -1,14 +1,16 @@
 module Security_Top (input CLK,						//the board's oscillator clock
 							input RST,						//system reset
-							output T_CLK,					//trigger clock, used in all modules and by the DAC decoder
+							output XCLK,					//chip clock used by the audio codec
+							output BCLK,					//bit clock used by the audio codec
+							output DACLRCK,				//clock used by the audio codec to align left and right channels
 							input Echo_Sig,				//echo signal from HC-SR04
 							output Trigger_Sig,			//trigger signal to HC-SR04
 							output [13:0] Distance,		//distance from object, digits
 							output Sound_Data,			//alarm data stream to be converted to analog audio
-							inout Sound_Trig,				//alarm trigger impulse
 							inout I2C_Data,				//i2c data for address, r/w operation
 							inout I2C_Clock);				//i2c clock
-							
+
+wire T_CLK;						//trigger clock, used in most modules and by the DAC decoder		
 wire [7:0] Distance_Raw;	//distance from object, bits
 							
 CLK_Divider DUT1(.CLK(CLK),
@@ -39,10 +41,12 @@ CodecConfigurator DUT5(.reset(RST),
 							  .ready(),
 							  .ackNum());
 							
-Sound_Generator DUT6(.CLK(T_CLK),
+Sound_Generator DUT6(.CLK(CLK),
 							.RST(RST),
 							.Distance(Distance_Raw),
-							.Data(Sound_Data),
-							.Trig(Sound_Trig));
+							.Sound_Data(Sound_Data),
+							.XCLK(XCLK),
+							.BCLK(BCLK),
+							.DACLRCK(DACLRCK));
 							
 endmodule 

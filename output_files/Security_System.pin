@@ -71,8 +71,8 @@ Pin Name/Usage               : Location  : Dir.   : I/O Standard      : Voltage 
 GND                          : A1        : gnd    :                   :         :           :                
 VCCIO3                       : A2        : power  :                   : 3.3V    : 3         :                
 I2C_Clock                    : A3        : bidir  : 3.3-V LVTTL       :         : 3         : Y              
-GND*                         : A4        :        :                   :         : 3         :                
-Sound_Trig                   : A5        : bidir  : 3.3-V LVTTL       :         : 3         : Y              
+BCLK                         : A4        : output : 3.3-V LVTTL       :         : 3         : Y              
+DACLRCK                      : A5        : output : 3.3-V LVTTL       :         : 3         : Y              
 GND*                         : A6        :        :                   :         : 3         :                
 GND*                         : A7        :        :                   :         : 3         :                
 GND*                         : A8        :        :                   :         : 3         :                
@@ -137,7 +137,7 @@ GND                          : AB22      : gnd    :                   :         
 VCCIO2                       : B1        : power  :                   : 3.3V    : 2         :                
 GND                          : B2        : gnd    :                   :         :           :                
 I2C_Data                     : B3        : bidir  : 3.3-V LVTTL       :         : 3         : Y              
-T_CLK                        : B4        : output : 3.3-V LVTTL       :         : 3         : Y              
+XCLK                         : B4        : output : 3.3-V LVTTL       :         : 3         : Y              
 Sound_Data                   : B5        : output : 3.3-V LVTTL       :         : 3         : Y              
 GND*                         : B6        :        :                   :         : 3         :                
 GND*                         : B7        :        :                   :         : 3         :                

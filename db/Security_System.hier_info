@@ -1,7 +1,9 @@
 |Security_Top
-CLK => CLK.IN1
+CLK => CLK.IN2
 RST => RST.IN4
-T_CLK <= T_CLK.DB_MAX_OUTPUT_PORT_TYPE
+XCLK <= Sound_Generator:DUT6.XCLK
+BCLK <= Sound_Generator:DUT6.BCLK
+DACLRCK <= Sound_Generator:DUT6.DACLRCK
 Echo_Sig => Echo_Sig.IN1
 Trigger_Sig <= Sensor_Controller:DUT2.Trigger
 Distance[0] <= Digit_Converter:DUT3.Distance
@@ -18,8 +20,7 @@ Distance[10] <= Digit_Converter:DUT3.Distance
 Distance[11] <= Digit_Converter:DUT3.Distance
 Distance[12] <= Digit_Converter:DUT3.Distance
 Distance[13] <= Digit_Converter:DUT3.Distance
-Sound_Data <= Sound_Generator:DUT6.Data
-Sound_Trig <> Sound_Generator:DUT6.Trig
+Sound_Data <= Sound_Generator:DUT6.Sound_Data
 I2C_Data <> CodecConfigurator:DUT5.sda
 I2C_Clock <> CodecConfigurator:DUT5.scl
 
@@ -315,8 +316,14 @@ CLK => Counter[4].CLK
 CLK => Counter[5].CLK
 CLK => Counter[6].CLK
 CLK => Counter[7].CLK
-CLK => Trig~reg0.CLK
-RST => Trig.OUTPUTSELECT
+CLK => Counter[8].CLK
+CLK => Counter[9].CLK
+CLK => Counter[10].CLK
+CLK => Counter[11].CLK
+RST => Counter.OUTPUTSELECT
+RST => Counter.OUTPUTSELECT
+RST => Counter.OUTPUTSELECT
+RST => Counter.OUTPUTSELECT
 RST => Counter.OUTPUTSELECT
 RST => Counter.OUTPUTSELECT
 RST => Counter.OUTPUTSELECT
@@ -333,7 +340,9 @@ Distance[4] => LessThan0.IN12
 Distance[5] => LessThan0.IN11
 Distance[6] => LessThan0.IN10
 Distance[7] => LessThan0.IN9
-Data <= Counter[7].DB_MAX_OUTPUT_PORT_TYPE
-Trig <> Trig~reg0
+Sound_Data <= Sound_Data.DB_MAX_OUTPUT_PORT_TYPE
+XCLK <= Counter[1].DB_MAX_OUTPUT_PORT_TYPE
+BCLK <= Counter[3].DB_MAX_OUTPUT_PORT_TYPE
+DACLRCK <= Counter[8].DB_MAX_OUTPUT_PORT_TYPE
 
 
