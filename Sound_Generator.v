@@ -6,7 +6,7 @@ module Sound_Generator (input CLK,					//trigger clock, used in all modules and 
 								output BCLK,				//bit clock used by the audio codec
 								output DACLRCK);			//clock used by the audio codec to align left and right channels
 								
-reg [11:0] Counter;
+reg [15:0] Counter;
 
 always@(posedge CLK)
 	if(!RST)
@@ -14,7 +14,7 @@ always@(posedge CLK)
 	else
 		Counter <= Counter + 1;
 			
-assign Sound_Data = (Distance < 100) ? Counter[11] : 1'bz;
+assign Sound_Data = (Distance < 100) ? Counter[12] : 1'bz;		//frequency is about 6khz
 
 assign XCLK = Counter[1];
 assign BCLK = Counter[3];
