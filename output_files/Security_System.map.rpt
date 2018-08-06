@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Security_System
-Mon Aug 06 20:47:48 2018
+Mon Aug 06 20:58:20 2018
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -19,8 +19,8 @@ Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edit
  11. Parameter Settings for Inferred Entity Instance: Digit_Converter:DUT3|lpm_divide:Mod0
  12. Parameter Settings for Inferred Entity Instance: Digit_Converter:DUT3|lpm_divide:Div0
  13. Parameter Settings for Inferred Entity Instance: Sensor_Controller:DUT2|lpm_divide:Div0
- 14. Port Connectivity Checks: "CodecConfigurator:DUT5|I2CMaster:i2cm1|I2CTxLogic:txLogic"
- 15. Port Connectivity Checks: "CodecConfigurator:DUT5"
+ 14. Port Connectivity Checks: "CodecConfigurator:DUT6|I2CMaster:i2cm1|I2CTxLogic:txLogic"
+ 15. Port Connectivity Checks: "CodecConfigurator:DUT6"
  16. Elapsed Time Per Partition
  17. Analysis & Synthesis Messages
  18. Analysis & Synthesis Suppressed Messages
@@ -49,7 +49,7 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Mon Aug 06 20:47:48 2018           ;
+; Analysis & Synthesis Status        ; Successful - Mon Aug 06 20:58:20 2018           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; Security_System                                 ;
 ; Top-level Entity Name              ; Security_Top                                    ;
@@ -231,9 +231,9 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +-------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------------------------------------------------------------------------+--------------+
 ; |Security_Top                             ; 680 (0)           ; 83 (0)       ; 0           ; 0            ; 0       ; 0         ; 24   ; 0            ; |Security_Top                                                                                                                        ; work         ;
 ;    |CLK_Divider:DUT1|                     ; 17 (17)           ; 13 (13)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Security_Top|CLK_Divider:DUT1                                                                                                       ; work         ;
-;    |CodecConfigurator:DUT5|               ; 62 (17)           ; 29 (15)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Security_Top|CodecConfigurator:DUT5                                                                                                 ; work         ;
-;       |I2CMaster:i2cm1|                   ; 45 (10)           ; 14 (5)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Security_Top|CodecConfigurator:DUT5|I2CMaster:i2cm1                                                                                 ; work         ;
-;          |I2CTxLogic:txLogic|             ; 35 (35)           ; 9 (9)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Security_Top|CodecConfigurator:DUT5|I2CMaster:i2cm1|I2CTxLogic:txLogic                                                              ; work         ;
+;    |CodecConfigurator:DUT6|               ; 62 (17)           ; 29 (15)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Security_Top|CodecConfigurator:DUT6                                                                                                 ; work         ;
+;       |I2CMaster:i2cm1|                   ; 45 (10)           ; 14 (5)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Security_Top|CodecConfigurator:DUT6|I2CMaster:i2cm1                                                                                 ; work         ;
+;          |I2CTxLogic:txLogic|             ; 35 (35)           ; 9 (9)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Security_Top|CodecConfigurator:DUT6|I2CMaster:i2cm1|I2CTxLogic:txLogic                                                              ; work         ;
 ;    |Digit_Converter:DUT3|                 ; 183 (21)          ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Security_Top|Digit_Converter:DUT3                                                                                                   ; work         ;
 ;       |BCD:DUT1|                          ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Security_Top|Digit_Converter:DUT3|BCD:DUT1                                                                                          ; work         ;
 ;       |BCD:DUT2|                          ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Security_Top|Digit_Converter:DUT3|BCD:DUT2                                                                                          ; work         ;
@@ -250,7 +250,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ;          |lpm_divide_hem:auto_generated|  ; 356 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Security_Top|Sensor_Controller:DUT2|lpm_divide:Div0|lpm_divide_hem:auto_generated                                                   ; work         ;
 ;             |sign_div_unsign_rlh:divider| ; 356 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Security_Top|Sensor_Controller:DUT2|lpm_divide:Div0|lpm_divide_hem:auto_generated|sign_div_unsign_rlh:divider                       ; work         ;
 ;                |alt_u_div_o2f:divider|    ; 356 (356)         ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Security_Top|Sensor_Controller:DUT2|lpm_divide:Div0|lpm_divide_hem:auto_generated|sign_div_unsign_rlh:divider|alt_u_div_o2f:divider ; work         ;
-;    |Sound_Generator:DUT6|                 ; 12 (12)           ; 12 (12)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Security_Top|Sound_Generator:DUT6                                                                                                   ; work         ;
+;    |Sound_Generator:DUT5|                 ; 12 (12)           ; 12 (12)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Security_Top|Sound_Generator:DUT5                                                                                                   ; work         ;
 +-------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------------------------------------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -260,11 +260,11 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------------------------------------+---------------------------------------------+
 ; Register name                                       ; Reason for Removal                          ;
 +-----------------------------------------------------+---------------------------------------------+
-; CodecConfigurator:DUT5|data[7,8,13..15,17,19,22,23] ; Stuck at GND due to stuck port data_in      ;
-; CodecConfigurator:DUT5|data[16]                     ; Merged with CodecConfigurator:DUT5|data[18] ;
-; CodecConfigurator:DUT5|data[18]                     ; Merged with CodecConfigurator:DUT5|data[20] ;
-; CodecConfigurator:DUT5|data[20]                     ; Merged with CodecConfigurator:DUT5|data[21] ;
-; CodecConfigurator:DUT5|data[5]                      ; Merged with CodecConfigurator:DUT5|data[3]  ;
+; CodecConfigurator:DUT6|data[7,8,13..15,17,19,22,23] ; Stuck at GND due to stuck port data_in      ;
+; CodecConfigurator:DUT6|data[16]                     ; Merged with CodecConfigurator:DUT6|data[18] ;
+; CodecConfigurator:DUT6|data[18]                     ; Merged with CodecConfigurator:DUT6|data[20] ;
+; CodecConfigurator:DUT6|data[20]                     ; Merged with CodecConfigurator:DUT6|data[21] ;
+; CodecConfigurator:DUT6|data[5]                      ; Merged with CodecConfigurator:DUT6|data[3]  ;
 ; Total Number of Removed Registers = 13              ;                                             ;
 +-----------------------------------------------------+---------------------------------------------+
 
@@ -292,9 +292,9 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; 3:1                ; 20 bits   ; 40 LEs        ; 20 LEs               ; 20 LEs                 ; Yes        ; |Security_Top|Sensor_Controller:DUT2|Counter[8]                                  ;
 ; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |Security_Top|Sensor_Controller:DUT2|Distance[7]                                 ;
 ; 3:1                ; 12 bits   ; 24 LEs        ; 12 LEs               ; 12 LEs                 ; Yes        ; |Security_Top|CLK_Divider:DUT1|Counter[6]                                        ;
-; 8:1                ; 9 bits    ; 45 LEs        ; 36 LEs               ; 9 LEs                  ; Yes        ; |Security_Top|CodecConfigurator:DUT5|data[10]                                    ;
-; 5:1                ; 2 bits    ; 6 LEs         ; 4 LEs                ; 2 LEs                  ; Yes        ; |Security_Top|CodecConfigurator:DUT5|I2CMaster:i2cm1|txState[0]                  ;
-; 7:1                ; 4 bits    ; 16 LEs        ; 4 LEs                ; 12 LEs                 ; Yes        ; |Security_Top|CodecConfigurator:DUT5|I2CMaster:i2cm1|I2CTxLogic:txLogic|state[2] ;
+; 8:1                ; 9 bits    ; 45 LEs        ; 36 LEs               ; 9 LEs                  ; Yes        ; |Security_Top|CodecConfigurator:DUT6|data[10]                                    ;
+; 5:1                ; 2 bits    ; 6 LEs         ; 4 LEs                ; 2 LEs                  ; Yes        ; |Security_Top|CodecConfigurator:DUT6|I2CMaster:i2cm1|txState[0]                  ;
+; 7:1                ; 4 bits    ; 16 LEs        ; 4 LEs                ; 12 LEs                 ; Yes        ; |Security_Top|CodecConfigurator:DUT6|I2CMaster:i2cm1|I2CTxLogic:txLogic|state[2] ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------------------------------+
 
 
@@ -368,7 +368,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "CodecConfigurator:DUT5|I2CMaster:i2cm1|I2CTxLogic:txLogic"                                                                                    ;
+; Port Connectivity Checks: "CodecConfigurator:DUT6|I2CMaster:i2cm1|I2CTxLogic:txLogic"                                                                                    ;
 +--------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
 ; Port   ; Type  ; Severity ; Details                                                                                                                                      ;
 +--------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
@@ -377,7 +377,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +-----------------------------------------------------+
-; Port Connectivity Checks: "CodecConfigurator:DUT5"  ;
+; Port Connectivity Checks: "CodecConfigurator:DUT6"  ;
 +--------+--------+----------+------------------------+
 ; Port   ; Type   ; Severity ; Details                ;
 +--------+--------+----------+------------------------+
@@ -401,7 +401,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Mon Aug 06 20:47:46 2018
+    Info: Processing started: Mon Aug 06 20:58:18 2018
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Security_System -c Security_System
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 1 design units, including 1 entities, in source file security_top.v
@@ -414,10 +414,6 @@ Info (12021): Found 1 design units, including 1 entities, in source file digit_c
     Info (12023): Found entity 1: Digit_Converter
 Info (12021): Found 1 design units, including 1 entities, in source file bcd.v
     Info (12023): Found entity 1: BCD
-Info (12021): Found 1 design units, including 1 entities, in source file alarm_controller.v
-    Info (12023): Found entity 1: Alarm_Controller
-Info (12021): Found 1 design units, including 1 entities, in source file i2c_automata.v
-    Info (12023): Found entity 1: I2C_Automata
 Info (12021): Found 1 design units, including 1 entities, in source file sound_generator.v
     Info (12023): Found entity 1: Sound_Generator
 Info (12021): Found 1 design units, including 1 entities, in source file codecconfigurator.v
@@ -426,8 +422,6 @@ Info (12021): Found 1 design units, including 1 entities, in source file i2cmast
     Info (12023): Found entity 1: I2CMaster
 Info (12021): Found 1 design units, including 1 entities, in source file i2ctxlogic.v
     Info (12023): Found entity 1: I2CTxLogic
-Info (12021): Found 1 design units, including 1 entities, in source file audio_controller.v
-    Info (12023): Found entity 1: Audio_Controller
 Info (12127): Elaborating entity "Security_Top" for the top level hierarchy
 Info (12128): Elaborating entity "CLK_Divider" for hierarchy "CLK_Divider:DUT1"
 Warning (10230): Verilog HDL assignment warning at CLK_Divider.v(20): truncated value with size 32 to match size of target (12)
@@ -438,12 +432,12 @@ Info (12128): Elaborating entity "Digit_Converter" for hierarchy "Digit_Converte
 Warning (10230): Verilog HDL assignment warning at Digit_Converter.v(6): truncated value with size 32 to match size of target (4)
 Warning (10230): Verilog HDL assignment warning at Digit_Converter.v(7): truncated value with size 32 to match size of target (4)
 Info (12128): Elaborating entity "BCD" for hierarchy "Digit_Converter:DUT3|BCD:DUT1"
-Info (12128): Elaborating entity "CodecConfigurator" for hierarchy "CodecConfigurator:DUT5"
-Info (12128): Elaborating entity "I2CMaster" for hierarchy "CodecConfigurator:DUT5|I2CMaster:i2cm1"
-Info (12128): Elaborating entity "I2CTxLogic" for hierarchy "CodecConfigurator:DUT5|I2CMaster:i2cm1|I2CTxLogic:txLogic"
-Warning (10230): Verilog HDL assignment warning at I2CTxLogic.v(89): truncated value with size 8 to match size of target (1)
-Info (12128): Elaborating entity "Sound_Generator" for hierarchy "Sound_Generator:DUT6"
+Info (12128): Elaborating entity "Sound_Generator" for hierarchy "Sound_Generator:DUT5"
 Warning (10230): Verilog HDL assignment warning at Sound_Generator.v(15): truncated value with size 32 to match size of target (12)
+Info (12128): Elaborating entity "CodecConfigurator" for hierarchy "CodecConfigurator:DUT6"
+Info (12128): Elaborating entity "I2CMaster" for hierarchy "CodecConfigurator:DUT6|I2CMaster:i2cm1"
+Info (12128): Elaborating entity "I2CTxLogic" for hierarchy "CodecConfigurator:DUT6|I2CMaster:i2cm1|I2CTxLogic:txLogic"
+Warning (10230): Verilog HDL assignment warning at I2CTxLogic.v(89): truncated value with size 8 to match size of target (1)
 Info (278001): Inferred 3 megafunctions from design logic
     Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "Digit_Converter:DUT3|Mod0"
     Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "Digit_Converter:DUT3|Div0"
@@ -499,7 +493,7 @@ Info (21057): Implemented 705 device resources after synthesis - the final resou
     Info (21061): Implemented 681 logic cells
 Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 9 warnings
     Info: Peak virtual memory: 4643 megabytes
-    Info: Processing ended: Mon Aug 06 20:47:48 2018
+    Info: Processing ended: Mon Aug 06 20:58:20 2018
     Info: Elapsed time: 00:00:02
     Info: Total CPU time (on all processors): 00:00:02
 

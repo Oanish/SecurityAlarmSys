@@ -1,5 +1,5 @@
 Fitter report for Security_System
-Mon Aug 06 20:47:54 2018
+Mon Aug 06 20:58:26 2018
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -65,7 +65,7 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Fitter Summary                                                                       ;
 +------------------------------------+-------------------------------------------------+
-; Fitter Status                      ; Successful - Mon Aug 06 20:47:54 2018           ;
+; Fitter Status                      ; Successful - Mon Aug 06 20:58:26 2018           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; Security_System                                 ;
 ; Top-level Entity Name              ; Security_Top                                    ;
@@ -349,8 +349,8 @@ The pin-out file can be found in D:/Oana/Documents/Materiale Poli/GitHub/Securit
 +-----------+-------+----------+--------------+--------------+-------------+-----------------------+--------------------+--------+----------------+-----------------+------------------------+---------------+-----------------+------------+----------+--------------+--------------+------------------+-------------+----------------------+------+-----------------------------------------------------------------------+---------------------+
 ; Name      ; Pin # ; I/O Bank ; X coordinate ; Y coordinate ; Cell number ; Combinational Fan-Out ; Registered Fan-Out ; Global ; Input Register ; Output Register ; Output Enable Register ; Power Up High ; PCI I/O Enabled ; Open Drain ; Bus Hold ; Weak Pull Up ; I/O Standard ; Current Strength ; Termination ; Location assigned by ; Load ; Output Enable Source                                                  ; Output Enable Group ;
 +-----------+-------+----------+--------------+--------------+-------------+-----------------------+--------------------+--------+----------------+-----------------+------------------------+---------------+-----------------+------------+----------+--------------+--------------+------------------+-------------+----------------------+------+-----------------------------------------------------------------------+---------------------+
-; I2C_Clock ; A3    ; 3        ; 1            ; 27           ; 2           ; 0                     ; 0                  ; no     ; no             ; no              ; no                     ; no            ; no              ; yes        ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; User                 ; 0 pF ; CodecConfigurator:DUT5|I2CMaster:i2cm1|I2CTxLogic:txLogic|sclPullDown ; -                   ;
-; I2C_Data  ; B3    ; 3        ; 1            ; 27           ; 3           ; 0                     ; 0                  ; no     ; no             ; no              ; no                     ; no            ; no              ; yes        ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; User                 ; 0 pF ; CodecConfigurator:DUT5|I2CMaster:i2cm1|I2CTxLogic:txLogic|sdaPullDown ; -                   ;
+; I2C_Clock ; A3    ; 3        ; 1            ; 27           ; 2           ; 0                     ; 0                  ; no     ; no             ; no              ; no                     ; no            ; no              ; yes        ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; User                 ; 0 pF ; CodecConfigurator:DUT6|I2CMaster:i2cm1|I2CTxLogic:txLogic|sclPullDown ; -                   ;
+; I2C_Data  ; B3    ; 3        ; 1            ; 27           ; 3           ; 0                     ; 0                  ; no     ; no             ; no              ; no                     ; no            ; no              ; yes        ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; User                 ; 0 pF ; CodecConfigurator:DUT6|I2CMaster:i2cm1|I2CTxLogic:txLogic|sdaPullDown ; -                   ;
 +-----------+-------+----------+--------------+--------------+-------------+-----------------------+--------------------+--------+----------------+-----------------+------------------------+---------------+-----------------+------------+----------+--------------+--------------+------------------+-------------+----------------------+------+-----------------------------------------------------------------------+---------------------+
 
 
@@ -907,9 +907,9 @@ Note: User assignments will override these defaults. The user specified values a
 +-------------------------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+--------------------------------------------------------------------------------------------------------------------------------------+--------------+
 ; |Security_Top                             ; 683 (0)     ; 83 (0)                    ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 24   ; 0            ; 600 (0)      ; 2 (0)             ; 81 (0)           ; |Security_Top                                                                                                                        ; work         ;
 ;    |CLK_Divider:DUT1|                     ; 17 (17)     ; 13 (13)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 4 (4)        ; 0 (0)             ; 13 (13)          ; |Security_Top|CLK_Divider:DUT1                                                                                                       ; work         ;
-;    |CodecConfigurator:DUT5|               ; 63 (18)     ; 29 (15)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 34 (3)       ; 0 (0)             ; 29 (15)          ; |Security_Top|CodecConfigurator:DUT5                                                                                                 ; work         ;
-;       |I2CMaster:i2cm1|                   ; 45 (10)     ; 14 (5)                    ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 31 (5)       ; 0 (0)             ; 14 (5)           ; |Security_Top|CodecConfigurator:DUT5|I2CMaster:i2cm1                                                                                 ; work         ;
-;          |I2CTxLogic:txLogic|             ; 35 (35)     ; 9 (9)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 26 (26)      ; 0 (0)             ; 9 (9)            ; |Security_Top|CodecConfigurator:DUT5|I2CMaster:i2cm1|I2CTxLogic:txLogic                                                              ; work         ;
+;    |CodecConfigurator:DUT6|               ; 63 (18)     ; 29 (15)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 34 (3)       ; 0 (0)             ; 29 (15)          ; |Security_Top|CodecConfigurator:DUT6                                                                                                 ; work         ;
+;       |I2CMaster:i2cm1|                   ; 45 (10)     ; 14 (5)                    ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 31 (5)       ; 0 (0)             ; 14 (5)           ; |Security_Top|CodecConfigurator:DUT6|I2CMaster:i2cm1                                                                                 ; work         ;
+;          |I2CTxLogic:txLogic|             ; 35 (35)     ; 9 (9)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 26 (26)      ; 0 (0)             ; 9 (9)            ; |Security_Top|CodecConfigurator:DUT6|I2CMaster:i2cm1|I2CTxLogic:txLogic                                                              ; work         ;
 ;    |Digit_Converter:DUT3|                 ; 183 (21)    ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 183 (21)     ; 0 (0)             ; 0 (0)            ; |Security_Top|Digit_Converter:DUT3                                                                                                   ; work         ;
 ;       |BCD:DUT1|                          ; 7 (7)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 7 (7)        ; 0 (0)             ; 0 (0)            ; |Security_Top|Digit_Converter:DUT3|BCD:DUT1                                                                                          ; work         ;
 ;       |BCD:DUT2|                          ; 7 (7)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 7 (7)        ; 0 (0)             ; 0 (0)            ; |Security_Top|Digit_Converter:DUT3|BCD:DUT2                                                                                          ; work         ;
@@ -926,7 +926,7 @@ Note: User assignments will override these defaults. The user specified values a
 ;          |lpm_divide_hem:auto_generated|  ; 356 (0)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 346 (0)      ; 0 (0)             ; 10 (0)           ; |Security_Top|Sensor_Controller:DUT2|lpm_divide:Div0|lpm_divide_hem:auto_generated                                                   ; work         ;
 ;             |sign_div_unsign_rlh:divider| ; 356 (0)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 346 (0)      ; 0 (0)             ; 10 (0)           ; |Security_Top|Sensor_Controller:DUT2|lpm_divide:Div0|lpm_divide_hem:auto_generated|sign_div_unsign_rlh:divider                       ; work         ;
 ;                |alt_u_div_o2f:divider|    ; 356 (356)   ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 346 (346)    ; 0 (0)             ; 10 (10)          ; |Security_Top|Sensor_Controller:DUT2|lpm_divide:Div0|lpm_divide_hem:auto_generated|sign_div_unsign_rlh:divider|alt_u_div_o2f:divider ; work         ;
-;    |Sound_Generator:DUT6|                 ; 12 (12)     ; 12 (12)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 12 (12)          ; |Security_Top|Sound_Generator:DUT6                                                                                                   ; work         ;
+;    |Sound_Generator:DUT5|                 ; 12 (12)     ; 12 (12)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 12 (12)          ; |Security_Top|Sound_Generator:DUT5                                                                                                   ; work         ;
 +-------------------------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+--------------------------------------------------------------------------------------------------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -981,51 +981,51 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ;      - Sensor_Controller:DUT2|Distance[1]                                    ; 1                 ; 6       ;
 ;      - Sensor_Controller:DUT2|Distance[0]                                    ; 1                 ; 6       ;
 ;      - CLK_Divider:DUT1|T_CLK                                                ; 1                 ; 6       ;
-;      - Sound_Generator:DUT6|Counter[1]                                       ; 1                 ; 6       ;
-;      - Sound_Generator:DUT6|Counter[3]                                       ; 1                 ; 6       ;
-;      - Sound_Generator:DUT6|Counter[8]                                       ; 1                 ; 6       ;
-;      - Sound_Generator:DUT6|Counter[0]                                       ; 1                 ; 6       ;
-;      - Sound_Generator:DUT6|Counter[2]                                       ; 1                 ; 6       ;
-;      - Sound_Generator:DUT6|Counter[7]                                       ; 1                 ; 6       ;
-;      - Sound_Generator:DUT6|Counter[11]                                      ; 1                 ; 6       ;
-;      - Sound_Generator:DUT6|Counter[6]                                       ; 1                 ; 6       ;
-;      - Sound_Generator:DUT6|Counter[10]                                      ; 1                 ; 6       ;
-;      - Sound_Generator:DUT6|Counter[5]                                       ; 1                 ; 6       ;
-;      - Sound_Generator:DUT6|Counter[9]                                       ; 1                 ; 6       ;
-;      - Sound_Generator:DUT6|Counter[4]                                       ; 1                 ; 6       ;
+;      - Sound_Generator:DUT5|Counter[1]                                       ; 1                 ; 6       ;
+;      - Sound_Generator:DUT5|Counter[3]                                       ; 1                 ; 6       ;
+;      - Sound_Generator:DUT5|Counter[8]                                       ; 1                 ; 6       ;
+;      - Sound_Generator:DUT5|Counter[0]                                       ; 1                 ; 6       ;
+;      - Sound_Generator:DUT5|Counter[2]                                       ; 1                 ; 6       ;
+;      - Sound_Generator:DUT5|Counter[7]                                       ; 1                 ; 6       ;
+;      - Sound_Generator:DUT5|Counter[11]                                      ; 1                 ; 6       ;
+;      - Sound_Generator:DUT5|Counter[6]                                       ; 1                 ; 6       ;
+;      - Sound_Generator:DUT5|Counter[10]                                      ; 1                 ; 6       ;
+;      - Sound_Generator:DUT5|Counter[5]                                       ; 1                 ; 6       ;
+;      - Sound_Generator:DUT5|Counter[9]                                       ; 1                 ; 6       ;
+;      - Sound_Generator:DUT5|Counter[4]                                       ; 1                 ; 6       ;
 ;      - Sensor_Controller:DUT2|Trigger~0                                      ; 1                 ; 6       ;
 ;      - Sensor_Controller:DUT2|Distance[7]~0                                  ; 1                 ; 6       ;
 ;      - Sensor_Controller:DUT2|Counter[8]~56                                  ; 1                 ; 6       ;
-;      - CodecConfigurator:DUT5|I2CMaster:i2cm1|I2CTxLogic:txLogic|sdaPullDown ; 1                 ; 6       ;
-;      - CodecConfigurator:DUT5|I2CMaster:i2cm1|I2CTxLogic:txLogic|sclPullDown ; 1                 ; 6       ;
+;      - CodecConfigurator:DUT6|I2CMaster:i2cm1|I2CTxLogic:txLogic|sdaPullDown ; 1                 ; 6       ;
+;      - CodecConfigurator:DUT6|I2CMaster:i2cm1|I2CTxLogic:txLogic|sclPullDown ; 1                 ; 6       ;
 ;      - CLK_Divider:DUT1|Counter[6]~18                                        ; 1                 ; 6       ;
-;      - CodecConfigurator:DUT5|I2CMaster:i2cm1|I2CTxLogic:txLogic|state[3]    ; 1                 ; 6       ;
-;      - CodecConfigurator:DUT5|I2CMaster:i2cm1|I2CTxLogic:txLogic|state[2]    ; 1                 ; 6       ;
-;      - CodecConfigurator:DUT5|I2CMaster:i2cm1|I2CTxLogic:txLogic|state[0]    ; 1                 ; 6       ;
-;      - CodecConfigurator:DUT5|I2CMaster:i2cm1|I2CTxLogic:txLogic|state[1]    ; 1                 ; 6       ;
-;      - CodecConfigurator:DUT5|I2CMaster:i2cm1|txState[1]                     ; 1                 ; 6       ;
-;      - CodecConfigurator:DUT5|I2CMaster:i2cm1|bytesCounter[0]                ; 1                 ; 6       ;
-;      - CodecConfigurator:DUT5|I2CMaster:i2cm1|bytesCounter[1]                ; 1                 ; 6       ;
-;      - CodecConfigurator:DUT5|data[12]                                       ; 1                 ; 6       ;
-;      - CodecConfigurator:DUT5|data[6]                                        ; 1                 ; 6       ;
-;      - CodecConfigurator:DUT5|data[3]                                        ; 1                 ; 6       ;
-;      - CodecConfigurator:DUT5|data[4]                                        ; 1                 ; 6       ;
-;      - CodecConfigurator:DUT5|data[21]                                       ; 1                 ; 6       ;
-;      - CodecConfigurator:DUT5|data[9]                                        ; 1                 ; 6       ;
-;      - CodecConfigurator:DUT5|data[1]                                        ; 1                 ; 6       ;
-;      - CodecConfigurator:DUT5|data[10]                                       ; 1                 ; 6       ;
-;      - CodecConfigurator:DUT5|data[2]                                        ; 1                 ; 6       ;
-;      - CodecConfigurator:DUT5|data[11]                                       ; 1                 ; 6       ;
-;      - CodecConfigurator:DUT5|data[0]                                        ; 1                 ; 6       ;
-;      - CodecConfigurator:DUT5|I2CMaster:i2cm1|I2CTxLogic:txLogic|bitState[1] ; 1                 ; 6       ;
-;      - CodecConfigurator:DUT5|I2CMaster:i2cm1|I2CTxLogic:txLogic|bitState[0] ; 1                 ; 6       ;
-;      - CodecConfigurator:DUT5|I2CMaster:i2cm1|txState[0]                     ; 1                 ; 6       ;
-;      - CodecConfigurator:DUT5|I2CMaster:i2cm1|I2CTxLogic:txLogic|ready       ; 1                 ; 6       ;
-;      - CodecConfigurator:DUT5|state[2]                                       ; 1                 ; 6       ;
-;      - CodecConfigurator:DUT5|state[0]                                       ; 1                 ; 6       ;
-;      - CodecConfigurator:DUT5|state[1]                                       ; 1                 ; 6       ;
-;      - CodecConfigurator:DUT5|I2CMaster:i2cm1|ready                          ; 1                 ; 6       ;
-;      - CodecConfigurator:DUT5|i2cClockDisable                                ; 1                 ; 6       ;
+;      - CodecConfigurator:DUT6|I2CMaster:i2cm1|I2CTxLogic:txLogic|state[3]    ; 1                 ; 6       ;
+;      - CodecConfigurator:DUT6|I2CMaster:i2cm1|I2CTxLogic:txLogic|state[2]    ; 1                 ; 6       ;
+;      - CodecConfigurator:DUT6|I2CMaster:i2cm1|I2CTxLogic:txLogic|state[0]    ; 1                 ; 6       ;
+;      - CodecConfigurator:DUT6|I2CMaster:i2cm1|I2CTxLogic:txLogic|state[1]    ; 1                 ; 6       ;
+;      - CodecConfigurator:DUT6|I2CMaster:i2cm1|txState[1]                     ; 1                 ; 6       ;
+;      - CodecConfigurator:DUT6|I2CMaster:i2cm1|bytesCounter[0]                ; 1                 ; 6       ;
+;      - CodecConfigurator:DUT6|I2CMaster:i2cm1|bytesCounter[1]                ; 1                 ; 6       ;
+;      - CodecConfigurator:DUT6|data[12]                                       ; 1                 ; 6       ;
+;      - CodecConfigurator:DUT6|data[6]                                        ; 1                 ; 6       ;
+;      - CodecConfigurator:DUT6|data[3]                                        ; 1                 ; 6       ;
+;      - CodecConfigurator:DUT6|data[4]                                        ; 1                 ; 6       ;
+;      - CodecConfigurator:DUT6|data[21]                                       ; 1                 ; 6       ;
+;      - CodecConfigurator:DUT6|data[9]                                        ; 1                 ; 6       ;
+;      - CodecConfigurator:DUT6|data[1]                                        ; 1                 ; 6       ;
+;      - CodecConfigurator:DUT6|data[10]                                       ; 1                 ; 6       ;
+;      - CodecConfigurator:DUT6|data[2]                                        ; 1                 ; 6       ;
+;      - CodecConfigurator:DUT6|data[11]                                       ; 1                 ; 6       ;
+;      - CodecConfigurator:DUT6|data[0]                                        ; 1                 ; 6       ;
+;      - CodecConfigurator:DUT6|I2CMaster:i2cm1|I2CTxLogic:txLogic|bitState[1] ; 1                 ; 6       ;
+;      - CodecConfigurator:DUT6|I2CMaster:i2cm1|I2CTxLogic:txLogic|bitState[0] ; 1                 ; 6       ;
+;      - CodecConfigurator:DUT6|I2CMaster:i2cm1|txState[0]                     ; 1                 ; 6       ;
+;      - CodecConfigurator:DUT6|I2CMaster:i2cm1|I2CTxLogic:txLogic|ready       ; 1                 ; 6       ;
+;      - CodecConfigurator:DUT6|state[2]                                       ; 1                 ; 6       ;
+;      - CodecConfigurator:DUT6|state[0]                                       ; 1                 ; 6       ;
+;      - CodecConfigurator:DUT6|state[1]                                       ; 1                 ; 6       ;
+;      - CodecConfigurator:DUT6|I2CMaster:i2cm1|ready                          ; 1                 ; 6       ;
+;      - CodecConfigurator:DUT6|i2cClockDisable                                ; 1                 ; 6       ;
 ; Echo_Sig                                                                     ;                   ;         ;
 ;      - Sensor_Controller:DUT2|Distance[7]~0                                  ; 1                 ; 6       ;
 +------------------------------------------------------------------------------+-------------------+---------+
@@ -1040,13 +1040,13 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; CLK_Divider:DUT1|Counter[6]~18                                       ; LCCOMB_X7_Y21_N6   ; 12      ; Sync. clear               ; no     ; --                   ; --               ; --                        ;
 ; CLK_Divider:DUT1|T_CLK                                               ; LCFF_X12_Y21_N1    ; 9       ; Clock                     ; no     ; --                   ; --               ; --                        ;
 ; CLK_Divider:DUT1|T_CLK                                               ; LCFF_X12_Y21_N1    ; 23      ; Clock                     ; yes    ; Global Clock         ; GCLK9            ; --                        ;
-; CodecConfigurator:DUT5|I2CMaster:i2cm1|I2CTxLogic:txLogic|Decoder2~0 ; LCCOMB_X5_Y22_N4   ; 2       ; Clock enable              ; no     ; --                   ; --               ; --                        ;
-; CodecConfigurator:DUT5|I2CMaster:i2cm1|I2CTxLogic:txLogic|ready      ; LCFF_X7_Y22_N11    ; 5       ; Clock                     ; yes    ; Global Clock         ; GCLK8            ; --                        ;
-; CodecConfigurator:DUT5|I2CMaster:i2cm1|I2CTxLogic:txLogic|state[2]~1 ; LCCOMB_X7_Y22_N20  ; 4       ; Clock enable              ; no     ; --                   ; --               ; --                        ;
-; CodecConfigurator:DUT5|I2CMaster:i2cm1|ready                         ; LCFF_X5_Y21_N5     ; 3       ; Clock                     ; no     ; --                   ; --               ; --                        ;
-; CodecConfigurator:DUT5|I2CMaster:i2cm1|ready                         ; LCFF_X5_Y21_N5     ; 14      ; Clock                     ; yes    ; Global Clock         ; GCLK1            ; --                        ;
-; CodecConfigurator:DUT5|comb                                          ; LCCOMB_X4_Y21_N12  ; 9       ; Clock                     ; yes    ; Global Clock         ; GCLK3            ; --                        ;
-; CodecConfigurator:DUT5|data[10]~0                                    ; LCCOMB_X4_Y22_N26  ; 10      ; Clock enable              ; no     ; --                   ; --               ; --                        ;
+; CodecConfigurator:DUT6|I2CMaster:i2cm1|I2CTxLogic:txLogic|Decoder2~0 ; LCCOMB_X5_Y22_N4   ; 2       ; Clock enable              ; no     ; --                   ; --               ; --                        ;
+; CodecConfigurator:DUT6|I2CMaster:i2cm1|I2CTxLogic:txLogic|ready      ; LCFF_X7_Y22_N11    ; 5       ; Clock                     ; yes    ; Global Clock         ; GCLK8            ; --                        ;
+; CodecConfigurator:DUT6|I2CMaster:i2cm1|I2CTxLogic:txLogic|state[2]~1 ; LCCOMB_X7_Y22_N20  ; 4       ; Clock enable              ; no     ; --                   ; --               ; --                        ;
+; CodecConfigurator:DUT6|I2CMaster:i2cm1|ready                         ; LCFF_X5_Y21_N5     ; 3       ; Clock                     ; no     ; --                   ; --               ; --                        ;
+; CodecConfigurator:DUT6|I2CMaster:i2cm1|ready                         ; LCFF_X5_Y21_N5     ; 14      ; Clock                     ; yes    ; Global Clock         ; GCLK1            ; --                        ;
+; CodecConfigurator:DUT6|comb                                          ; LCCOMB_X4_Y21_N12  ; 9       ; Clock                     ; yes    ; Global Clock         ; GCLK3            ; --                        ;
+; CodecConfigurator:DUT6|data[10]~0                                    ; LCCOMB_X4_Y22_N26  ; 10      ; Clock enable              ; no     ; --                   ; --               ; --                        ;
 ; Digit_Converter:DUT3|LessThan0~1                                     ; LCCOMB_X4_Y21_N4   ; 4       ; Output enable             ; no     ; --                   ; --               ; --                        ;
 ; RST                                                                  ; PIN_R22            ; 54      ; Async. clear, Sync. clear ; no     ; --                   ; --               ; --                        ;
 ; Sensor_Controller:DUT2|Counter[8]~56                                 ; LCCOMB_X27_Y21_N24 ; 20      ; Sync. clear               ; no     ; --                   ; --               ; --                        ;
@@ -1061,9 +1061,9 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------------------------------------------------+-------------------+---------+----------------------+------------------+---------------------------+
 ; CLK                                                             ; PIN_L1            ; 25      ; Global Clock         ; GCLK2            ; --                        ;
 ; CLK_Divider:DUT1|T_CLK                                          ; LCFF_X12_Y21_N1   ; 23      ; Global Clock         ; GCLK9            ; --                        ;
-; CodecConfigurator:DUT5|I2CMaster:i2cm1|I2CTxLogic:txLogic|ready ; LCFF_X7_Y22_N11   ; 5       ; Global Clock         ; GCLK8            ; --                        ;
-; CodecConfigurator:DUT5|I2CMaster:i2cm1|ready                    ; LCFF_X5_Y21_N5    ; 14      ; Global Clock         ; GCLK1            ; --                        ;
-; CodecConfigurator:DUT5|comb                                     ; LCCOMB_X4_Y21_N12 ; 9       ; Global Clock         ; GCLK3            ; --                        ;
+; CodecConfigurator:DUT6|I2CMaster:i2cm1|I2CTxLogic:txLogic|ready ; LCFF_X7_Y22_N11   ; 5       ; Global Clock         ; GCLK8            ; --                        ;
+; CodecConfigurator:DUT6|I2CMaster:i2cm1|ready                    ; LCFF_X5_Y21_N5    ; 14      ; Global Clock         ; GCLK1            ; --                        ;
+; CodecConfigurator:DUT6|comb                                     ; LCCOMB_X4_Y21_N12 ; 9       ; Global Clock         ; GCLK3            ; --                        ;
 +-----------------------------------------------------------------+-------------------+---------+----------------------+------------------+---------------------------+
 
 
@@ -1091,21 +1091,21 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Sensor_Controller:DUT2|lpm_divide:Div0|lpm_divide_hem:auto_generated|sign_div_unsign_rlh:divider|alt_u_div_o2f:divider|add_sub_7_result_int[7]~12           ; 16      ;
 ; Sensor_Controller:DUT2|lpm_divide:Div0|lpm_divide_hem:auto_generated|sign_div_unsign_rlh:divider|alt_u_div_o2f:divider|add_sub_6_result_int[7]~12           ; 16      ;
 ; Sensor_Controller:DUT2|lpm_divide:Div0|lpm_divide_hem:auto_generated|sign_div_unsign_rlh:divider|alt_u_div_o2f:divider|add_sub_5_result_int[6]~10           ; 16      ;
-; CodecConfigurator:DUT5|state[1]                                                                                                                             ; 14      ;
-; CodecConfigurator:DUT5|state[2]                                                                                                                             ; 14      ;
-; CodecConfigurator:DUT5|state[0]                                                                                                                             ; 13      ;
-; CodecConfigurator:DUT5|I2CMaster:i2cm1|bytesCounter[1]                                                                                                      ; 13      ;
-; CodecConfigurator:DUT5|I2CMaster:i2cm1|I2CTxLogic:txLogic|state[1]                                                                                          ; 13      ;
+; CodecConfigurator:DUT6|state[1]                                                                                                                             ; 14      ;
+; CodecConfigurator:DUT6|state[2]                                                                                                                             ; 14      ;
+; CodecConfigurator:DUT6|state[0]                                                                                                                             ; 13      ;
+; CodecConfigurator:DUT6|I2CMaster:i2cm1|bytesCounter[1]                                                                                                      ; 13      ;
+; CodecConfigurator:DUT6|I2CMaster:i2cm1|I2CTxLogic:txLogic|state[1]                                                                                          ; 13      ;
 ; Sensor_Controller:DUT2|lpm_divide:Div0|lpm_divide_hem:auto_generated|sign_div_unsign_rlh:divider|alt_u_div_o2f:divider|add_sub_22_result_int[7]~12          ; 13      ;
-; CodecConfigurator:DUT5|I2CMaster:i2cm1|txState[1]                                                                                                           ; 12      ;
+; CodecConfigurator:DUT6|I2CMaster:i2cm1|txState[1]                                                                                                           ; 12      ;
 ; CLK_Divider:DUT1|Counter[6]~18                                                                                                                              ; 12      ;
-; CodecConfigurator:DUT5|I2CMaster:i2cm1|txState[0]                                                                                                           ; 11      ;
-; CodecConfigurator:DUT5|I2CMaster:i2cm1|bytesCounter[0]                                                                                                      ; 11      ;
-; CodecConfigurator:DUT5|I2CMaster:i2cm1|I2CTxLogic:txLogic|state[0]                                                                                          ; 11      ;
+; CodecConfigurator:DUT6|I2CMaster:i2cm1|txState[0]                                                                                                           ; 11      ;
+; CodecConfigurator:DUT6|I2CMaster:i2cm1|bytesCounter[0]                                                                                                      ; 11      ;
+; CodecConfigurator:DUT6|I2CMaster:i2cm1|I2CTxLogic:txLogic|state[0]                                                                                          ; 11      ;
 ; Digit_Converter:DUT3|lpm_divide:Div0|lpm_divide_eem:auto_generated|sign_div_unsign_olh:divider|alt_u_div_i2f:divider|add_sub_29_result_int[5]~8             ; 11      ;
 ; Digit_Converter:DUT3|lpm_divide:Div0|lpm_divide_eem:auto_generated|sign_div_unsign_olh:divider|alt_u_div_i2f:divider|add_sub_28_result_int[5]~8             ; 11      ;
 ; Sensor_Controller:DUT2|Distance[5]                                                                                                                          ; 11      ;
-; CodecConfigurator:DUT5|data[10]~0                                                                                                                           ; 10      ;
+; CodecConfigurator:DUT6|data[10]~0                                                                                                                           ; 10      ;
 ; Digit_Converter:DUT3|lpm_divide:Div0|lpm_divide_eem:auto_generated|sign_div_unsign_olh:divider|alt_u_div_i2f:divider|add_sub_27_result_int[5]~8             ; 10      ;
 ; Digit_Converter:DUT3|lpm_divide:Div0|lpm_divide_eem:auto_generated|sign_div_unsign_olh:divider|alt_u_div_i2f:divider|add_sub_26_result_int[5]~8             ; 10      ;
 ; Digit_Converter:DUT3|lpm_divide:Div0|lpm_divide_eem:auto_generated|sign_div_unsign_olh:divider|alt_u_div_i2f:divider|add_sub_25_result_int[5]~8             ; 10      ;
@@ -1127,23 +1127,23 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Digit_Converter:DUT3|Distance_Tens[1]~9                                                                                                                     ; 7       ;
 ; Digit_Converter:DUT3|Distance_Tens[0]~8                                                                                                                     ; 7       ;
 ; Digit_Converter:DUT3|LessThan0~0                                                                                                                            ; 7       ;
-; CodecConfigurator:DUT5|I2CMaster:i2cm1|I2CTxLogic:txLogic|bitState[0]                                                                                       ; 6       ;
-; CodecConfigurator:DUT5|I2CMaster:i2cm1|I2CTxLogic:txLogic|state[2]                                                                                          ; 6       ;
+; CodecConfigurator:DUT6|I2CMaster:i2cm1|I2CTxLogic:txLogic|bitState[0]                                                                                       ; 6       ;
+; CodecConfigurator:DUT6|I2CMaster:i2cm1|I2CTxLogic:txLogic|state[2]                                                                                          ; 6       ;
 ; Sensor_Controller:DUT2|Counter[1]                                                                                                                           ; 6       ;
 ; Sensor_Controller:DUT2|Distance[2]                                                                                                                          ; 6       ;
 ; Sensor_Controller:DUT2|Distance[3]                                                                                                                          ; 6       ;
 ; Sensor_Controller:DUT2|Distance[4]                                                                                                                          ; 6       ;
-; CodecConfigurator:DUT5|I2CMaster:i2cm1|I2CTxLogic:txLogic|bitState[1]                                                                                       ; 5       ;
-; CodecConfigurator:DUT5|I2CMaster:i2cm1|I2CTxLogic:txLogic|state[3]                                                                                          ; 5       ;
-; CodecConfigurator:DUT5|I2CMaster:i2cm1|I2CTxLogic:txLogic|sdaPullDown                                                                                       ; 5       ;
+; CodecConfigurator:DUT6|I2CMaster:i2cm1|I2CTxLogic:txLogic|bitState[1]                                                                                       ; 5       ;
+; CodecConfigurator:DUT6|I2CMaster:i2cm1|I2CTxLogic:txLogic|state[3]                                                                                          ; 5       ;
+; CodecConfigurator:DUT6|I2CMaster:i2cm1|I2CTxLogic:txLogic|sdaPullDown                                                                                       ; 5       ;
 ; Sensor_Controller:DUT2|Counter[0]                                                                                                                           ; 5       ;
 ; Digit_Converter:DUT3|Add0~16                                                                                                                                ; 5       ;
 ; Sensor_Controller:DUT2|Distance[6]                                                                                                                          ; 5       ;
-; CodecConfigurator:DUT5|I2CMaster:i2cm1|I2CTxLogic:txLogic|ready                                                                                             ; 4       ;
-; CodecConfigurator:DUT5|I2CMaster:i2cm1|I2CTxLogic:txLogic|state[2]~1                                                                                        ; 4       ;
-; CodecConfigurator:DUT5|I2CMaster:i2cm1|I2CTxLogic:txLogic|state[2]~0                                                                                        ; 4       ;
-; CodecConfigurator:DUT5|I2CMaster:i2cm1|I2CTxLogic:txLogic|ready~0                                                                                           ; 4       ;
-; CodecConfigurator:DUT5|I2CMaster:i2cm1|I2CTxLogic:txLogic|sclPullDown                                                                                       ; 4       ;
+; CodecConfigurator:DUT6|I2CMaster:i2cm1|I2CTxLogic:txLogic|ready                                                                                             ; 4       ;
+; CodecConfigurator:DUT6|I2CMaster:i2cm1|I2CTxLogic:txLogic|state[2]~1                                                                                        ; 4       ;
+; CodecConfigurator:DUT6|I2CMaster:i2cm1|I2CTxLogic:txLogic|state[2]~0                                                                                        ; 4       ;
+; CodecConfigurator:DUT6|I2CMaster:i2cm1|I2CTxLogic:txLogic|ready~0                                                                                           ; 4       ;
+; CodecConfigurator:DUT6|I2CMaster:i2cm1|I2CTxLogic:txLogic|sclPullDown                                                                                       ; 4       ;
 ; Digit_Converter:DUT3|LessThan0~1                                                                                                                            ; 4       ;
 ; Sensor_Controller:DUT2|Add1~30                                                                                                                              ; 4       ;
 ; Sensor_Controller:DUT2|Add1~28                                                                                                                              ; 4       ;
@@ -1185,8 +1185,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Digit_Converter:DUT3|Add0~8                                                                                                                                 ; 4       ;
 ; Digit_Converter:DUT3|Add0~6                                                                                                                                 ; 4       ;
 ; Sensor_Controller:DUT2|Distance[1]                                                                                                                          ; 4       ;
-; CodecConfigurator:DUT5|I2CMaster:i2cm1|I2CTxLogic:txLogic|Equal2~0                                                                                          ; 3       ;
-; CodecConfigurator:DUT5|data[21]                                                                                                                             ; 3       ;
+; CodecConfigurator:DUT6|I2CMaster:i2cm1|I2CTxLogic:txLogic|Equal2~0                                                                                          ; 3       ;
+; CodecConfigurator:DUT6|data[21]                                                                                                                             ; 3       ;
 ; Sensor_Controller:DUT2|Add1~38                                                                                                                              ; 3       ;
 ; Sensor_Controller:DUT2|Add1~36                                                                                                                              ; 3       ;
 ; Sensor_Controller:DUT2|Add1~34                                                                                                                              ; 3       ;
@@ -1247,12 +1247,12 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Sensor_Controller:DUT2|lpm_divide:Div0|lpm_divide_hem:auto_generated|sign_div_unsign_rlh:divider|alt_u_div_o2f:divider|StageOut[60]~408                     ; 2       ;
 ; Sensor_Controller:DUT2|lpm_divide:Div0|lpm_divide_hem:auto_generated|sign_div_unsign_rlh:divider|alt_u_div_o2f:divider|StageOut[52]~406                     ; 2       ;
 ; Sensor_Controller:DUT2|lpm_divide:Div0|lpm_divide_hem:auto_generated|sign_div_unsign_rlh:divider|alt_u_div_o2f:divider|StageOut[53]~405                     ; 2       ;
-; CodecConfigurator:DUT5|i2cClockDisable                                                                                                                      ; 2       ;
-; CodecConfigurator:DUT5|I2CMaster:i2cm1|ready                                                                                                                ; 2       ;
-; CodecConfigurator:DUT5|I2CMaster:i2cm1|I2CTxLogic:txLogic|Decoder2~0                                                                                        ; 2       ;
-; CodecConfigurator:DUT5|I2CMaster:i2cm1|I2CTxLogic:txLogic|Decoder1~0                                                                                        ; 2       ;
-; CodecConfigurator:DUT5|data[0]                                                                                                                              ; 2       ;
-; CodecConfigurator:DUT5|data[3]                                                                                                                              ; 2       ;
+; CodecConfigurator:DUT6|i2cClockDisable                                                                                                                      ; 2       ;
+; CodecConfigurator:DUT6|I2CMaster:i2cm1|ready                                                                                                                ; 2       ;
+; CodecConfigurator:DUT6|I2CMaster:i2cm1|I2CTxLogic:txLogic|Decoder2~0                                                                                        ; 2       ;
+; CodecConfigurator:DUT6|I2CMaster:i2cm1|I2CTxLogic:txLogic|Decoder1~0                                                                                        ; 2       ;
+; CodecConfigurator:DUT6|data[0]                                                                                                                              ; 2       ;
+; CodecConfigurator:DUT6|data[3]                                                                                                                              ; 2       ;
 ; CLK_Divider:DUT1|Equal0~2                                                                                                                                   ; 2       ;
 ; CLK_Divider:DUT1|Equal0~1                                                                                                                                   ; 2       ;
 ; CLK_Divider:DUT1|Equal0~0                                                                                                                                   ; 2       ;
@@ -1274,7 +1274,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; CLK_Divider:DUT1|Counter[0]                                                                                                                                 ; 2       ;
 ; CLK_Divider:DUT1|Counter[3]                                                                                                                                 ; 2       ;
 ; CLK_Divider:DUT1|Counter[2]                                                                                                                                 ; 2       ;
-; Sound_Generator:DUT6|Counter[11]                                                                                                                            ; 2       ;
+; Sound_Generator:DUT5|Counter[11]                                                                                                                            ; 2       ;
 ; Sensor_Controller:DUT2|lpm_divide:Div0|lpm_divide_hem:auto_generated|sign_div_unsign_rlh:divider|alt_u_div_o2f:divider|add_sub_21_result_int[4]~6           ; 2       ;
 ; Sensor_Controller:DUT2|lpm_divide:Div0|lpm_divide_hem:auto_generated|sign_div_unsign_rlh:divider|alt_u_div_o2f:divider|add_sub_21_result_int[3]~4           ; 2       ;
 ; Sensor_Controller:DUT2|lpm_divide:Div0|lpm_divide_hem:auto_generated|sign_div_unsign_rlh:divider|alt_u_div_o2f:divider|add_sub_21_result_int[2]~2           ; 2       ;
@@ -1365,10 +1365,10 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Digit_Converter:DUT3|lpm_divide:Mod0|lpm_divide_45m:auto_generated|sign_div_unsign_bkh:divider|alt_u_div_ove:divider|add_sub_3_result_int[2]~2              ; 2       ;
 ; Digit_Converter:DUT3|lpm_divide:Mod0|lpm_divide_45m:auto_generated|sign_div_unsign_bkh:divider|alt_u_div_ove:divider|add_sub_3_result_int[1]~0              ; 2       ;
 ; Sensor_Controller:DUT2|Distance[0]                                                                                                                          ; 2       ;
-; Sound_Generator:DUT6|Counter[8]                                                                                                                             ; 2       ;
-; Sound_Generator:DUT6|Counter[3]                                                                                                                             ; 2       ;
-; Sound_Generator:DUT6|Counter[1]                                                                                                                             ; 2       ;
-; CodecConfigurator:DUT5|data[21]~feeder                                                                                                                      ; 1       ;
+; Sound_Generator:DUT5|Counter[8]                                                                                                                             ; 2       ;
+; Sound_Generator:DUT5|Counter[3]                                                                                                                             ; 2       ;
+; Sound_Generator:DUT5|Counter[1]                                                                                                                             ; 2       ;
+; CodecConfigurator:DUT6|data[21]~feeder                                                                                                                      ; 1       ;
 ; Echo_Sig                                                                                                                                                    ; 1       ;
 ; Sensor_Controller:DUT2|lpm_divide:Div0|lpm_divide_hem:auto_generated|sign_div_unsign_rlh:divider|alt_u_div_o2f:divider|op_15~12_wirecell                    ; 1       ;
 ; Sensor_Controller:DUT2|lpm_divide:Div0|lpm_divide_hem:auto_generated|sign_div_unsign_rlh:divider|alt_u_div_o2f:divider|add_sub_22_result_int[7]~12_wirecell ; 1       ;
@@ -1378,7 +1378,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Sensor_Controller:DUT2|lpm_divide:Div0|lpm_divide_hem:auto_generated|sign_div_unsign_rlh:divider|alt_u_div_o2f:divider|add_sub_18_result_int[7]~12_wirecell ; 1       ;
 ; Sensor_Controller:DUT2|lpm_divide:Div0|lpm_divide_hem:auto_generated|sign_div_unsign_rlh:divider|alt_u_div_o2f:divider|add_sub_17_result_int[7]~12_wirecell ; 1       ;
 ; Sensor_Controller:DUT2|lpm_divide:Div0|lpm_divide_hem:auto_generated|sign_div_unsign_rlh:divider|alt_u_div_o2f:divider|add_sub_16_result_int[7]~12_wirecell ; 1       ;
-; CodecConfigurator:DUT5|I2CMaster:i2cm1|I2CTxLogic:txLogic|bitState[0]~1                                                                                     ; 1       ;
+; CodecConfigurator:DUT6|I2CMaster:i2cm1|I2CTxLogic:txLogic|bitState[0]~1                                                                                     ; 1       ;
 ; Sensor_Controller:DUT2|lpm_divide:Div0|lpm_divide_hem:auto_generated|sign_div_unsign_rlh:divider|alt_u_div_o2f:divider|StageOut[156]~471                    ; 1       ;
 ; Sensor_Controller:DUT2|lpm_divide:Div0|lpm_divide_hem:auto_generated|sign_div_unsign_rlh:divider|alt_u_div_o2f:divider|StageOut[47]~452                     ; 1       ;
 ; Digit_Converter:DUT3|lpm_divide:Div0|lpm_divide_eem:auto_generated|sign_div_unsign_olh:divider|alt_u_div_i2f:divider|StageOut[152]~102                      ; 1       ;
@@ -1409,67 +1409,67 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Digit_Converter:DUT3|lpm_divide:Div0|lpm_divide_eem:auto_generated|sign_div_unsign_olh:divider|alt_u_div_i2f:divider|StageOut[133]~93                       ; 1       ;
 ; Digit_Converter:DUT3|lpm_divide:Mod0|lpm_divide_45m:auto_generated|sign_div_unsign_bkh:divider|alt_u_div_ove:divider|StageOut[33]~63                        ; 1       ;
 ; Digit_Converter:DUT3|lpm_divide:Mod0|lpm_divide_45m:auto_generated|sign_div_unsign_bkh:divider|alt_u_div_ove:divider|StageOut[28]~62                        ; 1       ;
-; CodecConfigurator:DUT5|i2cClockDisable~0                                                                                                                    ; 1       ;
-; CodecConfigurator:DUT5|I2CMaster:i2cm1|ready~0                                                                                                              ; 1       ;
-; CodecConfigurator:DUT5|Mux3~1                                                                                                                               ; 1       ;
-; CodecConfigurator:DUT5|state[0]~1                                                                                                                           ; 1       ;
-; CodecConfigurator:DUT5|state[2]~0                                                                                                                           ; 1       ;
-; CodecConfigurator:DUT5|I2CMaster:i2cm1|I2CTxLogic:txLogic|ready~4                                                                                           ; 1       ;
-; CodecConfigurator:DUT5|I2CMaster:i2cm1|I2CTxLogic:txLogic|ready~3                                                                                           ; 1       ;
-; CodecConfigurator:DUT5|I2CMaster:i2cm1|I2CTxLogic:txLogic|ready~2                                                                                           ; 1       ;
-; CodecConfigurator:DUT5|I2CMaster:i2cm1|I2CTxLogic:txLogic|ready~1                                                                                           ; 1       ;
-; CodecConfigurator:DUT5|comb~0                                                                                                                               ; 1       ;
-; CodecConfigurator:DUT5|I2CMaster:i2cm1|txState[0]~1                                                                                                         ; 1       ;
-; CodecConfigurator:DUT5|I2CMaster:i2cm1|I2CTxLogic:txLogic|bitState[1]~0                                                                                     ; 1       ;
-; CodecConfigurator:DUT5|Mux10~0                                                                                                                              ; 1       ;
-; CodecConfigurator:DUT5|Mux1~0                                                                                                                               ; 1       ;
-; CodecConfigurator:DUT5|Mux8~0                                                                                                                               ; 1       ;
-; CodecConfigurator:DUT5|Mux4~1                                                                                                                               ; 1       ;
-; CodecConfigurator:DUT5|Mux9~0                                                                                                                               ; 1       ;
-; CodecConfigurator:DUT5|Mux3~0                                                                                                                               ; 1       ;
-; CodecConfigurator:DUT5|Mux6~0                                                                                                                               ; 1       ;
-; CodecConfigurator:DUT5|Mux7~0                                                                                                                               ; 1       ;
-; CodecConfigurator:DUT5|Mux4~0                                                                                                                               ; 1       ;
-; CodecConfigurator:DUT5|Mux0~0                                                                                                                               ; 1       ;
-; CodecConfigurator:DUT5|I2CMaster:i2cm1|bytesCounter~1                                                                                                       ; 1       ;
-; CodecConfigurator:DUT5|I2CMaster:i2cm1|bytesCounter[0]~0                                                                                                    ; 1       ;
-; CodecConfigurator:DUT5|I2CMaster:i2cm1|txState[1]~0                                                                                                         ; 1       ;
-; CodecConfigurator:DUT5|I2CMaster:i2cm1|I2CTxLogic:txLogic|Mux6~0                                                                                            ; 1       ;
-; CodecConfigurator:DUT5|I2CMaster:i2cm1|I2CTxLogic:txLogic|Mux7~0                                                                                            ; 1       ;
-; CodecConfigurator:DUT5|I2CMaster:i2cm1|I2CTxLogic:txLogic|Mux5~0                                                                                            ; 1       ;
-; CodecConfigurator:DUT5|I2CMaster:i2cm1|I2CTxLogic:txLogic|Mux4~0                                                                                            ; 1       ;
-; CodecConfigurator:DUT5|I2CMaster:i2cm1|I2CTxLogic:txLogic|Add2~0                                                                                            ; 1       ;
-; CodecConfigurator:DUT5|I2CMaster:i2cm1|I2CTxLogic:txLogic|Mux3~1                                                                                            ; 1       ;
-; CodecConfigurator:DUT5|I2CMaster:i2cm1|I2CTxLogic:txLogic|Mux3~0                                                                                            ; 1       ;
-; CodecConfigurator:DUT5|I2CMaster:i2cm1|I2CTxLogic:txLogic|Selector0~0                                                                                       ; 1       ;
-; CodecConfigurator:DUT5|I2CMaster:i2cm1|I2CTxLogic:txLogic|Mux0~0                                                                                            ; 1       ;
-; CodecConfigurator:DUT5|I2CMaster:i2cm1|I2CTxLogic:txLogic|Mux1~1                                                                                            ; 1       ;
-; CodecConfigurator:DUT5|I2CMaster:i2cm1|I2CTxLogic:txLogic|Mux1~0                                                                                            ; 1       ;
-; CodecConfigurator:DUT5|I2CMaster:i2cm1|I2CTxLogic:txLogic|sdaPullDown~8                                                                                     ; 1       ;
-; CodecConfigurator:DUT5|I2CMaster:i2cm1|I2CTxLogic:txLogic|sdaPullDown~7                                                                                     ; 1       ;
-; CodecConfigurator:DUT5|I2CMaster:i2cm1|I2CTxLogic:txLogic|sdaPullDown~6                                                                                     ; 1       ;
-; CodecConfigurator:DUT5|I2CMaster:i2cm1|I2CTxLogic:txLogic|sdaPullDown~5                                                                                     ; 1       ;
-; CodecConfigurator:DUT5|I2CMaster:i2cm1|I2CTxLogic:txLogic|ShiftRight0~1                                                                                     ; 1       ;
-; CodecConfigurator:DUT5|I2CMaster:i2cm1|Mux7~0                                                                                                               ; 1       ;
-; CodecConfigurator:DUT5|I2CMaster:i2cm1|I2CTxLogic:txLogic|ShiftRight0~0                                                                                     ; 1       ;
-; CodecConfigurator:DUT5|I2CMaster:i2cm1|Mux4~0                                                                                                               ; 1       ;
-; CodecConfigurator:DUT5|data[11]                                                                                                                             ; 1       ;
-; CodecConfigurator:DUT5|I2CMaster:i2cm1|Mux5~1                                                                                                               ; 1       ;
-; CodecConfigurator:DUT5|data[2]                                                                                                                              ; 1       ;
-; CodecConfigurator:DUT5|I2CMaster:i2cm1|Mux5~0                                                                                                               ; 1       ;
-; CodecConfigurator:DUT5|data[10]                                                                                                                             ; 1       ;
-; CodecConfigurator:DUT5|I2CMaster:i2cm1|Mux6~0                                                                                                               ; 1       ;
-; CodecConfigurator:DUT5|data[1]                                                                                                                              ; 1       ;
-; CodecConfigurator:DUT5|data[9]                                                                                                                              ; 1       ;
-; CodecConfigurator:DUT5|I2CMaster:i2cm1|I2CTxLogic:txLogic|sdaPullDown~4                                                                                     ; 1       ;
-; CodecConfigurator:DUT5|I2CMaster:i2cm1|I2CTxLogic:txLogic|sdaPullDown~3                                                                                     ; 1       ;
-; CodecConfigurator:DUT5|I2CMaster:i2cm1|I2CTxLogic:txLogic|sdaPullDown~2                                                                                     ; 1       ;
-; CodecConfigurator:DUT5|data[4]                                                                                                                              ; 1       ;
-; CodecConfigurator:DUT5|I2CMaster:i2cm1|I2CTxLogic:txLogic|sdaPullDown~1                                                                                     ; 1       ;
-; CodecConfigurator:DUT5|data[6]                                                                                                                              ; 1       ;
-; CodecConfigurator:DUT5|I2CMaster:i2cm1|I2CTxLogic:txLogic|sdaPullDown~0                                                                                     ; 1       ;
-; CodecConfigurator:DUT5|data[12]                                                                                                                             ; 1       ;
-; CodecConfigurator:DUT5|I2CMaster:i2cm1|I2CTxLogic:txLogic|Selector1~0                                                                                       ; 1       ;
+; CodecConfigurator:DUT6|i2cClockDisable~0                                                                                                                    ; 1       ;
+; CodecConfigurator:DUT6|I2CMaster:i2cm1|ready~0                                                                                                              ; 1       ;
+; CodecConfigurator:DUT6|Mux3~1                                                                                                                               ; 1       ;
+; CodecConfigurator:DUT6|state[0]~1                                                                                                                           ; 1       ;
+; CodecConfigurator:DUT6|state[2]~0                                                                                                                           ; 1       ;
+; CodecConfigurator:DUT6|I2CMaster:i2cm1|I2CTxLogic:txLogic|ready~4                                                                                           ; 1       ;
+; CodecConfigurator:DUT6|I2CMaster:i2cm1|I2CTxLogic:txLogic|ready~3                                                                                           ; 1       ;
+; CodecConfigurator:DUT6|I2CMaster:i2cm1|I2CTxLogic:txLogic|ready~2                                                                                           ; 1       ;
+; CodecConfigurator:DUT6|I2CMaster:i2cm1|I2CTxLogic:txLogic|ready~1                                                                                           ; 1       ;
+; CodecConfigurator:DUT6|comb~0                                                                                                                               ; 1       ;
+; CodecConfigurator:DUT6|I2CMaster:i2cm1|txState[0]~1                                                                                                         ; 1       ;
+; CodecConfigurator:DUT6|I2CMaster:i2cm1|I2CTxLogic:txLogic|bitState[1]~0                                                                                     ; 1       ;
+; CodecConfigurator:DUT6|Mux10~0                                                                                                                              ; 1       ;
+; CodecConfigurator:DUT6|Mux1~0                                                                                                                               ; 1       ;
+; CodecConfigurator:DUT6|Mux8~0                                                                                                                               ; 1       ;
+; CodecConfigurator:DUT6|Mux4~1                                                                                                                               ; 1       ;
+; CodecConfigurator:DUT6|Mux9~0                                                                                                                               ; 1       ;
+; CodecConfigurator:DUT6|Mux3~0                                                                                                                               ; 1       ;
+; CodecConfigurator:DUT6|Mux6~0                                                                                                                               ; 1       ;
+; CodecConfigurator:DUT6|Mux7~0                                                                                                                               ; 1       ;
+; CodecConfigurator:DUT6|Mux4~0                                                                                                                               ; 1       ;
+; CodecConfigurator:DUT6|Mux0~0                                                                                                                               ; 1       ;
+; CodecConfigurator:DUT6|I2CMaster:i2cm1|bytesCounter~1                                                                                                       ; 1       ;
+; CodecConfigurator:DUT6|I2CMaster:i2cm1|bytesCounter[0]~0                                                                                                    ; 1       ;
+; CodecConfigurator:DUT6|I2CMaster:i2cm1|txState[1]~0                                                                                                         ; 1       ;
+; CodecConfigurator:DUT6|I2CMaster:i2cm1|I2CTxLogic:txLogic|Mux6~0                                                                                            ; 1       ;
+; CodecConfigurator:DUT6|I2CMaster:i2cm1|I2CTxLogic:txLogic|Mux7~0                                                                                            ; 1       ;
+; CodecConfigurator:DUT6|I2CMaster:i2cm1|I2CTxLogic:txLogic|Mux5~0                                                                                            ; 1       ;
+; CodecConfigurator:DUT6|I2CMaster:i2cm1|I2CTxLogic:txLogic|Mux4~0                                                                                            ; 1       ;
+; CodecConfigurator:DUT6|I2CMaster:i2cm1|I2CTxLogic:txLogic|Add2~0                                                                                            ; 1       ;
+; CodecConfigurator:DUT6|I2CMaster:i2cm1|I2CTxLogic:txLogic|Mux3~1                                                                                            ; 1       ;
+; CodecConfigurator:DUT6|I2CMaster:i2cm1|I2CTxLogic:txLogic|Mux3~0                                                                                            ; 1       ;
+; CodecConfigurator:DUT6|I2CMaster:i2cm1|I2CTxLogic:txLogic|Selector0~0                                                                                       ; 1       ;
+; CodecConfigurator:DUT6|I2CMaster:i2cm1|I2CTxLogic:txLogic|Mux0~0                                                                                            ; 1       ;
+; CodecConfigurator:DUT6|I2CMaster:i2cm1|I2CTxLogic:txLogic|Mux1~1                                                                                            ; 1       ;
+; CodecConfigurator:DUT6|I2CMaster:i2cm1|I2CTxLogic:txLogic|Mux1~0                                                                                            ; 1       ;
+; CodecConfigurator:DUT6|I2CMaster:i2cm1|I2CTxLogic:txLogic|sdaPullDown~8                                                                                     ; 1       ;
+; CodecConfigurator:DUT6|I2CMaster:i2cm1|I2CTxLogic:txLogic|sdaPullDown~7                                                                                     ; 1       ;
+; CodecConfigurator:DUT6|I2CMaster:i2cm1|I2CTxLogic:txLogic|sdaPullDown~6                                                                                     ; 1       ;
+; CodecConfigurator:DUT6|I2CMaster:i2cm1|I2CTxLogic:txLogic|sdaPullDown~5                                                                                     ; 1       ;
+; CodecConfigurator:DUT6|I2CMaster:i2cm1|I2CTxLogic:txLogic|ShiftRight0~1                                                                                     ; 1       ;
+; CodecConfigurator:DUT6|I2CMaster:i2cm1|Mux7~0                                                                                                               ; 1       ;
+; CodecConfigurator:DUT6|I2CMaster:i2cm1|I2CTxLogic:txLogic|ShiftRight0~0                                                                                     ; 1       ;
+; CodecConfigurator:DUT6|I2CMaster:i2cm1|Mux4~0                                                                                                               ; 1       ;
+; CodecConfigurator:DUT6|data[11]                                                                                                                             ; 1       ;
+; CodecConfigurator:DUT6|I2CMaster:i2cm1|Mux5~1                                                                                                               ; 1       ;
+; CodecConfigurator:DUT6|data[2]                                                                                                                              ; 1       ;
+; CodecConfigurator:DUT6|I2CMaster:i2cm1|Mux5~0                                                                                                               ; 1       ;
+; CodecConfigurator:DUT6|data[10]                                                                                                                             ; 1       ;
+; CodecConfigurator:DUT6|I2CMaster:i2cm1|Mux6~0                                                                                                               ; 1       ;
+; CodecConfigurator:DUT6|data[1]                                                                                                                              ; 1       ;
+; CodecConfigurator:DUT6|data[9]                                                                                                                              ; 1       ;
+; CodecConfigurator:DUT6|I2CMaster:i2cm1|I2CTxLogic:txLogic|sdaPullDown~4                                                                                     ; 1       ;
+; CodecConfigurator:DUT6|I2CMaster:i2cm1|I2CTxLogic:txLogic|sdaPullDown~3                                                                                     ; 1       ;
+; CodecConfigurator:DUT6|I2CMaster:i2cm1|I2CTxLogic:txLogic|sdaPullDown~2                                                                                     ; 1       ;
+; CodecConfigurator:DUT6|data[4]                                                                                                                              ; 1       ;
+; CodecConfigurator:DUT6|I2CMaster:i2cm1|I2CTxLogic:txLogic|sdaPullDown~1                                                                                     ; 1       ;
+; CodecConfigurator:DUT6|data[6]                                                                                                                              ; 1       ;
+; CodecConfigurator:DUT6|I2CMaster:i2cm1|I2CTxLogic:txLogic|sdaPullDown~0                                                                                     ; 1       ;
+; CodecConfigurator:DUT6|data[12]                                                                                                                             ; 1       ;
+; CodecConfigurator:DUT6|I2CMaster:i2cm1|I2CTxLogic:txLogic|Selector1~0                                                                                       ; 1       ;
 ; CLK_Divider:DUT1|T_CLK~0                                                                                                                                    ; 1       ;
 ; Sensor_Controller:DUT2|lpm_divide:Div0|lpm_divide_hem:auto_generated|sign_div_unsign_rlh:divider|alt_u_div_o2f:divider|StageOut[154]~403                    ; 1       ;
 ; Sensor_Controller:DUT2|lpm_divide:Div0|lpm_divide_hem:auto_generated|sign_div_unsign_rlh:divider|alt_u_div_o2f:divider|StageOut[154]~402                    ; 1       ;
@@ -1729,13 +1729,13 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; CLK_Divider:DUT1|Counter[1]~14                                                                                                                              ; 1       ;
 ; CLK_Divider:DUT1|Counter[0]~13                                                                                                                              ; 1       ;
 ; CLK_Divider:DUT1|Counter[0]~12                                                                                                                              ; 1       ;
-; Sound_Generator:DUT6|Counter[11]~34                                                                                                                         ; 1       ;
-; Sound_Generator:DUT6|Counter[10]~33                                                                                                                         ; 1       ;
-; Sound_Generator:DUT6|Counter[10]~32                                                                                                                         ; 1       ;
-; Sound_Generator:DUT6|Counter[9]~31                                                                                                                          ; 1       ;
-; Sound_Generator:DUT6|Counter[9]~30                                                                                                                          ; 1       ;
-; Sound_Generator:DUT6|Counter[9]                                                                                                                             ; 1       ;
-; Sound_Generator:DUT6|Counter[10]                                                                                                                            ; 1       ;
+; Sound_Generator:DUT5|Counter[11]~34                                                                                                                         ; 1       ;
+; Sound_Generator:DUT5|Counter[10]~33                                                                                                                         ; 1       ;
+; Sound_Generator:DUT5|Counter[10]~32                                                                                                                         ; 1       ;
+; Sound_Generator:DUT5|Counter[9]~31                                                                                                                          ; 1       ;
+; Sound_Generator:DUT5|Counter[9]~30                                                                                                                          ; 1       ;
+; Sound_Generator:DUT5|Counter[9]                                                                                                                             ; 1       ;
+; Sound_Generator:DUT5|Counter[10]                                                                                                                            ; 1       ;
 ; Sensor_Controller:DUT2|Counter[19]~59                                                                                                                       ; 1       ;
 ; Sensor_Controller:DUT2|Counter[18]~58                                                                                                                       ; 1       ;
 ; Sensor_Controller:DUT2|Counter[18]~57                                                                                                                       ; 1       ;
@@ -1931,30 +1931,30 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Sensor_Controller:DUT2|Add1~5                                                                                                                               ; 1       ;
 ; Sensor_Controller:DUT2|Add1~3                                                                                                                               ; 1       ;
 ; Sensor_Controller:DUT2|Add1~1                                                                                                                               ; 1       ;
-; Sound_Generator:DUT6|Counter[8]~29                                                                                                                          ; 1       ;
-; Sound_Generator:DUT6|Counter[8]~28                                                                                                                          ; 1       ;
-; Sound_Generator:DUT6|Counter[7]~27                                                                                                                          ; 1       ;
-; Sound_Generator:DUT6|Counter[7]~26                                                                                                                          ; 1       ;
-; Sound_Generator:DUT6|Counter[6]~25                                                                                                                          ; 1       ;
-; Sound_Generator:DUT6|Counter[6]~24                                                                                                                          ; 1       ;
-; Sound_Generator:DUT6|Counter[5]~23                                                                                                                          ; 1       ;
-; Sound_Generator:DUT6|Counter[5]~22                                                                                                                          ; 1       ;
-; Sound_Generator:DUT6|Counter[4]~21                                                                                                                          ; 1       ;
-; Sound_Generator:DUT6|Counter[4]~20                                                                                                                          ; 1       ;
-; Sound_Generator:DUT6|Counter[4]                                                                                                                             ; 1       ;
-; Sound_Generator:DUT6|Counter[5]                                                                                                                             ; 1       ;
-; Sound_Generator:DUT6|Counter[6]                                                                                                                             ; 1       ;
-; Sound_Generator:DUT6|Counter[7]                                                                                                                             ; 1       ;
-; Sound_Generator:DUT6|Counter[3]~19                                                                                                                          ; 1       ;
-; Sound_Generator:DUT6|Counter[3]~18                                                                                                                          ; 1       ;
-; Sound_Generator:DUT6|Counter[2]~17                                                                                                                          ; 1       ;
-; Sound_Generator:DUT6|Counter[2]~16                                                                                                                          ; 1       ;
-; Sound_Generator:DUT6|Counter[2]                                                                                                                             ; 1       ;
-; Sound_Generator:DUT6|Counter[1]~15                                                                                                                          ; 1       ;
-; Sound_Generator:DUT6|Counter[1]~14                                                                                                                          ; 1       ;
-; Sound_Generator:DUT6|Counter[0]~13                                                                                                                          ; 1       ;
-; Sound_Generator:DUT6|Counter[0]~12                                                                                                                          ; 1       ;
-; Sound_Generator:DUT6|Counter[0]                                                                                                                             ; 1       ;
+; Sound_Generator:DUT5|Counter[8]~29                                                                                                                          ; 1       ;
+; Sound_Generator:DUT5|Counter[8]~28                                                                                                                          ; 1       ;
+; Sound_Generator:DUT5|Counter[7]~27                                                                                                                          ; 1       ;
+; Sound_Generator:DUT5|Counter[7]~26                                                                                                                          ; 1       ;
+; Sound_Generator:DUT5|Counter[6]~25                                                                                                                          ; 1       ;
+; Sound_Generator:DUT5|Counter[6]~24                                                                                                                          ; 1       ;
+; Sound_Generator:DUT5|Counter[5]~23                                                                                                                          ; 1       ;
+; Sound_Generator:DUT5|Counter[5]~22                                                                                                                          ; 1       ;
+; Sound_Generator:DUT5|Counter[4]~21                                                                                                                          ; 1       ;
+; Sound_Generator:DUT5|Counter[4]~20                                                                                                                          ; 1       ;
+; Sound_Generator:DUT5|Counter[4]                                                                                                                             ; 1       ;
+; Sound_Generator:DUT5|Counter[5]                                                                                                                             ; 1       ;
+; Sound_Generator:DUT5|Counter[6]                                                                                                                             ; 1       ;
+; Sound_Generator:DUT5|Counter[7]                                                                                                                             ; 1       ;
+; Sound_Generator:DUT5|Counter[3]~19                                                                                                                          ; 1       ;
+; Sound_Generator:DUT5|Counter[3]~18                                                                                                                          ; 1       ;
+; Sound_Generator:DUT5|Counter[2]~17                                                                                                                          ; 1       ;
+; Sound_Generator:DUT5|Counter[2]~16                                                                                                                          ; 1       ;
+; Sound_Generator:DUT5|Counter[2]                                                                                                                             ; 1       ;
+; Sound_Generator:DUT5|Counter[1]~15                                                                                                                          ; 1       ;
+; Sound_Generator:DUT5|Counter[1]~14                                                                                                                          ; 1       ;
+; Sound_Generator:DUT5|Counter[0]~13                                                                                                                          ; 1       ;
+; Sound_Generator:DUT5|Counter[0]~12                                                                                                                          ; 1       ;
+; Sound_Generator:DUT5|Counter[0]                                                                                                                             ; 1       ;
 ; Digit_Converter:DUT3|lpm_divide:Div0|lpm_divide_eem:auto_generated|sign_div_unsign_olh:divider|alt_u_div_i2f:divider|add_sub_31_result_int[5]~8             ; 1       ;
 ; Digit_Converter:DUT3|lpm_divide:Div0|lpm_divide_eem:auto_generated|sign_div_unsign_olh:divider|alt_u_div_i2f:divider|add_sub_31_result_int[4]~7             ; 1       ;
 ; Digit_Converter:DUT3|lpm_divide:Div0|lpm_divide_eem:auto_generated|sign_div_unsign_olh:divider|alt_u_div_i2f:divider|add_sub_31_result_int[3]~5             ; 1       ;
@@ -2238,12 +2238,12 @@ This will disable optimization of problematic paths and expose them for further 
 +------------------------------------+-----------------------------------------------------------------------+-------------------+
 ; Source Register                    ; Destination Register                                                  ; Delay Added in ns ;
 +------------------------------------+-----------------------------------------------------------------------+-------------------+
-; CLK_Divider:DUT1|T_CLK             ; CodecConfigurator:DUT5|I2CMaster:i2cm1|I2CTxLogic:txLogic|sclPullDown ; 2.088             ;
-; Sensor_Controller:DUT2|Distance[7] ; CodecConfigurator:DUT5|I2CMaster:i2cm1|I2CTxLogic:txLogic|sclPullDown ; 1.433             ;
+; CLK_Divider:DUT1|T_CLK             ; CodecConfigurator:DUT6|I2CMaster:i2cm1|I2CTxLogic:txLogic|sclPullDown ; 2.088             ;
+; Sensor_Controller:DUT2|Distance[7] ; CodecConfigurator:DUT6|I2CMaster:i2cm1|I2CTxLogic:txLogic|sclPullDown ; 1.433             ;
 ; Sensor_Controller:DUT2|Distance[3] ; Distance[13]                                                          ; 0.795             ;
 ; Sensor_Controller:DUT2|Distance[6] ; Distance[13]                                                          ; 0.794             ;
 ; Sensor_Controller:DUT2|Distance[2] ; Distance[13]                                                          ; 0.794             ;
-; Sensor_Controller:DUT2|Distance[5] ; CodecConfigurator:DUT5|I2CMaster:i2cm1|I2CTxLogic:txLogic|sclPullDown ; 0.704             ;
+; Sensor_Controller:DUT2|Distance[5] ; CodecConfigurator:DUT6|I2CMaster:i2cm1|I2CTxLogic:txLogic|sclPullDown ; 0.704             ;
 +------------------------------------+-----------------------------------------------------------------------+-------------------+
 Note: This table only shows the top 6 path(s) that have the largest delay added for hold.
 
@@ -2280,21 +2280,21 @@ Info (176353): Automatically promoted node CLK_Divider:DUT1|T_CLK
         Info (176357): Destination node Sensor_Controller:DUT2|Distance[3]
         Info (176357): Destination node Sensor_Controller:DUT2|Distance[2]
         Info (176357): Destination node CLK_Divider:DUT1|T_CLK~0
-        Info (176357): Destination node CodecConfigurator:DUT5|comb~0
-Info (176353): Automatically promoted node CodecConfigurator:DUT5|I2CMaster:i2cm1|ready 
+        Info (176357): Destination node CodecConfigurator:DUT6|comb~0
+Info (176353): Automatically promoted node CodecConfigurator:DUT6|I2CMaster:i2cm1|ready 
     Info (176355): Automatically promoted destinations to use location or clock signal Global Clock
     Info (176356): Following destination nodes may be non-global or may not use global or regional clocks
-        Info (176357): Destination node CodecConfigurator:DUT5|i2cClockDisable
-        Info (176357): Destination node CodecConfigurator:DUT5|I2CMaster:i2cm1|ready~0
-Info (176353): Automatically promoted node CodecConfigurator:DUT5|comb 
+        Info (176357): Destination node CodecConfigurator:DUT6|i2cClockDisable
+        Info (176357): Destination node CodecConfigurator:DUT6|I2CMaster:i2cm1|ready~0
+Info (176353): Automatically promoted node CodecConfigurator:DUT6|comb 
     Info (176355): Automatically promoted destinations to use location or clock signal Global Clock
-Info (176353): Automatically promoted node CodecConfigurator:DUT5|I2CMaster:i2cm1|I2CTxLogic:txLogic|ready 
+Info (176353): Automatically promoted node CodecConfigurator:DUT6|I2CMaster:i2cm1|I2CTxLogic:txLogic|ready 
     Info (176355): Automatically promoted destinations to use location or clock signal Global Clock
     Info (176356): Following destination nodes may be non-global or may not use global or regional clocks
-        Info (176357): Destination node CodecConfigurator:DUT5|I2CMaster:i2cm1|I2CTxLogic:txLogic|ready~1
-        Info (176357): Destination node CodecConfigurator:DUT5|I2CMaster:i2cm1|I2CTxLogic:txLogic|ready~2
-        Info (176357): Destination node CodecConfigurator:DUT5|I2CMaster:i2cm1|I2CTxLogic:txLogic|ready~3
-        Info (176357): Destination node CodecConfigurator:DUT5|I2CMaster:i2cm1|I2CTxLogic:txLogic|ready~4
+        Info (176357): Destination node CodecConfigurator:DUT6|I2CMaster:i2cm1|I2CTxLogic:txLogic|ready~1
+        Info (176357): Destination node CodecConfigurator:DUT6|I2CMaster:i2cm1|I2CTxLogic:txLogic|ready~2
+        Info (176357): Destination node CodecConfigurator:DUT6|I2CMaster:i2cm1|I2CTxLogic:txLogic|ready~3
+        Info (176357): Destination node CodecConfigurator:DUT6|I2CMaster:i2cm1|I2CTxLogic:txLogic|ready~4
 Info (176233): Starting register packing
 Info (176235): Finished register packing
     Extra Info (176219): No registers were packed into other blocks
@@ -2310,7 +2310,7 @@ Info (170195): Router estimated average interconnect usage is 0% of the availabl
 Info (170194): Fitter routing operations ending: elapsed time is 00:00:01
 Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info (170201): Optimizations that may affect the design's routability were skipped
-Info (11888): Total time spent on timing analysis during the Fitter is 0.44 seconds.
+Info (11888): Total time spent on timing analysis during the Fitter is 0.41 seconds.
 Info (306004): Started post-fitting delay annotation
 Warning (306006): Found 21 output pins without output pin load capacitance assignment
     Info (306007): Pin "Sound_Data" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
@@ -2342,8 +2342,8 @@ Warning (169174): The Reserve All Unused Pins setting has not been specified, an
 Info (144001): Generated suppressed messages file D:/Oana/Documents/Materiale Poli/GitHub/SecurityAlarmSys/output_files/Security_System.fit.smsg
 Info: Quartus II 64-Bit Fitter was successful. 0 errors, 5 warnings
     Info: Peak virtual memory: 4896 megabytes
-    Info: Processing ended: Mon Aug 06 20:47:55 2018
-    Info: Elapsed time: 00:00:06
+    Info: Processing ended: Mon Aug 06 20:58:26 2018
+    Info: Elapsed time: 00:00:05
     Info: Total CPU time (on all processors): 00:00:05
 
 

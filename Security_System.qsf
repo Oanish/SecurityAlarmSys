@@ -63,8 +63,6 @@ set_location_assignment PIN_R22 -to RST
 set_location_assignment PIN_L1 -to CLK
 set_location_assignment PIN_A13 -to Echo_Sig
 set_location_assignment PIN_B13 -to Trigger_Sig
-set_global_assignment -name VERILOG_FILE Alarm_Controller.v
-set_global_assignment -name VERILOG_FILE I2C_Automata.v
 set_global_assignment -name VERILOG_FILE Sound_Generator.v
 set_location_assignment PIN_A3 -to I2C_Clock
 set_location_assignment PIN_B3 -to I2C_Data
@@ -86,7 +84,6 @@ set_global_assignment -name VERILOG_FILE CodecConfigurator.v
 set_global_assignment -name VERILOG_FILE I2CMaster.v
 set_global_assignment -name VERILOG_FILE I2CTxLogic.v
 set_location_assignment PIN_B5 -to Sound_Data
-set_global_assignment -name VERILOG_FILE Audio_Controller.v
 set_location_assignment PIN_A4 -to BCLK
 set_location_assignment PIN_B4 -to XCLK
 set_location_assignment PIN_A5 -to DACLRCK

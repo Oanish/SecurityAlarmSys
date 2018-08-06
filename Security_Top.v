@@ -25,28 +25,20 @@ Sensor_Controller DUT2(.CLK(T_CLK),
 						 
 Digit_Converter DUT3(.Distance_Raw(Distance_Raw),
 							.Distance(Distance));
-
-//Alarm_Controller DUT4(.CLK(T_CLK),					
-//							 .RST(RST),
-//							 .Distance(Distance_Raw),
-//							 .Sound_Data(Sound_Data),
-//							 .Sound_Trig(Sound_Trig),
-//							 .I2C_Data(I2C_Data),
-//							 .I2C_Clock(I2C_Clock));
 							 
-CodecConfigurator DUT5(.reset(RST),
-							  .inClock((Distance_Raw < 100) ? T_CLK : 1'b0),
-							  .sda(I2C_Data),
-							  .scl(I2C_Clock),
-							  .ready(),
-							  .ackNum());
-							
-Sound_Generator DUT6(.CLK(CLK),
+Sound_Generator DUT5(.CLK(CLK),
 							.RST(RST),
 							.Distance(Distance_Raw),
 							.Sound_Data(Sound_Data),
 							.XCLK(XCLK),
 							.BCLK(BCLK),
 							.DACLRCK(DACLRCK));
+							
+CodecConfigurator DUT6(.reset(RST),
+							  .inClock((Distance_Raw < 100) ? T_CLK : 1'b0),
+							  .sda(I2C_Data),
+							  .scl(I2C_Clock),
+							  .ready(),
+							  .ackNum());
 							
 endmodule 
