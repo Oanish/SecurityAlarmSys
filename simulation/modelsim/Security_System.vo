@@ -16,7 +16,7 @@
 // PROGRAM "Quartus II 64-Bit"
 // VERSION "Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition"
 
-// DATE "08/06/2018 21:20:09"
+// DATE "08/07/2018 20:39:19"
 
 // 
 // Device: Altera EP2C20F484C7 Package FBGA484
@@ -985,6 +985,8 @@ wire \DUT3|DUT1|WideOr3~0_combout ;
 wire \DUT3|DUT1|WideOr2~0_combout ;
 wire \DUT3|DUT1|WideOr1~0_combout ;
 wire \DUT3|DUT1|WideOr0~0_combout ;
+wire [7:0] \DUT2|Distance ;
+wire [1:0] \DUT6|i2cm1|txLogic|bitState ;
 wire [1:0] \DUT6|i2cm1|bytesCounter ;
 wire [11:0] \DUT1|Counter ;
 wire [15:0] \DUT5|Counter ;
@@ -993,8 +995,6 @@ wire [23:0] \DUT6|data ;
 wire [3:0] \DUT6|i2cm1|txLogic|state ;
 wire [1:0] \DUT6|i2cm1|txState ;
 wire [2:0] \DUT6|state ;
-wire [7:0] \DUT2|Distance ;
-wire [1:0] \DUT6|i2cm1|txLogic|bitState ;
 
 
 // Location: LCCOMB_X13_Y20_N24

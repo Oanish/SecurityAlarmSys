@@ -1,4 +1,4 @@
-module Sound_Generator (input CLK,					//trigger clock, used in all modules and by the DAC decoder
+module Sound_Generator (input CLK,					//the board's oscillator clock
 								input RST,					//system reset
 								input [7:0] Distance,	//distance from object, bits
 								output Sound_Data,		//alarm data stream to be converted to analog audio

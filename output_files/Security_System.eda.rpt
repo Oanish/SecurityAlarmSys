@@ -1,5 +1,5 @@
 EDA Netlist Writer report for Security_System
-Mon Aug 06 21:20:10 2018
+Tue Aug 07 20:39:20 2018
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -36,7 +36,7 @@ applicable agreement for further details.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Mon Aug 06 21:20:10 2018 ;
+; EDA Netlist Writer Status ; Successful - Tue Aug 07 20:39:20 2018 ;
 ; Revision Name             ; Security_System                       ;
 ; Top-level Entity Name     ; Security_Top                          ;
 ; Family                    ; Cyclone II                            ;
@@ -84,12 +84,12 @@ applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit EDA Netlist Writer
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Mon Aug 06 21:20:09 2018
+    Info: Processing started: Tue Aug 07 20:39:19 2018
 Info: Command: quartus_eda --read_settings_files=off --write_settings_files=off Security_System -c Security_System
 Info (204026): Generated files "Security_System.vo", "Security_System_fast.vo", "Security_System_v.sdo" and "Security_System_v_fast.sdo" in directory "D:/Oana/Documents/Materiale Poli/GitHub/SecurityAlarmSys/simulation/modelsim/" for EDA simulation tool
 Info: Quartus II 64-Bit EDA Netlist Writer was successful. 0 errors, 0 warnings
     Info: Peak virtual memory: 4559 megabytes
-    Info: Processing ended: Mon Aug 06 21:20:10 2018
+    Info: Processing ended: Tue Aug 07 20:39:20 2018
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 

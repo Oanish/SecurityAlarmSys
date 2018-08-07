@@ -10,7 +10,7 @@ module Security_Top (input CLK,						//the board's oscillator clock
 							inout I2C_Data,				//i2c data for address, r/w operation
 							inout I2C_Clock);				//i2c clock
 
-wire T_CLK;						//trigger clock, used in most modules and by the DAC decoder		
+wire T_CLK;						//trigger clock		
 wire [7:0] Distance_Raw;	//distance from object, bits
 							
 CLK_Divider DUT1(.CLK(CLK),
